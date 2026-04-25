@@ -1,0 +1,158 @@
+@import "../../../assets/css/variable.scss";
+
+.modalExpense {
+    z-index: 9999999 !important;
+    width: 100%;
+    height: 100%;
+
+    .modal-dialog {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .modal-content {
+        width: 500px;
+        height: 586px;
+        flex-shrink: 0;
+        border-radius: 18px;
+        background: #FFF;
+        
+
+        @media (max-width: 767px) {
+            width: 100%;
+        }
+    }
+
+    .modal-body {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .crossIcccoo {}
+
+        .wraper_add_modal {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+
+
+
+            h2 {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: 0;
+                color: #0F8BE1;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+
+                .plusAdd {
+                    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='25' viewBox='0 0 24 25' fill='none'%3E%3Cpath d='M10.8571 13.6429H4V11.3571H10.8571V4.5H13.1429V11.3571H20V13.6429H13.1429V20.5H10.8571V13.6429Z' fill='%230F75BC'/%3E%3C/svg%3E");
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-position: center;
+                    display: block;
+                    width: 24px;
+                    height: 24px;
+                }
+            }
+
+            .descrInpt {
+                width: 100%;
+                height: 23px;
+                display: flex;
+                border-radius: 19.823px;
+                background: #F2F9FF;
+                padding: 20px;
+                color: var(--Black-60, #45464E);
+                font-family: "Anek Malayalam";
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+            }
+
+            .wrape_cl {
+                display: flex;
+                flex-direction: column;
+
+                label {
+                    color: #313131;
+                    font-family: "Anek Malayalam";
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: normal;
+                }
+
+                .wraper_dateExpense {
+                    display: flex;
+                    width: 100%;
+                    height: 45px;
+                    padding: 11px 14.8px 10px 14.2px;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 23.25px;
+                    background: #F2F9FF;
+
+                    .ant-picker {
+                        width: 100%;
+                        height: 100%;
+                        background: transparent;
+                        border: none;
+                        outline: none;
+
+                        input {
+                            color: var(--Black-60, #45464E);
+                            font-family: "Anek Malayalam";
+                            font-size: 16px;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: normal;
+                            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='25' height='24' viewBox='0 0 25 24' fill='none'%3E%3Cpath d='M5.01433 21.794C4.46424 21.794 3.99333 21.5981 3.6016 21.2064C3.20987 20.8147 3.01401 20.3438 3.01401 19.7937V5.79141C3.01401 5.24133 3.20987 4.77042 3.6016 4.37869C3.99333 3.98696 4.46424 3.79109 5.01433 3.79109H6.01449V1.79077H8.01481V3.79109H16.0161V1.79077H18.0164V3.79109H19.0166C19.5667 3.79109 20.0376 3.98696 20.4293 4.37869C20.821 4.77042 21.0169 5.24133 21.0169 5.79141V19.7937C21.0169 20.3438 20.821 20.8147 20.4293 21.2064C20.0376 21.5981 19.5667 21.794 19.0166 21.794H5.01433ZM5.01433 19.7937H19.0166V9.79206H5.01433V19.7937ZM5.01433 7.79173H19.0166V5.79141H5.01433V7.79173ZM12.0155 13.7927C11.7321 13.7927 11.4945 13.6968 11.3028 13.5052C11.1111 13.3135 11.0153 13.0759 11.0153 12.7925C11.0153 12.5092 11.1111 12.2716 11.3028 12.0799C11.4945 11.8882 11.7321 11.7924 12.0155 11.7924C12.2988 11.7924 12.5364 11.8882 12.7281 12.0799C12.9198 12.2716 13.0156 12.5092 13.0156 12.7925C13.0156 13.0759 12.9198 13.3135 12.7281 13.5052C12.5364 13.6968 12.2988 13.7927 12.0155 13.7927ZM8.01481 13.7927C7.73143 13.7927 7.49389 13.6968 7.3022 13.5052C7.1105 13.3135 7.01465 13.0759 7.01465 12.7925C7.01465 12.5092 7.1105 12.2716 7.3022 12.0799C7.49389 11.8882 7.73143 11.7924 8.01481 11.7924C8.29819 11.7924 8.53573 11.8882 8.72743 12.0799C8.91912 12.2716 9.01497 12.5092 9.01497 12.7925C9.01497 13.0759 8.91912 13.3135 8.72743 13.5052C8.53573 13.6968 8.29819 13.7927 8.01481 13.7927ZM16.0161 13.7927C15.7327 13.7927 15.4952 13.6968 15.3035 13.5052C15.1118 13.3135 15.0159 13.0759 15.0159 12.7925C15.0159 12.5092 15.1118 12.2716 15.3035 12.0799C15.4952 11.8882 15.7327 11.7924 16.0161 11.7924C16.2995 11.7924 16.537 11.8882 16.7287 12.0799C16.9204 12.2716 17.0163 12.5092 17.0163 12.7925C17.0163 13.0759 16.9204 13.3135 16.7287 13.5052C16.537 13.6968 16.2995 13.7927 16.0161 13.7927ZM12.0155 17.7933C11.7321 17.7933 11.4945 17.6975 11.3028 17.5058C11.1111 17.3141 11.0153 17.0766 11.0153 16.7932C11.0153 16.5098 11.1111 16.2723 11.3028 16.0806C11.4945 15.8889 11.7321 15.793 12.0155 15.793C12.2988 15.793 12.5364 15.8889 12.7281 16.0806C12.9198 16.2723 13.0156 16.5098 13.0156 16.7932C13.0156 17.0766 12.9198 17.3141 12.7281 17.5058C12.5364 17.6975 12.2988 17.7933 12.0155 17.7933ZM8.01481 17.7933C7.73143 17.7933 7.49389 17.6975 7.3022 17.5058C7.1105 17.3141 7.01465 17.0766 7.01465 16.7932C7.01465 16.5098 7.1105 16.2723 7.3022 16.0806C7.49389 15.8889 7.73143 15.793 8.01481 15.793C8.29819 15.793 8.53573 15.8889 8.72743 16.0806C8.91912 16.2723 9.01497 16.5098 9.01497 16.7932C9.01497 17.0766 8.91912 17.3141 8.72743 17.5058C8.53573 17.6975 8.29819 17.7933 8.01481 17.7933ZM16.0161 17.7933C15.7327 17.7933 15.4952 17.6975 15.3035 17.5058C15.1118 17.3141 15.0159 17.0766 15.0159 16.7932C15.0159 16.5098 15.1118 16.2723 15.3035 16.0806C15.4952 15.8889 15.7327 15.793 16.0161 15.793C16.2995 15.793 16.537 15.8889 16.7287 16.0806C16.9204 16.2723 17.0163 16.5098 17.0163 16.7932C17.0163 17.0766 16.9204 17.3141 16.7287 17.5058C16.537 17.6975 16.2995 17.7933 16.0161 17.7933Z' fill='%23474254'/%3E%3C/svg%3E");
+                            background-repeat: no-repeat;
+                            background-position: center right;
+                            display: block;
+                            background-size: 24.004px;
+                        }
+
+                        svg {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+
+        .saveBtn {
+            width: 100%;
+            display: flex;
+            height: 40px;
+            padding: 12px 10px;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            flex-shrink: 0;
+            border-radius: 100px;
+            background: #0F75BC;
+            color: #FFF;
+            text-align: center;
+            font-family: "Anek Malayalam";
+            font-size: 15px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            margin: auto;
+            margin-top: 18px !important;
+        }
+    }
+}

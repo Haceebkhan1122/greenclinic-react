@@ -1,0 +1,45 @@
+@import "../../assets/css/variable.scss";
+
+.profile-update {
+    .profileUpdate-wrap {
+        width: 100%;
+        min-height: 100vh;
+        box-shadow: 0px 8px 20px 0px #00285514;
+        background-color: white;
+        border-radius: 15px;
+        position: relative;
+
+        @media (min-width : 0px) and (max-width : 768px) {
+            border-radius: 10px;
+        }
+
+        .ant-tabs-top {
+            .ant-tabs-nav-wrap {
+                .ant-tabs-nav-list {
+                    .ant-tabs-tab {
+                        padding: 12px 20px;
+                        margin: 0;
+
+                        .ant-tabs-tab-btn {
+                            color: $body-text-color;
+                            font-size: 18px;
+                            font-style: normal;
+                            padding-left: 25px;
+                            padding-right: 25px;
+                            font-weight: 400;
+                            line-height: 20.642px;
+                        }
+                    }
+
+                    .ant-tabs-tab-active {
+                        .ant-tabs-tab-btn {
+                            color: $blue-color;
+                            font-weight: 600;
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

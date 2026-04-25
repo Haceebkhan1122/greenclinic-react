@@ -1,0 +1,116 @@
+.indicatorCard {
+    width: 100%;
+    height: 320px;
+    border-radius: 14px;
+    border: 0.5px solid #D9D9D9;
+    background: #FFF;
+    box-shadow: 0px 8px 20px 0px rgba(0, 40, 85, 0.06);
+    margin-bottom: 20px;
+    overflow-y: scroll;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+
+    img {
+        width: 20px;
+        object-fit: contain;
+    }
+
+    h4 {
+        color: #8799AC;
+        font-family: "Anek Malayalam";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20.642px;
+        margin: 0px !important;
+        /* 129.012% */
+    }
+
+    button {
+        width: 58px;
+        height: 26px;
+        flex-shrink: 0;
+        border-radius: 13px;
+        border: 1px solid #0F75BC;
+        background: #FFF;
+        color: #0F75BC;
+        font-family: "Anek Malayalam";
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+    }
+
+    .cardsWraperIndicator {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+
+
+        .singleC {
+            width: 100%;
+            padding: 11px 0px;
+            border-bottom: 1px solid #8E96A0;
+
+            p {
+                color: #0F75BC;
+                font-family: "Anek Malayalam";
+                font-size: 12px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                margin: 0px !important;
+            }
+
+            h3 {
+                color: #000;
+                font-family: "Anek Malayalam";
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                margin: 0px !important;
+            }
+
+            h4 {
+                color: #0F75BC;
+                font-family: "Anek Malayalam";
+                font-size: 12px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+                text-decoration-line: underline;
+                text-decoration-style: solid;
+                text-decoration-skip-ink: none;
+                text-decoration-thickness: auto;
+                text-underline-offset: auto;
+                text-underline-position: from-font;
+                margin: 0px !important;
+            }
+        }
+
+        .deleteIcon {
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='15' height='15' viewBox='0 0 15 15' fill='none'%3E%3Cpath d='M11.9098 3.56256C12.0664 3.56256 12.2165 3.62182 12.3272 3.72731C12.4379 3.8328 12.5001 3.97588 12.5001 4.12506C12.5001 4.27425 12.4379 4.41732 12.3272 4.52281C12.2165 4.6283 12.0664 4.68756 11.9098 4.68756H11.3196L11.3178 4.7275L10.7671 12.0799C10.7459 12.3638 10.6126 12.6294 10.3941 12.8233C10.1756 13.0172 9.88806 13.1251 9.58946 13.1251H4.78519C4.48659 13.1251 4.19909 13.0172 3.98058 12.8233C3.76207 12.6294 3.62879 12.3638 3.60759 12.0799L3.05686 4.72806C3.05596 4.71458 3.05557 4.70107 3.05568 4.68756H2.4654C2.30885 4.68756 2.15871 4.6283 2.04801 4.52281C1.93731 4.41732 1.87512 4.27425 1.87512 4.12506C1.87512 3.97588 1.93731 3.8328 2.04801 3.72731C2.15871 3.62182 2.30885 3.56256 2.4654 3.56256H11.9098ZM10.1372 4.68756H4.238L4.78578 12.0001H9.58946L10.1372 4.68756ZM8.36818 1.87506C8.52473 1.87506 8.67487 1.93432 8.78557 2.03981C8.89627 2.1453 8.95846 2.28838 8.95846 2.43756C8.95846 2.58675 8.89627 2.72982 8.78557 2.83531C8.67487 2.9408 8.52473 3.00006 8.36818 3.00006H6.00707C5.85052 3.00006 5.70038 2.9408 5.58968 2.83531C5.47898 2.72982 5.41679 2.58675 5.41679 2.43756C5.41679 2.28838 5.47898 2.1453 5.58968 2.03981C5.70038 1.93432 5.85052 1.87506 6.00707 1.87506H8.36818Z' fill='%23FC5C5C'/%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            display: block;
+            width: 15px;
+            height: 15px;
+        }
+    }
+
+    .noitemsIndicator {
+        width: 100%;
+        height: 80%;
+        gap: 20px;
+        margin: auto;
+
+        img {
+            width: 60px;
+            object-fit: contain;
+        }
+    }
+}

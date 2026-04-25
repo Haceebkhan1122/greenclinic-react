@@ -1,0 +1,640 @@
+@import '../../../assets/css/variable.scss';
+
+.step_form {
+    z-index: 9999999 !important;
+
+    @media (max-width: 767px) {
+        padding-left: 0 !important;
+    }
+
+    .modal-dialog {
+        max-width: 84%;
+
+        @media (max-width: 767px) {
+            width: 100%;
+            height: 100%;
+            padding: 0;
+            margin: 0;
+            max-width: 100% !important;
+        }
+
+        .modal-content {
+            border-radius: 15.385px;
+            background: $white-color;
+
+            @media (max-width: 767px) {
+                background-color: #f2f9ff;
+                border: none;
+                border-radius: 0;
+            }
+
+            .close {
+                position: absolute;
+                top: 10px;
+                right: 10px;
+                z-index: 9;
+            }
+
+            .modal-body {
+                padding-left: 20px;
+                padding-right: 20px;
+
+                @media (max-width: 767px) {
+                    padding: 0;
+                }
+
+                h2 {
+                    color: $blue-color;
+                    font-size: 20px;
+                    border-bottom: 1px solid $light-blue-contrast-color;
+                    font-style: normal;
+                    margin-bottom: 20px;
+                    padding-bottom: 20px;
+                    font-weight: 500;
+                    line-height: 23.04px;
+
+                    img {
+                        display: none;
+                    }
+
+                    @media (max-width: 767px) {
+                        padding-top: 21px;
+                        padding-left: 20px;
+                        padding-right: 20px;
+                        font-size: 16px;
+                        background-color: white;
+                        box-shadow: 0px 3.998px 19.088px 0px rgba(0, 0, 0, 0.06);
+                        border-bottom: none;
+                        display: flex;
+
+                        img {
+                            display: block;
+                            width: 18px;
+                            height: 18px;
+                            margin-right: 10px;
+                        }
+                    }
+                }
+
+                @media (max-width: 767px) {
+                    .bg_from {
+                        border-radius: 10px;
+                        background: #FFF;
+                        margin: 0 10px;
+                        padding: 10px;
+                    }
+                }
+
+                form {
+
+                    input,
+                    select {
+                        border-radius: 25px;
+                        background-color: $background-color;
+                        border: none;
+                        height: 43px;
+                        width: 100%;
+                        padding: 6.794px 13.588px;
+                    }
+
+                    label {
+                        color: $body-text-color;
+                        font-family: "Anek Malayalam";
+                        font-size: 14px;
+                        font-style: normal;
+                        font-weight: 400;
+                        margin-bottom: 0;
+                        line-height: normal;
+                    }
+
+                    .ant-input-affix-wrapper {
+                        background-color: #f2f9ff;
+                        border: none;
+                        border-radius: 25px;
+                        padding-top: 0;
+                        height: 43px;
+
+                        .ant-input {
+                            background-color: transparent;
+                            border-radius: 0;
+                            padding: 0;
+                        }
+                    }
+
+                    .MuiFormGroup-root {
+                        display: flex;
+                        border-radius: 23.178px;
+                        border: 0.927px solid $background-color;
+                        background: $background-color;
+                        flex-direction: row;
+                        gap: 20px;
+                        padding: 0 20px;
+
+                        @media (max-width: 767px) {
+                            padding: 0 14px;
+                        }
+
+                        .MuiFormControlLabel-root {
+                            margin-bottom: 0;
+                        }
+
+                        .MuiTypography-root {
+                            color: $body-text-color;
+                            font-family: "Anek Malayalam";
+                            font-size: 16px;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: normal;
+
+                            @media (max-width: 767px) {
+                                font-size: 14px;
+                            }
+                        }
+                    }
+
+                    h4 {
+                        color: $blue-color;
+                        font-size: 18px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: 26px;
+                    }
+
+                    .passCri {
+                        color: $blue-color;
+                        font-size: 13px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: 26px;
+                    }
+
+                    .ant-checkbox-wrapper {
+                        .ant-checkbox-input {
+                            height: auto;
+                            border: 1px solid $light-blue-contrast-color;
+                        }
+
+                        .ant-checkbox-inner {
+                            width: 22px;
+                            border-radius: 50%;
+                            height: 22px;
+                        }
+                    }
+                }
+
+                .form_btn1 {
+                    text-align: end;
+                    border-top: 1px solid $light-blue-contrast-color;
+                    margin: 0 0 10px;
+                    padding-top: 20px;
+
+                    @media (max-width: 767px) {
+                        border-top: none;
+                        text-align: center;
+                        padding: 0;
+                        margin: 0;
+                    }
+                }
+
+
+                .form_btn2 {
+                    border-top: 1px solid #e2eaf0;
+                    margin: 0 0 10px;
+                    padding-top: 20px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+
+                    @media (max-width: 767px) {
+                        border-top: none;
+                        position: fixed;
+                        bottom: 0;
+                        left: 0;
+                        right: 0;
+                        margin: 0;
+                        width: 100%;
+                        padding: 22px;
+                        border-radius: 14px 14px 0px 0px;
+                        background: #FFF;
+                        box-shadow: 0px -8px 20px 0px rgba(0, 40, 85, 0.06);
+                        justify-content: center;
+
+                        div {
+                            display: flex;
+                            width: 100%;
+                            justify-content: space-evenly;
+                            align-items: center;
+
+                            button {
+                                padding: 0;
+                                width: 150px;
+                                margin-left: 0;
+                            }
+                        }
+                    }
+                }
+
+                button {
+                    margin-left: 10px;
+                    padding: 0 25px;
+                    height: 40px;
+
+                    @media (max-width: 767px) {
+                        width: 138px;
+                    }
+                }
+
+                .doctor_form {
+                    padding-bottom: 41px;
+
+                    @media (max-width: 767px) {
+                        padding-bottom: 30px;
+                        margin-bottom: 90px;
+                    }
+                }
+
+                h3 {
+                    color: $body-text-color;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 500;
+                    margin-bottom: 14px;
+                    line-height: 23.04px;
+                }
+
+                .platform_fee {
+                    color: $black-color;
+                    font-size: 10px;
+                    font-style: normal;
+                    margin-top: 9px;
+                    font-weight: 300;
+                    margin-bottom: 0;
+                    line-height: normal;
+
+                    .anticon {
+                        color: $blue-color;
+                        font-size: 12px;
+                        margin-right: 6px;
+                    }
+                }
+
+                .scheduleInPerson {
+                    border-left: 1px solid $light-blue-contrast-color;
+
+                    @media (max-width: 767px) {
+                        border-left: none;
+                        padding: 0;
+                    }
+
+                    ul {
+                        li {
+                            padding-bottom: 10px;
+                            margin-bottom: 15px;
+                            justify-content: space-between;
+                            border-bottom: 1px solid $light-blue-contrast-color;
+
+                            .days {
+                                display: flex;
+                                align-items: center;
+                                justify-content: space-between;
+                            }
+
+                            .timing {
+                                text-align: right;
+
+                                .timing-inputs {
+                                    display: flex;
+                                    text-align: left;
+                                    align-items: center;
+                                    margin-top: 10px;
+                                    justify-content: space-between;
+
+                                    label {
+                                        color: $body-text-color;
+                                        font-family: "Anek Malayalam";
+                                        font-size: 12px;
+                                        font-style: normal;
+                                        font-weight: 600;
+                                        margin-bottom: 10px;
+                                        line-height: normal;
+                                    }
+
+                                    input {
+                                        border-radius: 100px;
+                                        background: $background-color;
+                                        border: none;
+                                        padding: 12px;
+                                        width: 100%;
+                                    }
+                                }
+
+                                button {
+                                    margin-top: 10px;
+                                    margin-left: 0;
+                                    padding: 0;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .scheduleInVideo {
+                    border-left: 1px solid $light-blue-contrast-color;
+
+                    @media (max-width: 767px) {
+                        border-left: none;
+                        padding: 0;
+                    }
+
+                    ul {
+                        li {
+                            padding-bottom: 10px;
+                            margin-bottom: 15px;
+                            justify-content: space-between;
+                            border-bottom: 1px solid $light-blue-contrast-color;
+
+                            .days {
+                                display: flex;
+                                align-items: center;
+                                justify-content: space-between;
+                            }
+
+                            .timing {
+                                text-align: right;
+
+                                .timing-inputs {
+                                    display: flex;
+                                    text-align: left;
+                                    align-items: center;
+                                    margin-top: 10px;
+                                    justify-content: space-between;
+
+                                    label {
+                                        color: $body-text-color;
+                                        font-family: "Anek Malayalam";
+                                        font-size: 12px;
+                                        font-style: normal;
+                                        font-weight: 600;
+                                        margin-bottom: 10px;
+                                        line-height: normal;
+                                    }
+
+                                    input {
+                                        border-radius: 100px;
+                                        background: $background-color;
+                                        border: none;
+                                        padding: 12px;
+                                        width: 100%;
+                                    }
+                                }
+
+                                button {
+                                    margin-top: 10px;
+                                    margin-left: 0;
+                                    padding: 0;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .single_field_checks {
+        display: flex;
+        position: relative;
+
+        label {
+            position: relative;
+            display: flex;
+            align-items: center;
+            padding-left: 40px;
+
+            input {
+                appearance: none;
+                width: 22px !important;
+                height: 22px !important;
+                border-radius: 50%;
+                overflow: hidden;
+                padding: 0 !important;
+                position: absolute;
+                left: 0;
+
+                &:checked+span {
+                    width: 22px;
+                    height: 22px;
+                    border-radius: 50%;
+                    position: absolute;
+                    left: 0;
+                    background-image: url("data:image/svg+xml,%3Csvg width='22' height='22' viewBox='0 0 22 22' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='11' cy='11' r='10.25' stroke='%2384D95B' stroke-width='1.5'/%3E%3Cg clip-path='url(%23clip0_173_15892)'%3E%3Cpath d='M9.25007 13.4501L6.80007 11.0001L5.9834 11.8167L9.25007 15.0834L16.2501 8.08339L15.4334 7.26672L9.25007 13.4501Z' fill='%2384D95B' stroke='%2384D95B' stroke-width='0.5'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_173_15892'%3E%3Crect width='14' height='14' fill='white' transform='translate(4 4)'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A");
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-position: center;
+                }
+            }
+
+            span {}
+
+        }
+    }
+}
+
+
+.errorTxt {
+    color: red;
+    font-size: 14px;
+    padding-left: 7px;
+    padding-top: 7px;
+}
+
+
+.gender__single {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+
+    label {
+        color: rgba(18, 25, 33, 0.90);
+        font-family: "Anek Malayalam";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 26px;
+        margin-bottom: 6px;
+    }
+
+    input {
+        width: 100%;
+        height: 47px;
+        padding: 0px 10px 0px 15px;
+        align-items: center;
+        gap: 80px;
+        align-self: stretch;
+        border-radius: 25px;
+        border: 1px solid #F2F9FF;
+        background: #F2F9FF;
+        outline: none;
+        color: #313131;
+        font-family: "Anek Malayalam";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin-bottom: 14px;
+
+        &::placeholder {
+            color: #313131;
+            font-family: "Anek Malayalam";
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+    }
+
+    .form-select {
+        width: 100%;
+        height: 47px;
+        border-radius: 25px;
+        border: 1px solid #F2F9FF;
+        background: #F2F9FF;
+        background-image: url("data:image/svg+xml,%3Csvg width='18' height='19' viewBox='0 0 18 19' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M14.25 6.875L9 12.125L3.75 6.875' stroke='%23959494' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+        background-repeat: no-repeat;
+        background-size: 18px;
+        background-position: center right 10%;
+        color: #313131;
+        font-family: "Anek Malayalam";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin-bottom: 14px;
+        padding: 0px 10px 0px 15px;
+        transition: none !important;
+
+        &:focus {
+            outline: none;
+            border: none;
+            box-shadow: none;
+        }
+
+        &:active {
+            border: none;
+            outline: none;
+        }
+
+
+    }
+
+
+    .labelTextSpan {
+        color: rgba(18, 25, 33, 0.90);
+        font-family: "Anek Malayalam";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 26px;
+        margin-bottom: 6px;
+    }
+
+    .ant-input-suffix {}
+
+    .wraperGenders {
+        width: 100%;
+        height: 47px;
+        border: 1px solid #F2F9FF;
+        background: #F2F9FF;
+        border-radius: 25px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0px 15px;
+
+        
+
+        .singleGender {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            position: relative;
+
+            label {
+                margin: 0 !important;
+            }
+
+            input {
+                margin: 0 !important;
+                display: none;
+            }
+
+            .customInp {
+                width: 24px;
+                height: 24px;
+                border: 2px solid #5F6368;
+                border-radius: 50%;
+                margin-right: 10px;
+                position: relative;
+            }
+        }
+    }
+
+
+    .wraper_date {
+        width: 100%;
+        height: 47px;
+        overflow: hidden;
+        position: relative;
+
+        .ant-picker {
+            width: 100%;
+            height: 100%;
+            border: 1px solid #F2F9FF;
+            background: #F2F9FF;
+            border-radius: 25px;
+            padding: 0;
+            padding-right: 20px;
+            color: #313131;
+            font-family: "Anek Malayalam";
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            cursor: pointer;
+
+            input {
+                width: 100% !important;
+                height: 47px !important;
+                margin: 0;
+                color: #313131;
+                font-family: "Anek Malayalam";
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='25' viewBox='0 0 24 25' fill='none'%3E%3Cpath d='M4.9803 22.294C4.43021 22.294 3.9593 22.0981 3.56757 21.7064C3.17585 21.3147 2.97998 20.8438 2.97998 20.2937V6.29141C2.97998 5.74133 3.17585 5.27042 3.56757 4.87869C3.9593 4.48696 4.43021 4.29109 4.9803 4.29109H5.98046V2.29077H7.98078V4.29109H15.9821V2.29077H17.9824V4.29109H18.9826C19.5326 4.29109 20.0035 4.48696 20.3953 4.87869C20.787 5.27042 20.9829 5.74133 20.9829 6.29141V20.2937C20.9829 20.8438 20.787 21.3147 20.3953 21.7064C20.0035 22.0981 19.5326 22.294 18.9826 22.294H4.9803ZM4.9803 20.2937H18.9826V10.2921H4.9803V20.2937ZM4.9803 8.29173H18.9826V6.29141H4.9803V8.29173ZM11.9814 14.2927C11.698 14.2927 11.4605 14.1968 11.2688 14.0052C11.0771 13.8135 10.9813 13.5759 10.9813 13.2925C10.9813 13.0092 11.0771 12.7716 11.2688 12.5799C11.4605 12.3882 11.698 12.2924 11.9814 12.2924C12.2648 12.2924 12.5023 12.3882 12.694 12.5799C12.8857 12.7716 12.9816 13.0092 12.9816 13.2925C12.9816 13.5759 12.8857 13.8135 12.694 14.0052C12.5023 14.1968 12.2648 14.2927 11.9814 14.2927ZM7.98078 14.2927C7.69741 14.2927 7.45987 14.1968 7.26817 14.0052C7.07647 13.8135 6.98062 13.5759 6.98062 13.2925C6.98062 13.0092 7.07647 12.7716 7.26817 12.5799C7.45987 12.3882 7.69741 12.2924 7.98078 12.2924C8.26416 12.2924 8.5017 12.3882 8.6934 12.5799C8.8851 12.7716 8.98094 13.0092 8.98094 13.2925C8.98094 13.5759 8.8851 13.8135 8.6934 14.0052C8.5017 14.1968 8.26416 14.2927 7.98078 14.2927ZM15.9821 14.2927C15.6987 14.2927 15.4612 14.1968 15.2695 14.0052C15.0778 13.8135 14.9819 13.5759 14.9819 13.2925C14.9819 13.0092 15.0778 12.7716 15.2695 12.5799C15.4612 12.3882 15.6987 12.2924 15.9821 12.2924C16.2654 12.2924 16.503 12.3882 16.6947 12.5799C16.8864 12.7716 16.9822 13.0092 16.9822 13.2925C16.9822 13.5759 16.8864 13.8135 16.6947 14.0052C16.503 14.1968 16.2654 14.2927 15.9821 14.2927ZM11.9814 18.2933C11.698 18.2933 11.4605 18.1975 11.2688 18.0058C11.0771 17.8141 10.9813 17.5766 10.9813 17.2932C10.9813 17.0098 11.0771 16.7723 11.2688 16.5806C11.4605 16.3889 11.698 16.293 11.9814 16.293C12.2648 16.293 12.5023 16.3889 12.694 16.5806C12.8857 16.7723 12.9816 17.0098 12.9816 17.2932C12.9816 17.5766 12.8857 17.8141 12.694 18.0058C12.5023 18.1975 12.2648 18.2933 11.9814 18.2933ZM7.98078 18.2933C7.69741 18.2933 7.45987 18.1975 7.26817 18.0058C7.07647 17.8141 6.98062 17.5766 6.98062 17.2932C6.98062 17.0098 7.07647 16.7723 7.26817 16.5806C7.45987 16.3889 7.69741 16.293 7.98078 16.293C8.26416 16.293 8.5017 16.3889 8.6934 16.5806C8.8851 16.7723 8.98094 17.0098 8.98094 17.2932C8.98094 17.5766 8.8851 17.8141 8.6934 18.0058C8.5017 18.1975 8.26416 18.2933 7.98078 18.2933ZM15.9821 18.2933C15.6987 18.2933 15.4612 18.1975 15.2695 18.0058C15.0778 17.8141 14.9819 17.5766 14.9819 17.2932C14.9819 17.0098 15.0778 16.7723 15.2695 16.5806C15.4612 16.3889 15.6987 16.293 15.9821 16.293C16.2654 16.293 16.503 16.3889 16.6947 16.5806C16.8864 16.7723 16.9822 17.0098 16.9822 17.2932C16.9822 17.5766 16.8864 17.8141 16.6947 18.0058C16.503 18.1975 16.2654 18.2933 15.9821 18.2933Z' fill='%23959494'/%3E%3C/svg%3E") !important;
+                background-repeat: no-repeat;
+                background-size: 24px;
+                background-position: center right 0%;
+                cursor: pointer;
+            }
+        }
+
+        .ant-picker-suffix {
+            display: none;
+        }
+
+
+        .anticon {
+            display: none;
+        }
+    }
+
+    .error {
+        color: rgba(255, 0, 0, 0.7);
+        font-size: 12px;
+        margin-top: -5px;
+    }
+}

@@ -1,0 +1,1388 @@
+@import "../../assets/css/variable.scss";
+
+.top_wrap.calanderTopRow {
+    padding: 9px 10px 11px;
+    margin-top: -23px;
+
+    @media (min-width:0px) and (max-width:767px) {
+        padding: 9px 0px 11px;
+
+    }
+
+
+    .wraper_date {
+        display: flex;
+        gap: 30px;
+        align-items: center;
+
+        .ant-picker {
+            position: relative;
+            width: 100%;
+
+            input {
+                color: $body-text-color;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 600;
+            }
+        }
+
+        .left_arrow {
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='7' height='12' viewBox='0 0 7 12' fill='none'%3E%3Cpath d='M6.07629 10.9909L1.22049 6.1351L6.07629 1.2793' stroke='%23313131' stroke-width='1.78376' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            display: inline-block;
+            width: 7px;
+            height: 11px;
+            margin: auto;
+        }
+
+        .right_arrow {
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='7' height='12' viewBox='0 0 7 12' fill='none'%3E%3Cpath d='M1.16534 1.27864L6.02114 6.13444L1.16534 10.9902' stroke='%23313131' stroke-width='1.78376' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            display: inline-block;
+            width: 7px;
+            height: 11px;
+            margin: auto;
+        }
+    }
+
+    .daysTabs {
+        border-radius: 20px;
+        background: var(--Blue-Light, #F2F9FF);
+        width: 215px;
+        height: 40px;
+        padding: 2px;
+
+        button.ant-btn.ant-btn-primary.ant-btn-color-primary.ant-btn-variant-solid {
+            background-color: rgba(15, 117, 188, 0.20);
+            border-radius: 50px;
+            color: #0F75BC !important;
+            font-weight: 600 !important;
+        }
+
+        @media (min-width:0px) and (max-width:767px) {
+            height: 36px;
+            width: 100%;
+            position: relative;
+            right: 10px;
+
+        }
+
+        button {
+            color: #545554;
+            text-align: center;
+            font-family: "Anek Malayalam";
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            border: 0;
+            padding: 0;
+            background: initial;
+            padding: 0;
+            width: 33.333%;
+            background: initial;
+            height: 100%;
+            box-shadow: initial;
+
+            @media (min-width:0px) and (max-width:767px) {
+                font-size: 14px;
+            }
+
+
+            &:hover {
+                background: rgba(15, 117, 188, 0.20) !important;
+                color: #0F75BC;
+                border-radius: 20px;
+                font-weight: 400;
+                opacity: 1;
+
+            }
+
+            &:where(.css-dev-only-do-not-override-cdzvx5).ant-btn-variant-solid {
+                border-radius: 20px;
+                background: rgba(15, 117, 188, 0.20);
+                color: #0F75BC;
+                text-align: center;
+                font-family: "Anek Malayalam";
+
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+            }
+        }
+    }
+
+
+
+    .search {
+        background: $background-color;
+        border-radius: 100px;
+        display: flex;
+        padding: 0 10px;
+        align-items: center;
+        position: relative;
+
+        @media (min-width:0px) and (max-width:767px) {
+            margin-bottom: 20px;
+            margin-top: 35px;
+        }
+
+        img {
+            width: 20px;
+            height: 20px;
+            position: absolute;
+        }
+
+        select {
+            border-radius: 100px;
+            padding: .375rem;
+            padding-left: 25px;
+        }
+    }
+
+
+
+    .filter-by-div {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        select {
+            background-color: $background-color;
+            border-radius: 100px;
+            border: none;
+        }
+
+        p {
+            color: $dark-color;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            margin-bottom: 0;
+            line-height: normal;
+        }
+
+        .filter {
+            width: 70%;
+
+            .dropdown-toggle {
+                background-color: $background-color;
+                border-radius: 100px;
+                display: flex;
+                border: none;
+                width: 100%;
+                padding: 9px 18px;
+                align-items: center;
+                color: $dark-color;
+                font-size: 16px;
+                justify-content: space-between;
+                font-style: normal;
+                font-weight: 400;
+
+                &::after {
+                    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='13' height='7' viewBox='0 0 13 7' fill='none'%3E%3Cpath d='M11.298 0.950195L6.39805 5.8502L1.49805 0.950195' stroke='%23313131' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+                    background-position: center;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    border: none;
+                    width: 9.8px;
+                    height: 4.9px;
+                }
+            }
+
+            .dropdown-menu {
+                border-radius: 10px;
+                border: 1px solid $light-gray-color;
+                background: $white-color;
+                border: none;
+                width: 100%;
+                box-shadow: 0px 4px 20px 0px rgba(238, 238, 238, 0.80);
+
+                .accordion {
+                    .accordion-item {
+                        border: none;
+
+                        .accordion-button {
+                            padding: 10px;
+                            color: $body-text-color;
+                            font-size: 12px;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: normal;
+                            background-color: transparent;
+                            box-shadow: none;
+
+                            &::after {
+                                width: 11px;
+                                height: 11px;
+                                background-size: contain;
+                            }
+                        }
+
+                        .accordion-body {
+                            padding: 0 10px 0 20px;
+                            color: $body-text-color;
+                            font-size: 12px;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: normal;
+                        }
+                    }
+                }
+
+                .clear_all {
+                    color: #0F75BC;
+                    font-family: "Anek Malayalam";
+                    font-size: 12px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: normal;
+                    padding-left: 10px;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+
+    .setting {
+        .dropdown-toggle {
+            background: transparent;
+            border: none;
+            padding: 0;
+
+            img {
+                width: 21.775px;
+                height: 21.667px;
+            }
+
+            &::after {
+                content: none;
+            }
+
+            &:active {
+                background: transparent;
+            }
+        }
+
+        .dropdown-menu {
+            border-radius: 10px;
+            background: $white-color;
+            padding: 8px 12px;
+            z-index: 1;
+            width: 170px;
+            box-shadow: 0px 4px 20px 0px rgba(238, 238, 238, 0.80);
+
+            label {
+                font-size: 12px;
+                color: $dark-color;
+                font-style: normal;
+                font-weight: 400;
+            }
+
+            input {
+                width: 15px;
+                height: 15px;
+
+
+            }
+        }
+    }
+
+
+    .create {
+        @media (min-width:0px) and (max-width:767px) {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            height: 85px;
+            border-radius: 14px 14px 0px 0px;
+            background: #FFF;
+            box-shadow: 0px -8px 20px 0px rgba(0, 40, 85, 0.06);
+            left: 0;
+            padding: 20px;
+            z-index: 999;
+        }
+
+        .dropdown-toggle {
+            background: white !important;
+            border-radius: 100px;
+            border: 1px solid $blue-color;
+            color: $blue-color !important;
+            padding: 8px 15px;
+            text-align: center;
+            font-size: 15px;
+            justify-content: center;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+
+            @media (min-width:0px) and (max-width:767px) {
+                width: 320px;
+                height: 45px;
+                margin: 0 auto;
+            }
+
+            // &::after {
+            //     content: "";
+            //     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='17' height='16' viewBox='0 0 17 16' fill='none'%3E%3Cpath d='M13.1673 7.3335L8.50065 12.0002L3.83398 7.3335' stroke='%230F75BC' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+            //     background-position: center;
+            //     background-repeat: no-repeat;
+            //     background-size: cover;
+            //     width: 16px;
+            //     height: 16px;
+            //     border: none;
+            //     vertical-align: 0;
+            // }
+        }
+
+        .dropdown-menu {
+            border-radius: 10px;
+            border: 1px solid $light-gray-color;
+            background: $white-color;
+            border: none;
+            width: 170px;
+            box-shadow: 0px 4px 20px 0px rgba(238, 238, 238, 0.80);
+
+            .dropdown-item {
+                color: $body-text-color;
+                font-size: 12px;
+                font-style: normal;
+                background-color: transparent;
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                font-weight: 400;
+            }
+        }
+    }
+
+    .search__bar {
+        border-radius: 100px;
+        background: $background-color;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 16px;
+
+        img {
+            width: 20px;
+            height: 20px;
+        }
+
+        input {
+            color: #212121;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            background-color: transparent;
+            line-height: normal;
+
+            &::placeholder {
+                color: #212121;
+            }
+        }
+    }
+}
+
+.clanderSmallApp {
+
+    .dateBoxHeader {
+        margin-top: -14px;
+
+        .btnToday {
+            button {
+                color: #000;
+                font-family: "Anek Malayalam";
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+                width: 90px;
+                height: 40px;
+                flex-shrink: 0;
+                border-radius: 20px;
+                background: #FFF;
+                box-shadow: 0px 4px 20px 0px rgba(238, 238, 238, 0.60);
+                border: 0;
+
+                &:hover {
+                    color: #000;
+                }
+            }
+        }
+
+        .dateC {
+            color: #313131;
+            font-family: "Anek Malayalam";
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            width: 140px;
+        }
+
+        .iconLR {
+            display: flex;
+            gap: 40px;
+        }
+    }
+
+    .dateBoxHeader1 {
+        padding-top: 14px !important;
+        margin-top: 0;
+        border-top: 1px solid #D3DEE9;
+
+        .iconSelect {
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M7 10L12 15L17 10H7Z' fill='black' fill-opacity='0.6'/%3E%3C/svg%3E");
+            padding-right: 30px;
+            background-position: right center;
+            background-repeat: no-repeat;
+
+        }
+
+        select {
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 24px;
+            /* 171.429% */
+            letter-spacing: 0.1px;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            text-indent: 1px;
+            text-overflow: '';
+            font-family: "Anek Malayalam";
+
+
+            &::-ms-expand {
+                display: none;
+            }
+        }
+    }
+
+    .ant-picker-cell-inner {
+        &:before {
+            border-radius: 20px !important;
+        }
+    }
+
+    td.ant-picker-cell.ant-picker-cell-selected .ant-picker-cell-inner.ant-picker-calendar-date {
+        border-radius: 30px !important;
+        background-color: #0f75bc !important;
+
+        .ant-picker-calendar-date-value {
+            border: 0 !important;
+
+        }
+
+    }
+
+    .ant-picker-calendar-date-value {
+        font-family: "Anek Malayalam";
+        font-size: 12px;
+    }
+
+    .ant-picker-date-panel .ant-picker-content th {
+        font-family: "Anek Malayalam";
+        font-size: 12px;
+    }
+}
+
+.fc-dayGridMonth-view {
+    .fc-event-main {
+        background: #E9F5FF !important;
+        // border: 0.5px solid var(--Blue, #118BE2);
+    }
+
+    .fc-timegrid-slot {
+        height: auto !important;
+        min-height: 50px;
+        /* Adjust as needed */
+        overflow: visible;
+    }
+
+
+
+}
+
+.fc-event .fc-event-main {
+    z-index: initial;
+}
+
+.fc-timegrid-more-link-inner {
+    position: relative;
+}
+
+.p-4.clanderBox {
+    @media (min-width:0px) and (max-width:767px) {
+        // height: 450px;
+        // overflow-y: overlay;
+        // border-radius: 14px;
+        // background: #FFF;
+        // box-shadow: 4.164px 10.41px 21.237px 0px rgba(0, 0, 0, 0.09);
+        padding: 20px 0px !important;
+    }
+
+    .fc.fc-media-screen.fc-direction-ltr.fc-theme-standard {
+        @media (min-width:0px) and (max-width:767px) {
+            height: 600px;
+            overflow-y: overlay;
+            border-radius: 14px;
+            background: rgb(255, 255, 255);
+            box-shadow: rgba(0, 0, 0, 0.09) 4.164px 10.41px 21.237px 0px;
+            margin-top: -127px;
+            padding: 140px 10px 20px !important;
+        }
+
+    }
+
+    .clanderSmallApp {
+        @media (min-width:0px) and (max-width:767px) {
+            display: none;
+        }
+
+    }
+
+    .fc-v-event {
+        background: #E9F5FF !important;
+        border: 0.5px solid var(--Blue, #118BE2);
+
+    }
+
+    .fc .fc-timegrid-col.fc-day-today,
+    .fc .fc-daygrid-day.fc-day-today {
+        background-color: transparent;
+    }
+
+    .fc-event-main {
+        border-radius: 6px;
+
+        padding: 0px 1px 0px 10px !important;
+        display: flex;
+        align-items: center;
+        color: #313131 !important;
+        font-family: "Anek Malayalam";
+        font-style: normal !important;
+
+        // height: auto !important;
+        @media (min-width:0px) and (max-width:767px) {
+            padding: 2px 1px 0px 10px !important;
+        }
+
+        .boxFl {
+            &::before {
+                border-radius: 6px 0px 0px 6px;
+                content: "";
+                width: 8px;
+                height: 100%;
+                position: absolute;
+                left: 0;
+                top: 0;
+                background: #118BE2;
+                //  background: var(--before-bg, #118BE2);
+                color: #313131 !important;
+            }
+        }
+
+
+        i {
+            font-style: normal !important;
+
+        }
+
+        .d-flex.justify-content-between {
+            @media (min-width:0px) and (max-width:767px) {
+
+                width: 100%;
+            }
+        }
+
+        span.btnCl {
+            border-radius: 4px;
+            background: #FFF;
+            /* display: flex; */
+            padding: 2px 4px;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            color: #313131;
+            text-align: center;
+            font-family: "Anek Malayalam";
+            font-size: 10px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            text-transform: uppercase;
+        }
+    }
+
+    .appointmentDropdown {
+        position: absolute;
+        padding: 8px;
+        z-index: 99999999999999999;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        border-radius: 10px;
+        background: #FFF;
+        box-shadow: 0px 4px 20px 0px rgba(238, 238, 238, 0.80);
+        display: flex;
+        right: 0;
+        width: 105px;
+
+        a {
+            color: #313131;
+            font-family: "Anek Malayalam";
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            text-decoration: none;
+            display: flex;
+            gap: 10px;
+        }
+    }
+
+
+
+}
+
+.headerClander {
+    .ant-picker-calendar-header {
+        justify-content: start;
+        padding-left: 0;
+    }
+}
+
+.rightBoxClander {
+
+    .disabled-date {
+        background-color: #f5f5f5 !important;
+        /* Light gray */
+        pointer-events: none;
+        /* Prevent clicking */
+        color: #bbb !important;
+        /* Dim text */
+    }
+
+    .leave-day {
+        background-color: rgba(128, 128, 128, 0.3) !important;
+        /* Light Grey */
+        color: #555 !important;
+        /* Darker Grey for text */
+        // pointer-events: none;
+    }
+
+
+    .allAppField {
+
+
+        @media (min-width:0px) and (max-width:767px) {
+            border-radius: 20px;
+            background: #FFF;
+            display: flex;
+            width: 210px;
+            height: 40px;
+            padding: 10px 17px;
+            align-items: center;
+            gap: 22px;
+            flex-shrink: 0;
+            color: #000;
+            font-family: "Anek Malayalam";
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8' fill='none'%3E%3Cpath d='M10.6693 1.6665L6.0026 6.33317L1.33594 1.6665' stroke='%23313131' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+            background-size: 9.333px;
+            background-repeat: no-repeat;
+            height: 40px;
+            padding: 0 20px;
+            background-position: right 20px center;
+            width: 100%;
+        }
+
+    }
+
+    .fc-daygrid-day-number {
+        color: #313131;
+        text-align: center;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+        text-decoration: none;
+        text-align: center;
+    }
+
+    .fc-daygrid-day-top {
+        justify-content: center;
+    }
+
+    .fc-header-toolbar {
+        display: none;
+    }
+
+    .fc-col-header-cell-cushion {
+        color: #313131;
+        text-align: center;
+        font-family: "Anek Malayalam";
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        text-decoration: none;
+    }
+
+    span.fc-timegrid-axis-cushion {
+        color: #313131;
+        font-family: "Anek Malayalam";
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+    }
+
+}
+
+.appointmentType {
+
+    .accordion-item {
+        border-bottom: 1px solid #D3DEE9;
+        padding-bottom: 10px;
+
+        border: 0;
+
+        .accordion-button {
+
+            border: 0;
+            padding: 16px 0 0 0;
+            background: initial !important;
+            color: #000 !important;
+            font-family: "Anek Malayalam";
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+
+            &::after {
+                width: 10.5px;
+                height: 4.813px;
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='7' viewBox='0 0 14 7' fill='none'%3E%3Cpath d='M12.25 1.09424L7 5.90674L1.75 1.09424' stroke='%23313131' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+            }
+
+            &:not(.collapsed) {
+                box-shadow: initial;
+            }
+        }
+    }
+
+    .accordion-body {
+        padding: 18px 0 0 0;
+
+        .boxCheck {
+            position: relative;
+            margin-bottom: 10px;
+
+            input {
+                opacity: 0;
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                z-index: 999;
+                top: 0;
+                left: 0;
+                cursor: pointer;
+            }
+
+            input:checked+label::before {
+                background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cg clip-path='url(%23clip0_472_23103)'%3E%3Cpath d='M19 3H5C3.9 3 3 3.9 3 5V19C3 20.1 3.9 21 5 21H19C20.1 21 21 20.1 21 19V5C21 3.9 20.1 3 19 3ZM10.71 16.29C10.32 16.68 9.69 16.68 9.3 16.29L5.71 12.7C5.32 12.31 5.32 11.68 5.71 11.29C6.1 10.9 6.73 10.9 7.12 11.29L10 14.17L16.88 7.29C17.27 6.9 17.9 6.9 18.29 7.29C18.68 7.68 18.68 8.31 18.29 8.7L10.71 16.29Z' fill='%23118BE2'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_472_23103'%3E%3Crect width='24' height='24' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E");
+            }
+
+            label {
+                color: #000;
+                font-family: "Anek Malayalam";
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                position: relative;
+                padding-left: 32px; // Add spacing so text doesn't overlap checkbox
+
+                &::before {
+                    content: '';
+                    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cg clip-path='url(%23clip0_472_23112)'%3E%3Cpath d='M18 19H6C5.45 19 5 18.55 5 18V6C5 5.45 5.45 5 6 5H18C18.55 5 19 5.45 19 6V18C19 18.55 18.55 19 18 19ZM19 3H5C3.9 3 3 3.9 3 5V19C3 20.1 3.9 21 5 21H19C20.1 21 21 20.1 21 19V5C21 3.9 20.1 3 19 3Z' fill='%23E8EAED'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_472_23112'%3E%3Crect width='24' height='24' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E");
+                    width: 24px;
+                    height: 24px;
+                    position: absolute;
+                    left: 0;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    background-color: white;
+                }
+            }
+
+            p {
+                position: absolute;
+                right: 0;
+                margin: 0;
+                top: 0;
+            }
+        }
+    }
+}
+
+.d-flex.totalAppoint {
+    @media (min-width:0px) and (max-width:767px) {
+        display: none !important;
+    }
+}
+
+.totalAppoint {
+    padding-top: 30px;
+    padding-bottom: 20px;
+
+
+
+    p {
+        color: #313131;
+        font-family: "Anek Malayalam";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+        margin: 0;
+        margin-right: 25px;
+    }
+
+    .totalApp {
+        display: flex;
+
+        li {
+            color: #313131;
+            font-family: "Anek Malayalam";
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: normal;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-right: 15px;
+        }
+
+
+
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.ant-popover.css-dev-only-do-not-override-cdzvx5.css-dev-only-do-not-override-cdzvx5.ant-popover-placement-top {
+    width: 340px !important;
+    height: 280px;
+    border-radius: 10px;
+    background: #FFF;
+
+    @media (min-width:0px) and (max-width:767px) {
+        width: 100% !important;
+        height: 100%;
+        border-radius: 10px;
+        background: #FFF;
+        top: 0% !important;
+        transform: translateX(-50%);
+        left: 50% !important;
+        z-index: 9999;
+        background: #EEF5FB;
+
+    }
+
+    .ant-popover-content {
+        @media (min-width:0px) and (max-width:767px) {
+            height: 100%;
+
+            .ant-popover-inner {
+                height: 100%;
+            }
+        }
+
+    }
+
+}
+
+:where(.css-dev-only-do-not-override-cdzvx5).ant-popover .ant-popover-inner {
+    @media (min-width:0px) and (max-width:767px) {
+        border-radius: 0;
+        box-shadow: initial;
+        border-radius: 14px;
+        background: #FFF;
+        box-shadow: 4.164px 10.41px 21.237px 0px rgba(0, 0, 0, 0.09);
+        width: auto;
+        margin: 80px 20px 0 20px;
+        background: #fff;
+    }
+
+
+
+}
+
+.boxModalFollowup {
+    padding: 10px;
+    position: relative;
+
+    @media (min-width:0px) and (max-width:767px) {
+        padding: 0;
+    }
+
+    .mobileHeader {
+        @media (min-width:0px) and (max-width:767px) {
+            height: 64px;
+            position: fixed;
+            width: 100%;
+            left: 0;
+            top: 0;
+            background: #fff;
+            display: flex;
+            align-items: center;
+            padding: 0 20px;
+        }
+
+
+    }
+
+    .btnClose {
+        position: absolute;
+        width: 10px;
+        height: 10.667px;
+        right: 0;
+        cursor: pointer;
+
+        @media (min-width:0px) and (max-width:767px) {
+            right: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 16px;
+            height: 16px;
+
+            svg {
+                width: 16px;
+                height: 16px;
+
+                path {
+                    fill: #FC5C5C;
+                }
+            }
+
+        }
+
+    }
+
+    h3 {
+        color: #0F75BC;
+        font-family: "Anek Malayalam";
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+
+        @media (min-width:0px) and (max-width:767px) {
+            color: #0F75BC;
+            font-family: "Anek Malayalam";
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 19.903px;
+            /* 124.393% */
+            margin: 0;
+        }
+
+    }
+
+    .dateandTime {
+        display: flex;
+        padding-bottom: 6px;
+        border-bottom: 1px solid #8E96A0;
+        margin-bottom: 10px;
+
+        p {
+            width: 50%;
+            margin: 0;
+            display: flex;
+            color: #313131;
+            font-family: "Anek Malayalam";
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            align-items: center;
+
+            @media (min-width:0px) and (max-width:767px) {
+                align-items: center;
+            }
+
+
+            img {
+                margin-right: 3px;
+            }
+
+        }
+    }
+
+    .boxGrid {
+        display: flex;
+        flex-wrap: wrap;
+
+        div {
+            width: 50%;
+
+            @media (min-width:0px) and (max-width:767px) {
+                width: 100%;
+                border-bottom: 1px solid #8E96A0;
+
+            }
+
+            p {
+                color: #313131;
+                font-family: "Anek Malayalam";
+                font-size: 13px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                margin-bottom: 10px;
+
+                @media (min-width:0px) and (max-width:767px) {
+                    font-size: 14px;
+                }
+
+            }
+
+            label {
+                color: #6D747D;
+                font-family: "Anek Malayalam";
+                font-size: 12px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+
+                @media (min-width:0px) and (max-width:767px) {
+                    margin-top: 8px;
+                }
+
+            }
+        }
+    }
+
+    .btns {
+        text-align: center;
+        font-family: "Anek Malayalam";
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        text-transform: uppercase;
+        width: 100px;
+        height: 30px;
+        flex-shrink: 0;
+        border-radius: 18px;
+        border: 1px solid #0F75BC;
+
+        @media (min-width:0px) and (max-width:767px) {
+            width: 150px;
+            height: 45px;
+            border-radius: 100px;
+            font-size: 15px;
+
+        }
+
+
+
+    }
+
+    .btn01 {
+        background: rgba(255, 255, 255, 0.50);
+        color: #0F75BC;
+
+
+    }
+
+    .btn02 {
+        color: #FFF;
+        background: #0F75BC;
+    }
+
+
+
+    .gap12 {
+        gap: 12px;
+
+        @media (min-width:0px) and (max-width:767px) {
+            border-radius: 14px 14px 0px 0px;
+            background: #FFF;
+            box-shadow: 0px -8px 20px 0px rgba(0, 40, 85, 0.06);
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            padding: 20px;
+            justify-content: center !important;
+        }
+
+    }
+
+}
+
+
+.boxFl {
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center !important;
+
+    i {
+        overflow: hidden;
+        color: #313131;
+        text-overflow: ellipsis;
+        font-family: "Anek Malayalam";
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    .hideMob {
+        @media (min-width:0px) and (max-width:767px) {
+            display: none;
+        }
+    }
+
+    span.typep {
+        color: #313131;
+        font-family: "Anek Malayalam";
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+
+        @media (min-width:0px) and (max-width:767px) {
+            display: none;
+        }
+
+    }
+
+    span.typep.status01 {
+        font-size: 11px;
+    }
+
+    span.typep.d-flex.gap-2 {
+        @media (min-width:0px) and (max-width:767px) {
+            display: none !important;
+        }
+    }
+
+    b {
+        color: #313131;
+        font-family: "Anek Malayalam";
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+}
+
+
+a.fc-event.fc-event-start.fc-event-end.fc-event-past.fc-daygrid-event.fc-daygrid-block-event.fc-h-event span.typep,
+a.fc-event.fc-event-start.fc-event-end.fc-event-past.fc-daygrid-event.fc-daygrid-block-event.fc-h-event b,
+a.fc-event.fc-event-start.fc-event-end.fc-event-past.fc-daygrid-event.fc-daygrid-block-event.fc-h-event svg,
+a.fc-event.fc-event-start.fc-event-end.fc-event-past.fc-daygrid-event.fc-daygrid-block-event.fc-h-event span.btnCl {
+    display: none;
+}
+
+a.fc-event.fc-event-start.fc-event-end.fc-event-past.fc-daygrid-event.fc-daygrid-block-event.fc-h-event .boxFl {
+    gap: 0;
+}
+
+// week tab ui
+.fc-timeGridWeek-view .fc-v-event .fc-event-main {
+    overflow: hidden;
+}
+
+.fc-v-event .fc-event-main .boxFl {
+    gap: 0px !important;
+    align-items: initial !important;
+
+}
+
+.fc-timeGridDay-view {
+    a.fc-timegrid-more-link.fc-more-link {
+        width: 22px;
+        right: -20px;
+        background: #e9f5ff00 !important;
+        border-radius: 0;
+        border-top: 0px solid var(--Blue, #118BE2) !important;
+        border-right: 0px solid var(--Blue, #118BE2) !important;
+        border-bottom: 0px solid var(--Blue, #118BE2) !important;
+        border-left: 0px solid var(--Blue, #118BE2) !important;
+        box-shadow: initial;
+        line-height: 39px;
+        text-decoration: none;
+        color: #313131;
+        font-family: "Anek Malayalam";
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        margin-top: -24px;
+        bottom: 0;
+        height: 44px;
+    }
+}
+
+.fc-timeGridWeek-view {
+    a.fc-timegrid-more-link.fc-more-link {
+        width: 22px;
+        right: 0px;
+        background: #e9f5ff00 !important;
+        border-radius: 0;
+        border-top: 0px solid var(--Blue, #118BE2) !important;
+        border-right: 0px solid var(--Blue, #118BE2) !important;
+        border-bottom: 0px solid var(--Blue, #118BE2) !important;
+        border-left: 0px solid var(--Blue, #118BE2) !important;
+        box-shadow: initial;
+        line-height: 39px;
+        text-decoration: none;
+        color: #313131;
+        font-family: "Anek Malayalam";
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        margin-top: -24px;
+        bottom: 0;
+        height: 44px;
+    }
+}
+
+.fc-timeGridDay-view .fc-day.fc-timegrid-col .boxFl {
+    gap: 10px !important;
+    align-items: center !important;
+    height: 100%;
+
+    @media (min-width:0px) and (max-width:767px) {
+        gap: 0px !important;
+    }
+
+
+
+}
+
+
+.typep.status01:before {
+    content: '';
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 14 14' fill='none'%3E%3Cpath d='M0 7C0 3.13401 3.13401 0 7 0C10.866 0 14 3.13401 14 7C14 10.866 10.866 14 7 14C3.13401 14 0 10.866 0 7Z' fill='%237CC14B'/%3E%3Cpath d='M6.18268 9.68317L10.2952 5.57067L9.47852 4.754L6.18268 8.04984L4.52018 6.38734L3.70352 7.204L6.18268 9.68317ZM6.99935 12.8332C6.1924 12.8332 5.43407 12.68 4.72435 12.3738C4.01463 12.0675 3.39727 11.6519 2.87227 11.1269C2.34727 10.6019 1.93164 9.98456 1.62539 9.27484C1.31914 8.56511 1.16602 7.80678 1.16602 6.99984C1.16602 6.19289 1.31914 5.43456 1.62539 4.72484C1.93164 4.01512 2.34727 3.39775 2.87227 2.87275C3.39727 2.34775 4.01463 1.93213 4.72435 1.62588C5.43407 1.31963 6.1924 1.1665 6.99935 1.1665C7.80629 1.1665 8.56463 1.31963 9.27435 1.62588C9.98407 1.93213 10.6014 2.34775 11.1264 2.87275C11.6514 3.39775 12.0671 4.01512 12.3733 4.72484C12.6796 5.43456 12.8327 6.19289 12.8327 6.99984C12.8327 7.80678 12.6796 8.56511 12.3733 9.27484C12.0671 9.98456 11.6514 10.6019 11.1264 11.1269C10.6014 11.6519 9.98407 12.0675 9.27435 12.3738C8.56463 12.68 7.80629 12.8332 6.99935 12.8332ZM6.99935 11.6665C8.30213 11.6665 9.4056 11.2144 10.3098 10.3103C11.2139 9.40609 11.666 8.30262 11.666 6.99984C11.666 5.69706 11.2139 4.59359 10.3098 3.68942C9.4056 2.78525 8.30213 2.33317 6.99935 2.33317C5.69657 2.33317 4.5931 2.78525 3.68893 3.68942C2.78477 4.59359 2.33268 5.69706 2.33268 6.99984C2.33268 8.30262 2.78477 9.40609 3.68893 10.3103C4.5931 11.2144 5.69657 11.6665 6.99935 11.6665Z' fill='white'/%3E%3C/svg%3E");
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    left: 0;
+    top: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    transform: translateY(-50%);
+}
+
+span.typep.status01 {
+    padding-left: 20px;
+    position: relative;
+    margin-left: 30px;
+}
+
+.typep.phone01:before {
+    content: '';
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' viewBox='0 0 18 18' fill='none'%3E%3Cpath d='M14.9625 15.75C13.4 15.75 11.8563 15.4094 10.3313 14.7281C8.80625 14.0469 7.41875 13.0813 6.16875 11.8313C4.91875 10.5813 3.95312 9.19375 3.27188 7.66875C2.59063 6.14375 2.25 4.6 2.25 3.0375C2.25 2.8125 2.325 2.625 2.475 2.475C2.625 2.325 2.8125 2.25 3.0375 2.25H6.075C6.25 2.25 6.40625 2.30937 6.54375 2.42813C6.68125 2.54688 6.7625 2.6875 6.7875 2.85L7.275 5.475C7.3 5.675 7.29375 5.84375 7.25625 5.98125C7.21875 6.11875 7.15 6.2375 7.05 6.3375L5.23125 8.175C5.48125 8.6375 5.77813 9.08438 6.12188 9.51563C6.46563 9.94688 6.84375 10.3625 7.25625 10.7625C7.64375 11.15 8.05 11.5094 8.475 11.8406C8.9 12.1719 9.35 12.475 9.825 12.75L11.5875 10.9875C11.7 10.875 11.8469 10.7906 12.0281 10.7344C12.2094 10.6781 12.3875 10.6625 12.5625 10.6875L15.15 11.2125C15.325 11.2625 15.4688 11.3531 15.5813 11.4844C15.6938 11.6156 15.75 11.7625 15.75 11.925V14.9625C15.75 15.1875 15.675 15.375 15.525 15.525C15.375 15.675 15.1875 15.75 14.9625 15.75ZM4.51875 6.75L5.75625 5.5125L5.4375 3.75H3.76875C3.83125 4.2625 3.91875 4.76875 4.03125 5.26875C4.14375 5.76875 4.30625 6.2625 4.51875 6.75ZM11.2313 13.4625C11.7188 13.675 12.2156 13.8438 12.7219 13.9688C13.2281 14.0938 13.7375 14.175 14.25 14.2125V12.5625L12.4875 12.2063L11.2313 13.4625Z' fill='%23313131'/%3E%3C/svg%3E");
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    left: 0;
+    top: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    transform: translateY(-50%);
+}
+
+span.typep.phone01 {
+    padding-left: 20px;
+    position: relative;
+    margin-left: 30px;
+}
+
+.fc-timeGridDay-view {
+    .boxFl {
+        text-transform: capitalize;
+    }
+
+    .threeDot {
+        position: absolute;
+        right: 20px;
+        width: 80px;
+        // z-index: 99999;
+
+        div {
+            text-align: right;
+            display: flex;
+            justify-content: end;
+        }
+    }
+
+    .timeMonth {
+        display: none;
+    }
+}
+
+.boxFl .pName {
+    font-weight: 500;
+}
+
+.fc-timegrid-event-harness.fc-timegrid-event-harness-inset {
+    z-index: initial !important;
+    width: 102%;
+}
+
+
+.onlineConsultation {
+    border: 1px solid #8E96A0;
+    background-color: #8E96A0;
+
+    .boxGreen.boxFl {
+        &::before {
+            background: #7FC241 !important;
+            border-radius: 0px 0px 0px 0px;
+            left: -1px;
+        }
+
+        .fc-h-event {
+            border: 1px solid #7FC241 !important;
+            background-color: #7FC241 !important;
+        }
+    }
+}
+
+
+.p-4.clanderBox .fc-v-event.onlineConsultation {
+    border: 1px solid #8E96A0;
+    background-color: #8E96A0;
+}

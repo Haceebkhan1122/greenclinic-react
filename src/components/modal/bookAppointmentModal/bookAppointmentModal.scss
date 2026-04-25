@@ -1,0 +1,388 @@
+@import "../../../assets/css/variable.scss";
+
+.modal_appointment.appointmeintMainModal {
+    // display: flex;
+    // align-items: center;
+
+    @media (min-width:0px) and (max-width:767px) {
+        padding-left: 0 !important;
+        z-index: 9999 !important;
+        background: #F2F9FF;
+    }
+
+    .modal-dialog {
+        display: flex;
+        align-items: center;
+        height: 100vh;
+        margin-top: 0;
+        margin-bottom: 0;
+
+        @media(min-width:0) and (max-width:767px) {
+            height: auto;
+            display: block;
+        }
+
+        .modal-body {
+            padding-right: 0;
+
+            div#rc-tabs-1-panel-2 {
+                .container {
+                    padding-right: 0;
+                }
+            }
+        }
+
+        .boxMob {
+            border-radius: 14px;
+            background: #FFF;
+            box-shadow: 4.164px 10.41px 21.237px 0px rgba(0, 0, 0, 0.09);
+            padding: 10px 5px;
+            margin-top: 29px;
+
+            .ant-divider.css-dev-only-do-not-override-cdzvx5.ant-divider-horizontal {
+                display: none;
+            }
+
+            .mobpt {
+                @media (min-width:0px) and (max-width:767px) {}
+
+            }
+
+            .checkboxcheck {
+                input {
+                    &:checked+label {}
+                }
+
+                :where(.css-dev-only-do-not-override-cdzvx5).ant-checkbox-checked .ant-checkbox-inner {
+                    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' viewBox='0 0 18 18' fill='none'%3E%3Cg clip-path='url(%23clip0_1001_20808)'%3E%3Cpath d='M3.75 2.75H14.25C14.8047 2.75 15.25 3.19951 15.25 3.75V14.25C15.25 14.8005 14.8047 15.25 14.25 15.25H3.75C3.19527 15.25 2.75 14.8005 2.75 14.25V3.75C2.75 3.19951 3.19527 2.75 3.75 2.75Z' stroke='%230F75BC'/%3E%3Cpath d='M5 9.12092L7.85714 12L13 6.81766L12.1943 6L7.85714 10.3704L5.80571 8.30902L5 9.12092Z' fill='%230F75BC' stroke='%230F75BC'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_1001_20808'%3E%3Crect width='18' height='18' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E") !important;
+                    background-color: initial !important;
+                    background-size: contain;
+                }
+
+                :where(.css-dev-only-do-not-override-cdzvx5).ant-checkbox .ant-checkbox-inner {
+                    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' viewBox='0 0 18 18' fill='none'%3E%3Cg clip-path='url(%23clip0_1001_20726)'%3E%3Cpath d='M3.75 2.75H14.25C14.8047 2.75 15.25 3.19951 15.25 3.75V14.25C15.25 14.8005 14.8047 15.25 14.25 15.25H3.75C3.19527 15.25 2.75 14.8005 2.75 14.25V3.75C2.75 3.19951 3.19527 2.75 3.75 2.75Z' stroke='%238799AC'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_1001_20726'%3E%3Crect width='18' height='18' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E");
+                    width: 18px;
+                    height: 18px;
+                    border: 0px;
+                    background-size: contain;
+                    background-position: center;
+                    margin-top: 3px;
+                }
+
+                :where(.css-dev-only-do-not-override-cdzvx5).ant-checkbox-checked .ant-checkbox-inner:after {
+                    display: none;
+                }
+
+                label.form-label {
+                    color: #212121 !important;
+                    font-family: "Anek Malayalam";
+                    font-size: 16px !important;
+                    font-style: normal;
+                    font-weight: 500 !important;
+                    line-height: 23.04px;
+                    /* 144% */
+                    padding-left: 8px;
+                    margin: 0;
+
+
+                }
+
+            }
+
+            .invoiceForm {
+                @media (min-width:0px) and (max-width:767px) {
+                    .row {
+                        margin-top: 0 !important;
+                    }
+
+                    .btn_wrap {
+                        .button1.mobBtn {
+                            color: #0F75BC !important;
+
+                            border: 1px solid #0F75BC !important;
+
+                            background: #fff !important;
+
+                        }
+
+                    }
+                }
+
+
+            }
+        }
+    }
+
+    .tabClass {
+
+
+        .ant-tabs-content-holder {
+            @media (min-width:0px) and (max-width:767px) {
+                border-radius: 14px;
+                background: #FFF;
+                box-shadow: 4.164px 10.41px 21.237px 0px rgba(0, 0, 0, 0.09);
+            }
+
+        }
+    }
+
+    .mobBar {
+        padding: 0 20px;
+        background: #FFF;
+        box-shadow: 0px 3.998px 19.088px 0px rgba(0, 0, 0, 0.06);
+        width: 100%;
+        height: 64px;
+        flex-shrink: 0;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        position: fixed;
+        z-index: 99;
+
+        h4 {
+            height: auto;
+            margin: 0;
+            color: #0F75BC;
+            font-family: "Anek Malayalam";
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 19.903px;
+            /* 124.393% */
+        }
+
+        .close1 {
+            position: relative;
+            top: 0px;
+        }
+    }
+
+    .modal-dialog {
+        max-width: 600px;
+
+        @media (min-width:0px) and (max-width:767px) {
+            margin: 0;
+        }
+
+
+        .modal-content {
+            border-radius: 15.385px;
+            background: #FFF;
+
+            @media (min-width:0px) and (max-width:767px) {
+                border-radius: 0px !important;
+                background: #F2F9FF !important;
+                padding-bottom: 100px;
+
+            }
+
+            .modal-body {
+                @media (max-width: 767px) {
+                    padding-right: 15px;
+                }
+
+                .btn_wrap {
+                    @media (min-width:0px) and (max-width:767px) {
+                        position: fixed;
+                        bottom: 0;
+                        border-radius: 14px 14px 0px 0px;
+                        background: #FFF;
+                        box-shadow: 0px -8px 20px 0px rgba(0, 40, 85, 0.06);
+                        width: 100%;
+                        left: 0;
+                        padding: 20px;
+                        gap: 20px;
+                    }
+
+
+                    .button1 {
+                        @media (min-width:0px) and (max-width:767px) {
+                            order: 2;
+                            width: 150px;
+                            font-size: 15px;
+                            height: 45px;
+                            background-color: #0F75BC !important;
+                            border: 1px solid #0F75BC !important;
+                            color: #fff !important;
+                        }
+
+
+                    }
+
+                    .button2 {
+                        @media (min-width:0px) and (max-width:767px) {
+
+                            order: 1;
+                            width: 150px;
+                            font-size: 15px;
+                            height: 45px;
+                            border: 1px solid #0F75BC !important;
+
+                            background: #fff !important;
+                            color: #0F75BC !important;
+                        }
+                    }
+                }
+
+                .close {
+                    position: absolute;
+                    right: 10px;
+                    top: 10px;
+                }
+
+                h4 {
+                    color: $blue-color;
+                    font-size: 20px;
+                    font-style: normal;
+                    margin-bottom: 0;
+                    font-weight: 500;
+                    padding-bottom: 16px;
+                    line-height: 23.04px;
+                    border-bottom: 1px solid $light-blue-contrast-color;
+                }
+
+                .row {
+                    margin-top: 20px;
+                }
+
+                .form-label {
+                    color: $body-text-color;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                }
+
+                .ant-picker-input {
+                    input {
+                        font-size: 16px;
+                        color: $black4-color;
+                        font-weight: 300;
+                    }
+                }
+
+                .react-tel-input {
+                    align-items: center;
+                    border-radius: 25px;
+                    height: 43px;
+                    padding-left: 10px;
+
+                    .flag-dropdown {
+                        border: none;
+                        border-radius: 0;
+                        background-color: transparent;
+
+                        .selected-flag {
+                            &:hover{
+                                background-color: transparent;
+                            }
+                        }
+                    }
+
+                    .form-control  {
+                        width: 100%;
+                        background-color: transparent;
+                        font-weight: 300;
+                        border: none;
+                        font-size: 16px;
+                    }
+                }
+
+                .form-select,
+                .form-control {
+                    border-radius: 25px;
+                    background-color: $background-color;
+                    border: none;
+                    color: $black4-color;
+                    height: 43px;
+                    font-style: normal;
+                    font-weight: 300;
+                    line-height: normal;
+                    padding-right: 31px;
+
+                    &:focus {
+                        outline: none;
+                        box-shadow: none;
+                    }
+
+                    &:disabled {
+                        border: 0.849px solid #F2F9FF;
+                        background: #F2F9FF;
+                    }
+                }
+
+                .ant-picker-outlined {
+                    width: 125px;
+                    border: none;
+                    border-radius: 25px;
+                    background: #F2F9FF;
+                    height: 43px;
+                }
+
+                .automatically_wrap {
+                    .form-check-label {
+                        color: #212121;
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: 23.04px;
+                    }
+
+                    ul {
+                        margin-left: 22px;
+
+                        .form-check {
+                            margin-top: 20px;
+                        }
+
+                        .form-check-label {
+                            color: #5E6366;
+                            font-size: 16px;
+                            font-style: normal;
+                            font-weight: 300;
+                            line-height: normal;
+                        }
+                    }
+                }
+
+                textarea.form-control {
+                    border: none;
+                    border-radius: 25px;
+                    background: #F2F9FF;
+                    padding: 15px;
+                    color: #5E6366;
+                    font-family: "Anek Malayalam";
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 300;
+                    line-height: normal;
+                }
+
+                .mr_number_list {
+                    z-index: 1;
+                    position: absolute;
+                    top: 73px;
+                    left: 0;
+                    width: 100%;
+                    background-color: white;
+                    border-radius: 10px;
+                    border: 1px solid grey;
+                    max-height: 130px;
+                    overflow-x: hidden;
+                    overflow-y: scroll;
+
+                    li {
+                        padding: 10px;
+                        border-bottom: 1px solid #ccc;
+
+                        a {
+                            color: #337ab7;
+                            text-decoration: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}

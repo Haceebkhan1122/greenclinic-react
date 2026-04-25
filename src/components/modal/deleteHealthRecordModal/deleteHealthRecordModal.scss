@@ -1,0 +1,45 @@
+@import "../../../assets/css/variable.scss";
+
+.deleteHealthRecord {
+    .modal-dialog {
+        max-width: 538px;
+
+        .modal-content {
+            border-radius: 15px;
+            background: #FFF;
+
+            .modal-body {
+                padding: 60px 30px 32px;
+
+                .close {
+                    position: absolute;
+                    right: 30px;
+                    top: 26px;
+                }
+
+                h4 {
+                    color: $body-text-color;
+                    font-size: 26px;
+                    font-style: normal;
+                    font-weight: 400;
+                    padding-bottom: 44px;
+                    text-align: center;
+                    line-height: normal;
+                    width: 83%;
+                    margin: auto;
+                }
+
+                .button_wrap {
+                    display: flex;
+                    justify-content: space-between;
+
+                    button {
+                        width: 228px !important;
+                        height: 50px;
+                        padding: 8px 56px;
+                    }
+                }
+            }
+        }
+    }
+}

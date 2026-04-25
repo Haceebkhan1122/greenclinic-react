@@ -1,0 +1,49 @@
+@import "../../../assets/css/variable.scss";
+
+.profile-update {
+    .modal-dialog {
+        max-width: 562px;
+
+        .modal-content {
+            border-radius: 15.385px;
+            border: none;
+            background: $white-color;
+
+            .modal-body {
+                padding: 32px 51px;
+                text-align: center;
+
+                img {
+                    width: 282.834px;
+                    height: 121.79px;
+                    margin: auto;
+                }
+
+                h4 {
+                    color: $lightgray-shade-color;
+                    text-align: center;
+                    font-size: 22px;
+                    font-style: normal;
+                    margin-top: 25px;
+                    font-weight: 400;
+                    line-height: normal;
+                }
+
+                p {
+                    color: $black-color;
+                    text-align: center;
+                    font-size: 16px;
+                    margin: 25px 0;
+                    font-style: normal;
+                    font-weight: 300;
+                    line-height: normal;
+                }
+
+                .button2 {
+                    width: 189.435px;
+                    height: 51.664px;
+                }
+            }
+        }
+    }
+}

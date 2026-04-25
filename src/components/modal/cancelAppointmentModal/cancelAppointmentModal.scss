@@ -1,0 +1,159 @@
+@import "../../../assets/css/variable.scss";
+
+.cancelAppointment {
+    z-index: 9999999 !important;
+
+    @media (max-width: 767px) {
+        padding-left: 0 !important;
+    }
+
+    .modal-dialog {
+        max-width: 536px;
+
+        .modal-content {
+            border-radius: 15.385px;
+            background: $white-color;
+
+            @media (max-width: 767px) {
+                background-color: $background-color;
+                border: none;
+                border-radius: 0;
+                padding: 20px;
+                // background: #FFF;
+
+
+            }
+
+            .close {
+                position: absolute;
+                top: 15px;
+                right: 16px;
+                z-index: 9;
+
+                svg {
+                    width: 16px;
+                    height: 16px;
+                }
+            }
+
+            .modal-body {
+                padding-left: 20px;
+                padding-right: 20px;
+
+                @media (max-width: 767px) {
+                    padding: 0;
+                }
+
+                h4 {
+                    color: $blue-color;
+                    text-align: center;
+                    font-size: 24px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+
+                    @media (min-width:0px) and (max-width:767px) {
+                        font-size: 16px;
+                    }
+
+                }
+
+                p {
+                    color: $blue-color;
+                    text-align: center;
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 300;
+                    margin: 15px 0 20px;
+                    line-height: normal;
+
+                    @media (min-width:0px) and (max-width:767px) {
+                        font-size: 12px;
+                        margin: 9px 9px 20px;
+
+                    }
+
+                }
+
+                .box_wrap {
+                    border-radius: 12px;
+                    padding: 24px 20px 0;
+                    background: #F8F8F8;
+
+                    ul {
+                        li {
+                            display: flex;
+                            padding-bottom: 20px;
+                            justify-content: space-between;
+
+                            @media (min-width:0px) and (max-width:767px) {
+                                padding-bottom: 13px;
+
+                            }
+
+
+                            p {
+                                font-size: 16px;
+                                color: $blue-color;
+                                font-style: normal;
+                                font-weight: 400;
+                                line-height: normal;
+                                display: flex;
+                                margin: 0;
+                                gap: 8px;
+
+                                @media (min-width:0px) and (max-width:767px) {
+                                    font-size: 12px;
+                                }
+
+                                img {
+                                    width: 20px;
+                                    height: 20px;
+
+                                    @media (min-width:0px) and (max-width:767px) {
+                                        width: 13.98px;
+                                        height: 13.98px;
+                                    }
+
+                                }
+                            }
+
+                            span {
+                                color: $blue-color;
+                                font-size: 16px;
+                                font-style: normal;
+                                font-weight: 300;
+                                line-height: normal;
+
+                                @media (min-width:0px) and (max-width:767px) {
+                                    font-size: 12px;
+                                }
+
+                            }
+                        }
+                    }
+                }
+
+                .btn_wrap {
+                    display: flex;
+                    margin-top: 11px;
+                    justify-content: center;
+                    gap: 19px;
+
+                    button {
+                        width: 170px !important;
+                        height: 50px;
+
+                        @media (min-width:0px) and (max-width:767px) {
+                            width: 142.989px;
+                            height: 42.056px;
+                            font-size: 13.458px;
+
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,96 @@
+@import '../../../assets/css/variable.scss';
+
+.clinic {
+    z-index: 9999999 !important;
+
+    .modal-dialog {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+
+    .modal-content {
+        border-radius: 15px;
+        background: $white-color;
+
+        .modal-body {
+            padding-left: 0;
+            padding-right: 0;
+
+            @media (max-width: 767px) {
+                height: 660px;
+                overflow-y: scroll;
+            }
+
+            form {
+                padding-left: 1rem;
+                padding-right: 1rem;
+
+                input,
+                select,
+                textarea {
+                    border-radius: 25px;
+                    border: none;
+                    background-color: $background-color;
+                    color: $black4-color;
+                    height: 43px;
+                }
+            }
+        }
+
+        .modal-title {
+            color: $blue-color;
+            font-family: "Anek Malayalam";
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 23.04px;
+        }
+
+        .switched {
+            gap: 10px;
+            display: flex;
+            align-items: center;
+
+            .form-check-input {
+                width: 54px;
+                height: 24px !important;
+                background-color: #D9D9D9;
+                box-shadow: none;
+                background-size: 24px;
+
+
+                &:checked{
+                    background-color: $blue-color;
+                    // border : 2px solid #dcdfe1 !important;
+                }
+            }
+        }
+
+        .form_btn {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-top: 1px solid #E2EAF0;
+            padding-top: 24px;
+            margin-top: 29px;
+
+            button {
+                width: 228px;
+                padding: 9px 59px;
+                border: none;
+            }
+
+            @media (max-width: 767px) {
+                border-top: none !important;
+                margin-top: 0 !important;
+
+                button {
+                    width: 138px !important;
+                    padding: 8px 21px !important;
+                }
+            }
+        }
+    }
+}

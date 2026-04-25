@@ -1,0 +1,423 @@
+.dashboard {
+    width: 100%;
+    height: 100%;
+
+    .card_wraper {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        @media (max-width: 767px) {
+            gap: 10px;
+            flex-wrap: wrap;
+            border-radius: 10px;
+            background-color: #FFF;
+            padding: 10px;
+            align-items: normal;
+            // height: calc(100vh - 120px);
+        }
+
+        .singleCard {
+            width: 19%;
+            height: 160.527px;
+            flex-shrink: 0;
+            border-radius: 14px;
+            background: #FFF;
+            box-shadow: 0px 2.974px 14.869px 0px rgba(0, 40, 85, 0.20);
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            text-decoration: none;
+            justify-content: start;
+            padding: 12px;
+
+            span{
+                .anticon-eye-invisible, .anticon-eye{
+                    svg{
+                        width: 20px;
+                        height: 18px;
+                    }
+                }
+            }
+
+            &:first-child {
+
+
+                h3 {
+                    width: 40%;
+                }
+
+            }
+
+            @media (max-width: 767px) {
+                width: 47%;
+                box-shadow: 2px 3px 8px 0px rgba(0, 40, 85, 0.10);
+                height: 155px;
+                border-radius: 15px;
+                position: relative;
+            }
+
+            h3 {
+                width: 27%;
+                color: #313131;
+                font-family: "Anek Malayalam";
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+                margin: 0px !important;
+
+                @media (max-width: 767px) {
+                    width: 85%;
+                    font-size: 14px;
+                }
+
+
+            }
+
+            h2 {
+                color: #0F75BC;
+                text-align: center;
+                font-family: "Anek Malayalam";
+                font-size: 32px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                margin: 0px !important;
+
+                @media (max-width: 767px) {
+                    color: #0F75BC !important;
+                    font-size: 34px;
+                }
+
+            }
+
+            .wrape {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-top: 6px;
+
+
+
+                @media (max-width: 767px) {
+                    position: absolute;
+                    bottom: 14px;
+                    width: 88%;
+                    margin-top: 5%;
+
+                }
+
+                span {
+                    background-color: #DBF6FF;
+                    width: 33.702px;
+                    height: 33.703px;
+                    border-radius: 100px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+
+                p {
+                    color: var(--Black-60, #45464E);
+                    font-family: "Anek Malayalam";
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 300;
+                    line-height: normal;
+                    margin: 0px !important;
+
+                    @media (max-width: 767px) {
+                        font-size: 12px;
+                    }
+
+                }
+
+                label {
+                    background-image: url("data:image/svg+xml,%3Csvg width='34' height='34' viewBox='0 0 34 34' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='17.0892' cy='16.8722' r='16.8517' fill='%23DBF6FF'/%3E%3Cg clip-path='url(%23clip0_2677_2341)'%3E%3Cpath d='M11.3055 25.0027C10.8512 25.0027 10.4622 24.8409 10.1387 24.5174C9.81515 24.1938 9.65338 23.8049 9.65338 23.3506V11.7857C9.65338 11.3314 9.81515 10.9424 10.1387 10.6189C10.4622 10.2953 10.8512 10.1336 11.3055 10.1336H12.1316V8.48145H13.7837V10.1336H20.3922V8.48145H22.0443V10.1336H22.8704C23.3247 10.1336 23.7136 10.2953 24.0372 10.6189C24.3607 10.9424 24.5225 11.3314 24.5225 11.7857V23.3506C24.5225 23.8049 24.3607 24.1938 24.0372 24.5174C23.7136 24.8409 23.3247 25.0027 22.8704 25.0027H11.3055ZM11.3055 23.3506H22.8704V15.0899H11.3055V23.3506ZM11.3055 13.4378H22.8704V11.7857H11.3055V13.4378ZM17.0879 18.3942C16.8539 18.3942 16.6577 18.315 16.4994 18.1567C16.341 17.9984 16.2619 17.8022 16.2619 17.5681C16.2619 17.3341 16.341 17.1379 16.4994 16.9796C16.6577 16.8212 16.8539 16.7421 17.0879 16.7421C17.322 16.7421 17.5182 16.8212 17.6765 16.9796C17.8348 17.1379 17.914 17.3341 17.914 17.5681C17.914 17.8022 17.8348 17.9984 17.6765 18.1567C17.5182 18.315 17.322 18.3942 17.0879 18.3942ZM13.7837 18.3942C13.5496 18.3942 13.3535 18.315 13.1951 18.1567C13.0368 17.9984 12.9576 17.8022 12.9576 17.5681C12.9576 17.3341 13.0368 17.1379 13.1951 16.9796C13.3535 16.8212 13.5496 16.7421 13.7837 16.7421C14.0177 16.7421 14.2139 16.8212 14.3723 16.9796C14.5306 17.1379 14.6098 17.3341 14.6098 17.5681C14.6098 17.8022 14.5306 17.9984 14.3723 18.1567C14.2139 18.315 14.0177 18.3942 13.7837 18.3942ZM20.3922 18.3942C20.1581 18.3942 19.9619 18.315 19.8036 18.1567C19.6453 17.9984 19.5661 17.8022 19.5661 17.5681C19.5661 17.3341 19.6453 17.1379 19.8036 16.9796C19.9619 16.8212 20.1581 16.7421 20.3922 16.7421C20.6262 16.7421 20.8224 16.8212 20.9808 16.9796C21.1391 17.1379 21.2182 17.3341 21.2182 17.5681C21.2182 17.8022 21.1391 17.9984 20.9808 18.1567C20.8224 18.315 20.6262 18.3942 20.3922 18.3942ZM17.0879 21.6984C16.8539 21.6984 16.6577 21.6193 16.4994 21.4609C16.341 21.3026 16.2619 21.1064 16.2619 20.8724C16.2619 20.6383 16.341 20.4421 16.4994 20.2838C16.6577 20.1255 16.8539 20.0463 17.0879 20.0463C17.322 20.0463 17.5182 20.1255 17.6765 20.2838C17.8348 20.4421 17.914 20.6383 17.914 20.8724C17.914 21.1064 17.8348 21.3026 17.6765 21.4609C17.5182 21.6193 17.322 21.6984 17.0879 21.6984ZM13.7837 21.6984C13.5496 21.6984 13.3535 21.6193 13.1951 21.4609C13.0368 21.3026 12.9576 21.1064 12.9576 20.8724C12.9576 20.6383 13.0368 20.4421 13.1951 20.2838C13.3535 20.1255 13.5496 20.0463 13.7837 20.0463C14.0177 20.0463 14.2139 20.1255 14.3723 20.2838C14.5306 20.4421 14.6098 20.6383 14.6098 20.8724C14.6098 21.1064 14.5306 21.3026 14.3723 21.4609C14.2139 21.6193 14.0177 21.6984 13.7837 21.6984ZM20.3922 21.6984C20.1581 21.6984 19.9619 21.6193 19.8036 21.4609C19.6453 21.3026 19.5661 21.1064 19.5661 20.8724C19.5661 20.6383 19.6453 20.4421 19.8036 20.2838C19.9619 20.1255 20.1581 20.0463 20.3922 20.0463C20.6262 20.0463 20.8224 20.1255 20.9808 20.2838C21.1391 20.4421 21.2182 20.6383 21.2182 20.8724C21.2182 21.1064 21.1391 21.3026 20.9808 21.4609C20.8224 21.6193 20.6262 21.6984 20.3922 21.6984Z' fill='%230F75BC'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_2677_2341'%3E%3Crect width='20.222' height='20.222' fill='white' transform='translate(6.97833 6.75879)'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A");
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-position: center;
+                    display: block;
+                    width: 33.703px;
+                    height: 33.703px;
+                    cursor: pointer;
+
+                }
+
+                .rsIcon {
+                    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='35' height='34' viewBox='0 0 35 34' fill='none'%3E%3Ccircle cx='17.3358' cy='16.8722' r='16.8517' fill='%23DBF6FF'/%3E%3Cpath d='M14.3416 12.8721C14.9801 12.8721 15.5064 12.9491 15.9203 13.1031C16.3375 13.2571 16.6471 13.4898 16.8493 13.801C17.0514 14.1123 17.1525 14.5054 17.1525 14.9803C17.1525 15.3012 17.0915 15.5819 16.9696 15.8226C16.8477 16.0633 16.6872 16.267 16.4883 16.4339C16.2893 16.6008 16.0743 16.7371 15.8433 16.843L17.913 19.9091H16.2572L14.5774 17.2088H13.7832V19.9091H12.2911V12.8721H14.3416ZM14.2357 14.0946H13.7832V15.9959H14.2646C14.7587 15.9959 15.1117 15.9141 15.3235 15.7504C15.5385 15.5836 15.646 15.3397 15.646 15.0188C15.646 14.6851 15.5304 14.4476 15.2994 14.3064C15.0716 14.1652 14.717 14.0946 14.2357 14.0946ZM22.4374 18.3111C22.4374 18.6769 22.3508 18.9865 22.1775 19.24C22.0074 19.4903 21.7523 19.6813 21.4122 19.8128C21.0721 19.9412 20.6485 20.0054 20.1415 20.0054C19.7661 20.0054 19.4436 19.9813 19.174 19.9332C18.9077 19.885 18.6382 19.8048 18.3654 19.6925V18.4795C18.6574 18.6111 18.9703 18.7202 19.304 18.8068C19.6409 18.8903 19.9361 18.932 20.1896 18.932C20.4752 18.932 20.679 18.8903 20.8009 18.8068C20.9261 18.7202 20.9886 18.6079 20.9886 18.4699C20.9886 18.3801 20.963 18.2998 20.9116 18.2293C20.8635 18.1555 20.7576 18.0736 20.5939 17.9838C20.4303 17.8907 20.1736 17.7704 19.8238 17.6228C19.4869 17.4816 19.2093 17.3388 18.9911 17.1944C18.7761 17.05 18.6157 16.8799 18.5098 16.6842C18.4071 16.4852 18.3558 16.2333 18.3558 15.9285C18.3558 15.4311 18.5483 15.0573 18.9334 14.807C19.3216 14.5535 19.8399 14.4268 20.4881 14.4268C20.8218 14.4268 21.1394 14.4605 21.4411 14.5278C21.7459 14.5952 22.0588 14.7027 22.3796 14.8503L21.9368 15.9093C21.6705 15.7937 21.4186 15.6991 21.1812 15.6253C20.9469 15.5515 20.7079 15.5146 20.464 15.5146C20.249 15.5146 20.0869 15.5434 19.9778 15.6012C19.8687 15.659 19.8142 15.7472 19.8142 15.8659C19.8142 15.9526 19.8415 16.0296 19.896 16.097C19.9538 16.1644 20.0629 16.2398 20.2233 16.3232C20.387 16.4034 20.626 16.5077 20.9405 16.6361C21.2453 16.7612 21.5101 16.8928 21.7347 17.0307C21.9593 17.1655 22.1326 17.334 22.2545 17.5361C22.3764 17.7351 22.4374 17.9934 22.4374 18.3111Z' fill='%230F75BC'/%3E%3Ccircle cx='17.3485' cy='16.9173' r='9.2246' stroke='%230F75BC' stroke-width='1.77605'/%3E%3C/svg%3E");
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-position: center;
+                    display: block;
+                    width: 33.703px;
+                    height: 33.703px;
+                }
+
+                .addIcon {
+                    background-image: url("data:image/svg+xml,%3Csvg width='35' height='34' viewBox='0 0 35 34' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='17.6723' cy='16.8722' r='16.8517' fill='%23DBF6FF'/%3E%3Cpath d='M11.3284 10.3123C10.9993 10.3123 10.6837 10.4431 10.451 10.6757C10.2183 10.9084 10.0876 11.224 10.0876 11.5531V23.3404C10.0876 23.6695 10.2183 23.9851 10.451 24.2178C10.6837 24.4505 10.9993 24.5812 11.3284 24.5812H24.9769C25.3059 24.5812 25.6215 24.4505 25.8542 24.2178C26.0869 23.9851 26.2176 23.6695 26.2176 23.3404V11.5531C26.2176 11.224 26.0869 10.9084 25.8542 10.6757C25.6215 10.4431 25.3059 10.3123 24.9769 10.3123H22.4953M13.8099 8.45117V12.1735M22.4953 8.45117V12.1735M13.8099 10.3123H20.0138' stroke='%230F75BC' stroke-width='2.06602' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M17.1432 13.4932C16.9787 13.4932 16.8209 13.5585 16.7046 13.6749C16.5882 13.7912 16.5228 13.949 16.5228 14.1136V15.8581H14.7758C14.6113 15.8581 14.4535 15.9234 14.3372 16.0398C14.2208 16.1561 14.1555 16.3139 14.1555 16.4785V18.4947C14.1555 18.6593 14.2208 18.8171 14.3372 18.9334C14.4535 19.0497 14.6113 19.1151 14.7758 19.1151H16.5216V20.8596C16.5216 21.0242 16.587 21.182 16.7033 21.2983C16.8197 21.4147 16.9775 21.48 17.142 21.48H19.1582C19.2397 21.48 19.3204 21.464 19.3957 21.4328C19.4709 21.4016 19.5393 21.3559 19.5969 21.2983C19.6545 21.2407 19.7002 21.1723 19.7314 21.097C19.7626 21.0218 19.7786 20.9411 19.7786 20.8596V19.1151H21.5232C21.6877 19.1151 21.8455 19.0497 21.9618 18.9334C22.0782 18.8171 22.1435 18.6593 22.1435 18.4947V16.4785C22.1435 16.3139 22.0782 16.1561 21.9618 16.0398C21.8455 15.9234 21.6877 15.8581 21.5232 15.8581H19.7799V14.1136C19.7799 13.949 19.7145 13.7912 19.5982 13.6749C19.4818 13.5585 19.324 13.4932 19.1595 13.4932H17.1432Z' stroke='%230F75BC' stroke-width='2.06602' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-position: center;
+                    display: block;
+                    width: 33.703px;
+                    height: 33.703px;
+                }
+
+                .prescIcon {
+                    background-image: url("data:image/svg+xml,%3Csvg width='34' height='34' viewBox='0 0 34 34' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cellipse cx='17.0566' cy='16.8429' rx='16.7871' ry='16.8517' fill='%23DBF6FF'/%3E%3Cpath d='M12.0445 10.4658C11.775 10.4658 11.5165 10.5733 11.3259 10.7646C11.1353 10.9559 11.0283 11.2154 11.0283 11.486V19.6474C11.0283 19.9179 11.1353 20.1774 11.3259 20.3687C11.5165 20.5601 11.775 20.6675 12.0445 20.6675C12.3141 20.6675 12.5726 20.5601 12.7631 20.3687C12.9537 20.1774 13.0608 19.9179 13.0608 19.6474V16.5869H13.6563L17.7214 20.6675L15.3901 23.0058C15.1993 23.1973 15.092 23.4572 15.092 23.7281C15.092 23.999 15.1993 24.2588 15.3901 24.4503C15.5809 24.6419 15.8397 24.7495 16.1096 24.7495C16.3795 24.7495 16.6383 24.6419 16.8291 24.4503L19.1584 22.1101L21.4877 24.4503C21.6785 24.6419 21.9373 24.7495 22.2072 24.7495C22.4771 24.7495 22.7359 24.6419 22.9267 24.4503C23.1175 24.2588 23.2247 23.999 23.2247 23.7281C23.2247 23.4572 23.1175 23.1973 22.9267 23.0058L20.5954 20.6675L22.9267 18.3293C23.1175 18.1378 23.2247 17.8779 23.2247 17.607C23.2247 17.3361 23.1175 17.0763 22.9267 16.8847C22.7359 16.6932 22.4771 16.5856 22.2072 16.5856C21.9373 16.5856 21.6785 16.6932 21.4877 16.8847L19.1584 19.225L16.5059 16.5603C17.2727 16.4583 17.9722 16.0676 18.4628 15.4672C18.9533 14.8669 19.1981 14.1018 19.1478 13.327C19.0974 12.5521 18.7555 11.8255 18.1914 11.2943C17.6273 10.763 16.8831 10.4669 16.1096 10.4658H12.0445ZM13.0608 12.5062H16.1096C16.3791 12.5062 16.6376 12.6136 16.8282 12.805C17.0188 12.9963 17.1259 13.2558 17.1259 13.5263C17.1259 13.7969 17.0188 14.0564 16.8282 14.2477C16.6376 14.439 16.3791 14.5465 16.1096 14.5465H13.0608V12.5062Z' fill='%230F75BC'/%3E%3C/svg%3E%0A");
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-position: center;
+                    display: block;
+                    width: 33.703px;
+                    height: 33.703px;
+                }
+            }
+        }
+    }
+
+    .bottom {
+        width: 100%;
+        height: 597px;
+        flex-shrink: 0;
+        border-radius: 14.865px;
+        background: #FFF;
+        box-shadow: 0px 2.973px 14.865px 0px rgba(0, 40, 85, 0.20);
+        margin-top: 18.4px;
+        overflow: hidden;
+
+        // padding-top: 17px;
+        @media (max-width: 767px) {
+            display: none;
+        }
+
+        .dates_wrapers {
+            width: 100%;
+            height: 75px;
+            overflow: hidden;
+            padding: 0 12px;
+
+            .wraper_date {
+                width: 100%;
+                height: 44.594px;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 14.865px;
+                flex-shrink: 0;
+                border-radius: 23.04px;
+                background: #F2F9FF;
+                position: relative;
+
+                .left_arrow {
+                    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='7' height='12' viewBox='0 0 7 12' fill='none'%3E%3Cpath d='M6.07629 10.9909L1.22049 6.1351L6.07629 1.2793' stroke='%23313131' stroke-width='1.78376' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-position: center;
+                    display: block;
+                    position: absolute;
+                    left: 12px;
+                    width: 7.648px;
+                    height: 10.648px;
+                    top: 0;
+                    bottom: 0;
+                    margin: auto;
+                }
+
+                input {
+                    color: var(--Black-60, #45464E);
+                    font-family: "Anek Malayalam";
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    text-align: center;
+                    line-height: normal;
+
+                    &::placeholder {
+                        color: var(--Black-60, #45464E);
+                        font-family: "Anek Malayalam";
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: normal;
+                    }
+                }
+
+                .right_arrow {
+                    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='7' height='12' viewBox='0 0 7 12' fill='none'%3E%3Cpath d='M1.16534 1.27864L6.02114 6.13444L1.16534 10.9902' stroke='%23313131' stroke-width='1.78376' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-position: center;
+                    display: block;
+                    position: absolute;
+                    right: 12px;
+                    width: 7.648px;
+                    height: 10.648px;
+                    top: 0;
+                    bottom: 0;
+                    margin: auto;
+                }
+            }
+
+            select {
+                height: 44.594px;
+                flex-shrink: 0;
+                border-radius: 23.04px;
+            }
+
+            .search__bar {
+                width: 100%;
+                height: 44.594px;
+                flex-shrink: 0;
+                border-radius: 23.04px;
+                background: #F2F9FF;
+                display: flex;
+                align-items: center;
+                padding-left: 25px;
+
+                .search_icon {
+                    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='19' height='19' viewBox='0 0 19 19' fill='none'%3E%3Cg clip-path='url(%23clip0_859_8794)'%3E%3Cpath d='M12.9552 11.2205H12.3681L12.16 11.0198C12.8883 10.1725 13.3268 9.07255 13.3268 7.87595C13.3268 5.20773 11.164 3.04492 8.49582 3.04492C5.82761 3.04492 3.66479 5.20773 3.66479 7.87595C3.66479 10.5442 5.82761 12.707 8.49582 12.707C9.69243 12.707 10.7924 12.2685 11.6397 11.5401L11.8404 11.7482V12.3354L15.5565 16.0441L16.664 14.9367L12.9552 11.2205ZM8.49582 11.2205C6.64517 11.2205 5.15126 9.7266 5.15126 7.87595C5.15126 6.02529 6.64517 4.53139 8.49582 4.53139C10.3465 4.53139 11.8404 6.02529 11.8404 7.87595C11.8404 9.7266 10.3465 11.2205 8.49582 11.2205Z' fill='%235F6368'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_859_8794'%3E%3Crect width='17.8376' height='17.8376' fill='white' transform='translate(0.645264 0.814453)'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E");
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-position: center;
+                    display: block;
+                    width: 17.838px;
+                    height: 17.838px;
+                }
+
+                input {
+                    width: calc(100% - 20px);
+                    background-color: transparent;
+                    height: 100%;
+                    margin-left: 12px;
+                    border: none;
+                    outline: none;
+                    color: #313131;
+                    font-family: "Anek Malayalam";
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                    padding-right: 12px;
+
+
+                    &::placeholder {
+                        color: #313131;
+                        font-family: "Anek Malayalam";
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: normal;
+                    }
+                }
+            }
+
+            .ant-divider {
+                background-color: #CBCFD1;
+                width: 1px;
+                height: 92px;
+                position: absolute;
+                top: -14px;
+                left: 0;
+                right: 0;
+                margin: auto;
+            }
+
+            button {
+                width: 100%;
+                height: 44.594px;
+                flex-shrink: 0;
+                border-radius: 22.793px;
+                background: #0F75BC;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border: none;
+                outline: none;
+                white-space: nowrap;
+                color: #FFF;
+                font-family: "Anek Malayalam";
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+                gap: 6px;
+
+
+                .plusIcon {
+                    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='19' height='19' viewBox='0 0 19 19' fill='none'%3E%3Cpath d='M11.638 11.4484H16.4298C17.5654 11.4484 18.5071 10.533 18.5071 9.39558C18.5071 8.23044 17.5654 7.31498 16.4298 7.31498H11.638V2.51574C11.638 1.37835 10.7239 0.462891 9.58832 0.462891C8.4527 0.462891 7.51096 1.37835 7.51096 2.51574V7.31498H2.74687C1.61124 7.31498 0.669506 8.23044 0.669506 9.39558C0.669506 10.533 1.61124 11.4484 2.74687 11.4484H7.51096V16.2477C7.51096 17.3851 8.4527 18.3005 9.58832 18.3005C10.7239 18.3005 11.638 17.3851 11.638 16.2477V11.4484Z' fill='white'/%3E%3C/svg%3E");
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-position: center;
+                    display: block;
+                    width: 17.838px;
+                    height: 17.838px;
+                }
+            }
+        }
+
+        .table__wrape {
+            width: 100%;
+            height: calc(590px - 120px);
+            overflow-y: scroll;
+
+            &::-webkit-scrollbar {
+                display: none;
+            }
+
+            thead {
+                th {
+                    height: 48.38px;
+                    flex-shrink: 0;
+                    background: #E2EAF0;
+                    color: #000;
+                    font-family: "Anek Malayalam";
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                    vertical-align: middle;
+                    text-align: left;
+
+                    &:nth-child(1) {
+                        background-color: #F8E9C5;
+                        ;
+                    }
+
+                    &:nth-child(2) {
+                        background-color: #F8E9C5;
+                        ;
+                    }
+                }
+            }
+
+            tbody {
+                td {
+                    color: #000;
+                    font-family: "Anek Malayalam";
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                    text-align: left;
+                }
+            }
+        }
+
+        .boxBtn {
+            padding: 10px;
+            display: flex;
+            gap: 10px;
+            align-items: center;
+
+            .pagination_hk {
+                display: flex;
+                gap: 10px;
+            }
+        }
+    }
+}

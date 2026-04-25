@@ -1,0 +1,73 @@
+@import '../../../assets/css/variable.scss';
+
+.modalDeleteCustomFieldAppointment {
+    width: 100%;
+    height: 100%;
+
+    h2 {
+        color: #313131;
+        text-align: center;
+        font-family: "Anek Malayalam";
+        font-size: 26px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        width: 70%;
+        margin: auto;
+
+        @media (min-width : 0px) and (max-width : 768px) {
+            font-size: 18px;
+            font-weight: 500;
+        }
+    }
+
+    .wraper_btns {
+        display: flex;
+        width: 100%;
+        height: 98px;
+        justify-content: center;
+        align-items: center;
+        gap: 24px;
+
+        button {
+            width: 228px;
+            height: 50px;
+            flex-shrink: 0;
+            border-radius: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            font-family: $AnekBangla-Medium;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            outline: none;
+            border: none;
+
+            @media (min-width : 0px) and (max-width : 768px) {
+                width: 130px;
+                height: 50px;
+                font-size: 18px;
+            }
+
+            &:nth-child(1) {
+                color: #0F75BC;
+                border: 1px solid #0F75BC;
+                background-color: #FFF;
+
+                @media (min-width : 0px) and (max-width : 768px) {
+                    border: 1px solid #FC5C5C;
+                    color: #FC5C5C;
+                    font-weight: 600;
+                }
+            }
+
+            &:nth-child(2) {
+                color: #FFF;
+                background-color: #0F75BC;
+            }
+        }
+    }
+}

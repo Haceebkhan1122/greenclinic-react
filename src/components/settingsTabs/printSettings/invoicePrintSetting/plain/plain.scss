@@ -1,0 +1,96 @@
+@import "../../../../../assets/css/variable.scss";
+
+.uploadWraperPrint {
+    width: 400px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-direction: column;
+    align-items: end;
+
+
+    .singleImgUpload {
+        display: flex;
+        width: 97px;
+        height: 32px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        flex-shrink: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 19.2px;
+        border: 0.8px solid $blue-color;
+        position: relative;
+
+        .uploadLogo {
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='19' height='18' viewBox='0 0 19 18' fill='none'%3E%3Cg clip-path='url(%23clip0_7503_27256)'%3E%3Cpath d='M6.98828 11.2344L7.78141 12.0275L9.23828 10.5763V15.1719H10.3633V10.5763L11.8202 12.0275L12.6133 11.2344L9.80078 8.42188L6.98828 11.2344Z' fill='%230F75BC'/%3E%3Cpath d='M14.0198 13.4849H13.7386V12.3599H14.0198C14.6911 12.3868 15.3456 12.1458 15.8393 11.6901C16.333 11.2344 16.6255 10.6013 16.6523 9.92993C16.6792 9.2586 16.4382 8.6041 15.9825 8.11041C15.5268 7.61672 14.8936 7.32428 14.2223 7.29743H13.7386L13.6823 6.83618C13.5575 5.88918 13.0927 5.01983 12.3746 4.39008C11.6564 3.76033 10.7338 3.41311 9.77857 3.41311C8.82338 3.41311 7.90076 3.76033 7.18258 4.39008C6.46439 5.01983 5.99961 5.88918 5.87482 6.83618L5.86357 7.29743H5.37982C4.70849 7.32428 4.07532 7.61672 3.61961 8.11041C3.1639 8.6041 2.92296 9.2586 2.94982 9.92993C2.97667 10.6013 3.26911 11.2344 3.7628 11.6901C4.25649 12.1458 4.91099 12.3868 5.58232 12.3599H5.86357V13.4849H5.58232C4.6803 13.4792 3.81222 13.1403 3.145 12.5332C2.47777 11.9262 2.05849 11.0939 1.96777 10.1965C1.87704 9.29902 2.12128 8.39969 2.65352 7.67141C3.18576 6.94313 3.96844 6.4373 4.85107 6.25118C5.0939 5.11859 5.71779 4.10354 6.61862 3.37538C7.51945 2.64722 8.64274 2.25 9.80107 2.25C10.9594 2.25 12.0827 2.64722 12.9835 3.37538C13.8843 4.10354 14.5082 5.11859 14.7511 6.25118C15.6337 6.4373 16.4164 6.94313 16.9486 7.67141C17.4809 8.39969 17.7251 9.29902 17.6344 10.1965C17.5436 11.0939 17.1244 11.9262 16.4571 12.5332C15.7899 13.1403 14.9218 13.4792 14.0198 13.4849Z' fill='%230F75BC'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_7503_27256'%3E%3Crect width='18' height='18' fill='white' transform='translate(0.800781)'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E");
+            fill: $blue-color !important;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            display: block;
+            width: 18px;
+            height: 18px;
+        }
+
+        input {
+            display: none;
+        }
+
+        label {
+            color: $blue-color;
+            font-family: "Anek Malayalam";
+            font-size: 12.8px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            display: flex;
+            align-items: center;
+            gap: 7px;
+        }
+    }
+
+    .imgUploaded {
+        width: 74px;
+        height: 27px;
+        flex-shrink: 0;
+        border-radius: 10px;
+        background: #D9D9D9;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+
+        span {
+            color: #000;
+            font-family: "Anek Malayalam";
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            width: 100%;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            padding: 0px 5px;
+            font-size: 14px;
+        }
+
+        .crossIco {
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 14 14' fill='none'%3E%3Ccircle cx='6.80957' cy='6.80957' r='6.80957' fill='%23F2F9FF'/%3E%3Cpath d='M10.8526 4.02598L7.83118 7.04739L7.7452 7.13337L7.83118 7.21935L10.8526 10.2408L10.2408 10.8526L7.21935 7.83118L7.13337 7.7452L7.04739 7.83118L4.02598 10.8526L3.41416 10.2408L6.43556 7.21935L6.52154 7.13337L6.43556 7.04739L3.41416 4.02598L4.02598 3.41416L7.04739 6.43556L7.13337 6.52154L7.21935 6.43556L10.2408 3.41416L10.8526 4.02598Z' fill='%23313131' stroke='white' stroke-width='0.243199'/%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            display: block;
+            width: 13.619px;
+            height: 13.619px;
+            position: absolute;
+            right: -2px;
+            top: -5px;
+            cursor: pointer;
+        }
+    }
+}

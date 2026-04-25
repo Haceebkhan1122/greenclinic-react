@@ -1,0 +1,679 @@
+.prescriptionProfile {
+    width: 100%;
+    height: 100%;
+
+    .topBarPresc {
+        width: 100%;
+        height: 110px;
+        flex-shrink: 0;
+        border-radius: 15px;
+        background: #FFF;
+        box-shadow: 0px 1.984px 9.918px 0px rgba(0, 40, 85, 0.10);
+        padding: 0px 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+
+        .backIcon {
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='16' viewBox='0 0 10 16' fill='none'%3E%3Cpath d='M8.5 15L1.5 8L8.5 1' stroke='%23313131' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            display: block;
+            width: 14px;
+            height: 14px;
+        }
+
+        .MuiAvatar-root {
+            width: 70px;
+            height: 70px;
+        }
+
+
+        .details {
+            h3 {
+                color: #0F75BC;
+                font-family: "Anek Malayalam";
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+                margin-bottom: 0px !important;
+
+            }
+
+            h4 {
+                color: #313131;
+                font-family: "Anek Malayalam";
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 17.859px;
+                margin-bottom: 0px !important;
+
+            }
+
+            button {
+                width: 92px;
+                height: 36px;
+                flex-shrink: 0;
+                color: #0F75BC;
+                text-align: center;
+                font-family: "Anek Malayalam";
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+                border-radius: 20px;
+                background: #F2F9FF;
+            }
+        }
+
+        .actions {
+
+            span,
+            button {
+                width: 19.2px !important;
+                height: 19.2px !important;
+            }
+
+            .deleteIcon {
+                background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M17.5437 7.05014C17.7405 7.05014 17.9292 7.12464 18.0684 7.25726C18.2076 7.38987 18.2857 7.56974 18.2857 7.75728C18.2857 7.94483 18.2076 8.12469 18.0684 8.25731C17.9292 8.38992 17.7405 8.46443 17.5437 8.46443H16.8016L16.7994 8.51463L16.107 17.7577C16.0804 18.1145 15.9128 18.4484 15.6381 18.6922C15.3634 18.936 15.002 19.0716 14.6266 19.0716H8.58696C8.21158 19.0716 7.85014 18.936 7.57544 18.6922C7.30075 18.4484 7.1332 18.1145 7.10654 17.7577L6.4142 8.51534C6.41307 8.49839 6.41258 8.48141 6.41272 8.46443H5.67065C5.47384 8.46443 5.2851 8.38992 5.14593 8.25731C5.00677 8.12469 4.92859 7.94483 4.92859 7.75728C4.92859 7.56974 5.00677 7.38987 5.14593 7.25726C5.2851 7.12464 5.47384 7.05014 5.67065 7.05014H17.5437ZM15.3153 8.46443H7.89907L8.5877 17.6573H14.6266L15.3153 8.46443ZM13.0913 4.92871C13.2881 4.92871 13.4768 5.00321 13.616 5.13583C13.7552 5.26844 13.8334 5.44831 13.8334 5.63585C13.8334 5.8234 13.7552 6.00326 13.616 6.13588C13.4768 6.26849 13.2881 6.343 13.0913 6.343H10.123C9.92623 6.343 9.73748 6.26849 9.59832 6.13588C9.45915 6.00326 9.38097 5.8234 9.38097 5.63585C9.38097 5.44831 9.45915 5.26844 9.59832 5.13583C9.73748 5.00321 9.92623 4.92871 10.123 4.92871H13.0913Z' fill='%23FC5C5C'/%3E%3C/svg%3E");
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+                display: block;
+                width: 24px;
+                height: 24px;
+                cursor: pointer;
+            }
+
+            .editIcon {
+                background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20' fill='none'%3E%3Cpath d='M5.42466 14.5753H6.42192L12.5658 8.43151L11.5685 7.43425L5.42466 13.5781V14.5753ZM15.611 7.39863L12.5836 4.40685L13.5808 3.40959C13.8539 3.13653 14.1893 3 14.587 3C14.9847 3 15.3201 3.13653 15.5932 3.40959L16.5904 4.40685C16.8635 4.67991 17.0059 5.00936 17.0178 5.39521C17.0297 5.78105 16.8991 6.1105 16.626 6.38356L15.611 7.39863ZM14.5781 8.44932L7.0274 16H4V12.9726L11.5507 5.42192L14.5781 8.44932ZM12.0671 7.93288L11.5685 7.43425L12.5658 8.43151L12.0671 7.93288Z' fill='%23118BE2'/%3E%3C/svg%3E");
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+                display: block;
+                background-color: transparent;
+                width: 24px;
+                height: 24px;
+                cursor: pointer;
+            }
+
+            .messageIcon {
+                background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' viewBox='0 0 18 18' fill='none'%3E%3Cpath d='M2.4462 15C2.04207 15 1.7 14.86 1.42 14.58C1.14 14.3 1 13.9579 1 13.5538V4.4462C1 4.04207 1.14 3.7 1.42 3.42C1.7 3.14 2.04207 3 2.4462 3H14.7538C15.1579 3 15.5 3.14 15.78 3.42C16.06 3.7 16.2 4.04207 16.2 4.4462V13.5538C16.2 13.9579 16.06 14.3 15.78 14.58C15.5 14.86 15.1579 15 14.7538 15H2.4462ZM8.6 9.4462L2.2 5.3538V13.5538C2.2 13.6257 2.22307 13.6847 2.2692 13.7308C2.31533 13.7769 2.37433 13.8 2.4462 13.8H14.7538C14.8257 13.8 14.8847 13.7769 14.9308 13.7308C14.9769 13.6847 15 13.6257 15 13.5538V5.3538L8.6 9.4462ZM8.6 8.2L14.877 4.2H2.323L8.6 8.2ZM2.2 5.3538V4.2V13.5538C2.2 13.6257 2.22307 13.6847 2.2692 13.7308C2.31533 13.7769 2.37433 13.8 2.4462 13.8H2.2V5.3538Z' fill='%23118BE2'/%3E%3C/svg%3E");
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+                display: block;
+                width: 24px;
+                height: 24px;
+                cursor: pointer;
+            }
+
+            .printIcon {
+                background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' viewBox='0 0 18 18' fill='none'%3E%3Cg clip-path='url(%23clip0_470_29185)'%3E%3Cpath d='M15.4286 5.25042H13.8214V2.03613H4.17857V5.25042H2.57143C2.28727 5.25042 2.01475 5.3633 1.81381 5.56423C1.61288 5.76516 1.5 6.03769 1.5 6.32185V11.679C1.5 11.9632 1.61288 12.2357 1.81381 12.4366C2.01475 12.6375 2.28727 12.7504 2.57143 12.7504H4.17857V15.9647H13.8214V12.7504H15.4286C15.7127 12.7504 15.9853 12.6375 16.1862 12.4366C16.3871 12.2357 16.5 11.9632 16.5 11.679V6.32185C16.5 6.03769 16.3871 5.76516 16.1862 5.56423C15.9853 5.3633 15.7127 5.25042 15.4286 5.25042ZM5.25 3.10756H12.75V5.25042H5.25V3.10756ZM12.75 14.8933H5.25V9.53613H12.75V14.8933ZM15.4286 11.679H13.8214V8.4647H4.17857V11.679H2.57143V6.32185H15.4286V11.679Z' fill='%23118BE2'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_470_29185'%3E%3Crect width='17.1429' height='17.1429' fill='white' transform='translate(0.428589 0.428711)'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E");
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+                display: block;
+                background-color: transparent;
+                width: 24px;
+                height: 24px;
+                cursor: pointer;
+            }
+        }
+    }
+
+    .bottom_barContent {
+        margin-top: 20px;
+
+        .examPresc {
+            width: 100%;
+            min-height: 646px;
+            max-height: 100%;
+            height: 100%;
+            border-radius: 15px;
+            background: #FFF;
+            box-shadow: 0px 1.984px 9.918px 0px rgba(0, 40, 85, 0.10);
+            display: flex;
+            flex-direction: column;
+            overflow-y: scroll;
+            overflow-x: hidden;
+            gap: 10px;
+            padding: 20px;
+
+            .examPrescHead {
+                h4 {
+                    color: #0F75BC;
+                    font-family: "Anek Malayalam";
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: 19.042px;
+                    /* 119.013% */
+                }
+
+                span {
+                    color: #414254;
+                    text-align: right;
+                    font-family: "Anek Malayalam";
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 19.042px;
+                    /* 136.015% */
+                }
+            }
+
+            ul {
+                .lii {
+                    height: 42px;
+                    border-bottom: 0.24px solid #8E96A0;
+                    padding-bottom: 10px;
+
+
+                    h5 {
+                        color: #313131;
+                        font-family: "Anek Malayalam";
+                        font-size: 14px;
+                        font-style: normal;
+                        font-weight: 300;
+                        line-height: normal;
+                        margin-bottom: 0px !important;
+                    }
+
+                    span {
+                        color: #313131;
+                        text-align: right;
+                        font-family: "Anek Malayalam";
+                        font-size: 14px;
+                        font-style: normal;
+                        font-weight: 300;
+                        line-height: normal;
+                    }
+                }
+            }
+
+            .wrapeCompl {
+                width: 100%;
+                padding-top: 24px;
+                flex-direction: column;
+                gap: 10px;
+
+                .singleTextArea {
+                    display: flex;
+                    width: 100%;
+                    flex-direction: column;
+                    align-items: start;
+                    justify-content: start;
+                    gap: 4px;
+                    user-select: none;
+
+                    label {
+                        color: #313131;
+                        font-family: "Anek Malayalam";
+                        font-size: 14px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: normal;
+                    }
+
+                    textarea {
+                        width: 100%;
+                        resize: none;
+                        height: 60px;
+                        color: #313131;
+                        font-family: "Anek Malayalam";
+                        font-size: 12px;
+                        font-style: normal;
+                        font-weight: 300;
+                        line-height: normal;
+                        border-radius: 8px;
+                        border: 1px solid rgba(211, 222, 233, 0.30);
+                        padding: 12px;
+                        -webkit-user-select: none;
+                        -ms-user-select: none;
+                        user-select: none;
+                    }
+
+                    textarea[readonly] {
+                        height: auto !important;
+                        overflow: hidden;
+                        padding: 8px 12px;
+                        font-size: 12px;
+
+                    }
+
+                    .textBox {
+                        height: 60px;
+                        width: 100%;
+                        border-radius: 8px;
+                        border: 1px solid rgba(211, 222, 233, 0.30);
+                        padding: 8px 0;
+
+                        p {
+                            width: 100%;
+                            resize: none;
+
+                            color: #313131;
+                            font-family: "Anek Malayalam";
+                            font-size: 12px;
+                            font-style: normal;
+                            font-weight: 300;
+                            line-height: normal;
+                            border-radius: 8px;
+
+                            -webkit-user-select: none;
+                            -moz-user-select: none;
+                            user-select: none;
+                            height: 100%;
+                            margin: 0;
+                            overflow: auto;
+                            padding: 0px 12px;
+
+                            &::-webkit-scrollbar {}
+                        }
+                    }
+
+                }
+            }
+        }
+
+
+        .prescSCards {
+            .cardSingle {
+                width: 100%;
+                height: 313px;
+                border-radius: 15px;
+                background: #FFF;
+                box-shadow: 0px 1.984px 9.918px 0px rgba(0, 40, 85, 0.10);
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                overflow: hidden;
+                gap: 0px;
+                margin-bottom: 23px;
+
+                h3 {
+                    color: #0F75BC;
+                    font-family: "Anek Malayalam";
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: 19.042px;
+                    /* 119.013% */
+                    margin-bottom: 0px !important;
+                    padding: 20px;
+                    padding-bottom: 10px;
+                }
+
+                .table__wrape {
+                    width: 100%;
+                    height: 90%;
+                    overflow-y: scroll;
+
+                    table {
+                        th {
+                            background-color: #F0F7FD;
+                            color: #313131;
+                            font-family: "Anek Malayalam";
+                            font-size: 12px;
+                            font-style: normal;
+                            font-weight: 500;
+                            line-height: normal;
+                            padding-left: 20px;
+                        }
+
+                        td {
+                            color: #000;
+                            font-family: "Anek Malayalam";
+                            font-size: 14px;
+                            font-style: normal;
+                            font-weight: 300;
+                            line-height: normal;
+                            padding-left: 20px;
+
+                        }
+                    }
+                }
+            }
+
+            .wraper_tabs_prescription {
+                .MuiTabs-root {
+                    position: relative;
+                    min-height: 44px;
+
+                    &::before {
+                        content: '';
+                        position: absolute;
+                        top: 8px;
+                        right: 65px;
+                        background-color: #D3DEE9;
+                        width: 1px;
+                        height: 26px;
+                    }
+
+                    .MuiTabs-hideScrollbar.MuiTabs-scrollableX {
+                        max-width: 90%;
+                        min-height: 44px;
+
+                        .MuiButtonBase-root.MuiTab-root.MuiTab-textColorPrimary {
+                            text-transform: capitalize;
+                            padding-left: 22px;
+                            padding-right: 22px;
+                            min-height: 44px;
+                            font-size: 13px;
+                        }
+
+                        .MuiButtonBase-root.MuiTab-root.MuiTab-textColorPrimary.Mui-selected {
+                            font-weight: 600;
+                        }
+                    }
+
+                    .MuiButtonBase-root.MuiTabScrollButton-root.MuiTabScrollButton-horizontal {
+
+                        &:nth-child(1) {
+                            width: 30px;
+                            position: absolute;
+                            top: 0;
+                            bottom: 0;
+                            right: 33px;
+                            margin: auto;
+                        }
+
+                        &:nth-child(4) {
+                            right: -20px;
+                            width: 30px;
+                        }
+                    }
+
+                    .MuiButtonBase-root.MuiTabScrollButton-root.MuiTabScrollButton-horizontal.Mui-disabled {
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+
+        .healthSCards {
+            .cardSingleHealth {
+                width: 100%;
+                height: 313px;
+                flex-shrink: 0;
+                border-radius: 15px;
+                background: #FFF;
+                box-shadow: 0px 1.984px 9.918px 0px rgba(0, 40, 85, 0.10);
+                display: flex;
+                flex-direction: column;
+                position: relative;
+
+                h3 {
+                    color: #0F75BC;
+                    font-family: "Anek Malayalam";
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: 19.042px;
+                    /* 119.013% */
+                    padding: 20px;
+
+                    margin: 0px !important;
+                }
+
+                .table__wrape {
+                    height: 90%;
+                    overflow-y: auto;
+
+                    table {
+                        th {
+                            height: 36px;
+                            flex-shrink: 0;
+                            background: #F0F7FD;
+                            color: #313131;
+                            font-family: "Anek Malayalam";
+                            font-size: 12px;
+                            font-style: normal;
+                            font-weight: 500;
+                            padding-left: 20px;
+                            padding-right: 15px;
+                            line-height: normal;
+                        }
+
+                        td {
+                            color: #313131;
+                            font-family: "Anek Malayalam";
+                            font-size: 14px;
+                            font-style: normal;
+                            padding-left: 20px;
+                            padding-right: 15px;
+                            font-weight: 300;
+                            line-height: normal;
+
+
+                            h4 {
+                                color: #0F75BC;
+                                text-align: right;
+                                font-family: "Anek Malayalam";
+                                font-size: 14px;
+                                font-style: normal;
+                                font-weight: 500;
+                                line-height: 20.642px;
+                                /* 147.442% */
+                                text-decoration-line: underline;
+                                text-decoration-style: solid;
+                                text-decoration-skip-ink: none;
+                                text-decoration-thickness: auto;
+                                text-underline-offset: auto;
+                                text-underline-position: from-font;
+                                margin: 0px !important;
+                            }
+                        }
+                    }
+                }
+
+                .invoceDe {
+                    width: 100%;
+                    padding: 20px;
+
+                    h3 {
+                        padding: 0;
+                    }
+
+                    .printSvg {
+                        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' viewBox='0 0 18 18' fill='none'%3E%3Cg clip-path='url(%23clip0_470_46708)'%3E%3Cpath d='M15.4286 5.25042H13.8214V2.03613H4.17857V5.25042H2.57143C2.28727 5.25042 2.01475 5.3633 1.81381 5.56423C1.61288 5.76516 1.5 6.03769 1.5 6.32185V11.679C1.5 11.9632 1.61288 12.2357 1.81381 12.4366C2.01475 12.6375 2.28727 12.7504 2.57143 12.7504H4.17857V15.9647H13.8214V12.7504H15.4286C15.7127 12.7504 15.9853 12.6375 16.1862 12.4366C16.3871 12.2357 16.5 11.9632 16.5 11.679V6.32185C16.5 6.03769 16.3871 5.76516 16.1862 5.56423C15.9853 5.3633 15.7127 5.25042 15.4286 5.25042ZM5.25 3.10756H12.75V5.25042H5.25V3.10756ZM12.75 14.8933H5.25V9.53613H12.75V14.8933ZM15.4286 11.679H13.8214V8.4647H4.17857V11.679H2.57143V6.32185H15.4286V11.679Z' fill='%23118BE2'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_470_46708'%3E%3Crect width='17.1429' height='17.1429' fill='white' transform='translate(0.428589 0.428711)'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E");
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        background-position: center;
+                        display: block;
+                        width: 17.143px;
+                        height: 17.143px;
+                    }
+                }
+
+                .wrape_bi {
+                    position: relative;
+                    width: 100%;
+                    height: 90%;
+
+                    .listInvoice {
+                        display: flex;
+                        flex-direction: column;
+                        // gap: 10px;
+                        padding: 0px 8px !important;
+                        padding-right: 0px;
+                        height: 90%;
+                        overflow-y: auto;
+
+                        li {
+                            width: 100%;
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+                            border-bottom: 1px solid #E2EAF0;
+                            padding: 10px 13px;
+
+                            span {
+                                color: #313131;
+                                text-align: right;
+                                font-family: "Anek Malayalam";
+                                font-size: 14px;
+                                font-style: normal;
+                                font-weight: 300;
+                                line-height: normal;
+                            }
+                        }
+                    }
+
+                    .viewHistoryBtn {
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                        right: 0;
+                        margin: auto;
+                        color: #0F75BC;
+                        text-align: center;
+                        font-family: "Anek Malayalam";
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: normal;
+                        padding-top: 9px;
+                        padding-bottom: 11px;
+
+                        a {
+                            text-decoration: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.prescriptionProfile-mobile {
+    width: 100%;
+    height: 100%;
+
+    .topBarPresc {
+        .box_modal {
+            border-radius: 15px;
+            background: #FFF;
+            box-shadow: 0px 1.984px 9.918px 0px rgba(0, 40, 85, 0.10);
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 14px 10px;
+        }
+
+        .MuiAvatar-root {
+            width: 41px;
+            height: 41px;
+        }
+
+
+        .details {
+            border-radius: 15px;
+            background: #FFF;
+            box-shadow: 0px 1.984px 9.918px 0px rgba(0, 40, 85, 0.10);
+            width: 100%;
+            padding: 10px;
+            display: flex;
+            gap: 10px;
+            margin-bottom: 10px;
+
+            h3 {
+                color: #0F75BC;
+                font-size: 12.429px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+                margin-bottom: 0px !important;
+
+            }
+
+            h4 {
+                color: #313131;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 17.859px;
+                margin-bottom: 0px !important;
+            }
+
+            .details_wrap {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 0 40px;
+
+                h4 {
+                    font-size: 12px;
+                }
+            }
+
+            button {
+                width: 92px;
+                height: 36px;
+                flex-shrink: 0;
+                color: #0F75BC;
+                text-align: center;
+                font-family: "Anek Malayalam";
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+                border-radius: 20px;
+                background: #F2F9FF;
+            }
+        }
+
+        .actions {
+            .deleteIcon {
+                background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M17.5437 7.05014C17.7405 7.05014 17.9292 7.12464 18.0684 7.25726C18.2076 7.38987 18.2857 7.56974 18.2857 7.75728C18.2857 7.94483 18.2076 8.12469 18.0684 8.25731C17.9292 8.38992 17.7405 8.46443 17.5437 8.46443H16.8016L16.7994 8.51463L16.107 17.7577C16.0804 18.1145 15.9128 18.4484 15.6381 18.6922C15.3634 18.936 15.002 19.0716 14.6266 19.0716H8.58696C8.21158 19.0716 7.85014 18.936 7.57544 18.6922C7.30075 18.4484 7.1332 18.1145 7.10654 17.7577L6.4142 8.51534C6.41307 8.49839 6.41258 8.48141 6.41272 8.46443H5.67065C5.47384 8.46443 5.2851 8.38992 5.14593 8.25731C5.00677 8.12469 4.92859 7.94483 4.92859 7.75728C4.92859 7.56974 5.00677 7.38987 5.14593 7.25726C5.2851 7.12464 5.47384 7.05014 5.67065 7.05014H17.5437ZM15.3153 8.46443H7.89907L8.5877 17.6573H14.6266L15.3153 8.46443ZM13.0913 4.92871C13.2881 4.92871 13.4768 5.00321 13.616 5.13583C13.7552 5.26844 13.8334 5.44831 13.8334 5.63585C13.8334 5.8234 13.7552 6.00326 13.616 6.13588C13.4768 6.26849 13.2881 6.343 13.0913 6.343H10.123C9.92623 6.343 9.73748 6.26849 9.59832 6.13588C9.45915 6.00326 9.38097 5.8234 9.38097 5.63585C9.38097 5.44831 9.45915 5.26844 9.59832 5.13583C9.73748 5.00321 9.92623 4.92871 10.123 4.92871H13.0913Z' fill='%23FC5C5C'/%3E%3C/svg%3E");
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+                display: block;
+                width: 24px;
+                height: 24px;
+                cursor: pointer;
+            }
+
+            .editIcon {
+                background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20' fill='none'%3E%3Cpath d='M5.42466 14.5753H6.42192L12.5658 8.43151L11.5685 7.43425L5.42466 13.5781V14.5753ZM15.611 7.39863L12.5836 4.40685L13.5808 3.40959C13.8539 3.13653 14.1893 3 14.587 3C14.9847 3 15.3201 3.13653 15.5932 3.40959L16.5904 4.40685C16.8635 4.67991 17.0059 5.00936 17.0178 5.39521C17.0297 5.78105 16.8991 6.1105 16.626 6.38356L15.611 7.39863ZM14.5781 8.44932L7.0274 16H4V12.9726L11.5507 5.42192L14.5781 8.44932ZM12.0671 7.93288L11.5685 7.43425L12.5658 8.43151L12.0671 7.93288Z' fill='%23118BE2'/%3E%3C/svg%3E");
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+                display: block;
+                background-color: transparent;
+                width: 24px;
+                height: 24px;
+                cursor: pointer;
+            }
+
+            .messageIcon {
+                background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' viewBox='0 0 18 18' fill='none'%3E%3Cpath d='M2.4462 15C2.04207 15 1.7 14.86 1.42 14.58C1.14 14.3 1 13.9579 1 13.5538V4.4462C1 4.04207 1.14 3.7 1.42 3.42C1.7 3.14 2.04207 3 2.4462 3H14.7538C15.1579 3 15.5 3.14 15.78 3.42C16.06 3.7 16.2 4.04207 16.2 4.4462V13.5538C16.2 13.9579 16.06 14.3 15.78 14.58C15.5 14.86 15.1579 15 14.7538 15H2.4462ZM8.6 9.4462L2.2 5.3538V13.5538C2.2 13.6257 2.22307 13.6847 2.2692 13.7308C2.31533 13.7769 2.37433 13.8 2.4462 13.8H14.7538C14.8257 13.8 14.8847 13.7769 14.9308 13.7308C14.9769 13.6847 15 13.6257 15 13.5538V5.3538L8.6 9.4462ZM8.6 8.2L14.877 4.2H2.323L8.6 8.2ZM2.2 5.3538V4.2V13.5538C2.2 13.6257 2.22307 13.6847 2.2692 13.7308C2.31533 13.7769 2.37433 13.8 2.4462 13.8H2.2V5.3538Z' fill='%23118BE2'/%3E%3C/svg%3E");
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+                display: block;
+                width: 24px;
+                height: 24px;
+                cursor: pointer;
+            }
+
+            .printIcon {
+                background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' viewBox='0 0 18 18' fill='none'%3E%3Cg clip-path='url(%23clip0_470_29185)'%3E%3Cpath d='M15.4286 5.25042H13.8214V2.03613H4.17857V5.25042H2.57143C2.28727 5.25042 2.01475 5.3633 1.81381 5.56423C1.61288 5.76516 1.5 6.03769 1.5 6.32185V11.679C1.5 11.9632 1.61288 12.2357 1.81381 12.4366C2.01475 12.6375 2.28727 12.7504 2.57143 12.7504H4.17857V15.9647H13.8214V12.7504H15.4286C15.7127 12.7504 15.9853 12.6375 16.1862 12.4366C16.3871 12.2357 16.5 11.9632 16.5 11.679V6.32185C16.5 6.03769 16.3871 5.76516 16.1862 5.56423C15.9853 5.3633 15.7127 5.25042 15.4286 5.25042ZM5.25 3.10756H12.75V5.25042H5.25V3.10756ZM12.75 14.8933H5.25V9.53613H12.75V14.8933ZM15.4286 11.679H13.8214V8.4647H4.17857V11.679H2.57143V6.32185H15.4286V11.679Z' fill='%23118BE2'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_470_29185'%3E%3Crect width='17.1429' height='17.1429' fill='white' transform='translate(0.428589 0.428711)'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E");
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+                display: block;
+                background-color: transparent;
+                width: 24px;
+                height: 24px;
+                cursor: pointer;
+            }
+        }
+    }
+}

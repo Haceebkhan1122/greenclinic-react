@@ -1,0 +1,63 @@
+@import "../../assets/css/variable.scss";
+
+.healthRecordTab {
+    .btn-icon {
+        display: flex;
+        justify-content: end;
+        gap: 14px;
+
+        button {
+            svg {
+                color: $blue-color;
+                width: 24px;
+                height: 24px;
+            }
+
+            &:last-child {
+                svg {
+                    color: #FC5C5C;
+                }
+            }
+        }
+    }
+
+    width: 100%;
+    height: 100%;
+
+
+    .ancItems {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+
+        img {
+            width: 16px;
+            object-fit: contain;
+        }
+    }
+
+    .p-paginator-bottom {
+        justify-content: left;
+        padding-left: 20px;
+    }
+
+    .menuIcon {
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='25' viewBox='0 0 24 25' fill='none'%3E%3Cpath d='M12 4.07663C12.55 4.07663 13.0208 4.27246 13.4125 4.66413C13.8042 5.0558 14 5.52663 14 6.07663C14 6.62663 13.8042 7.09746 13.4125 7.48913C13.0208 7.8808 12.55 8.07663 12 8.07663C11.45 8.07663 10.9792 7.8808 10.5875 7.48913C10.1958 7.09746 10 6.62663 10 6.07663C10 5.52663 10.1958 5.0558 10.5875 4.66413C10.9792 4.27246 11.45 4.07663 12 4.07663ZM12 10.0766C12.55 10.0766 13.0208 10.2725 13.4125 10.6641C13.8042 11.0558 14 11.5266 14 12.0766C14 12.6266 13.8042 13.0975 13.4125 13.4891C13.0208 13.8808 12.55 14.0766 12 14.0766C11.45 14.0766 10.9792 13.8808 10.5875 13.4891C10.1958 13.0975 10 12.6266 10 12.0766C10 11.5266 10.1958 11.0558 10.5875 10.6641C10.9792 10.2725 11.45 10.0766 12 10.0766ZM12 16.0766C12.55 16.0766 13.0208 16.2725 13.4125 16.6641C13.8042 17.0558 14 17.5266 14 18.0766C14 18.6266 13.8042 19.0975 13.4125 19.4891C13.0208 19.8808 12.55 20.0766 12 20.0766C11.45 20.0766 10.9792 19.8808 10.5875 19.4891C10.1958 19.0975 10 18.6266 10 18.0766C10 17.5266 10.1958 17.0558 10.5875 16.6641C10.9792 16.2725 11.45 16.0766 12 16.0766Z' fill='%230F345A'/%3E%3C/svg%3E");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        display: block;
+        width: 24px;
+        height: 24px;
+    }
+
+    .table__wrape {
+        .p-datatable-wrapper {
+            height: calc(100vh - 20px);
+        }
+
+        .p-datatable {
+            height: 100%;
+        }
+    }
+}

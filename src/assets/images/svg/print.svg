@@ -1,0 +1,10 @@
+<svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="printer 1" clip-path="url(#clip0_5451_22484)">
+<path id="Vector" d="M14 5H12.5V2H3.5V5H2C1.73478 5 1.48043 5.10536 1.29289 5.29289C1.10536 5.48043 1 5.73478 1 6V11C1 11.2652 1.10536 11.5196 1.29289 11.7071C1.48043 11.8946 1.73478 12 2 12H3.5V15H12.5V12H14C14.2652 12 14.5196 11.8946 14.7071 11.7071C14.8946 11.5196 15 11.2652 15 11V6C15 5.73478 14.8946 5.48043 14.7071 5.29289C14.5196 5.10536 14.2652 5 14 5ZM4.5 3H11.5V5H4.5V3ZM11.5 14H4.5V9H11.5V14ZM14 11H12.5V8H3.5V11H2V6H14V11Z" fill="#0F75BC"/>
+</g>
+<defs>
+<clipPath id="clip0_5451_22484">
+<rect width="16" height="16" fill="white" transform="translate(0 0.5)"/>
+</clipPath>
+</defs>
+</svg>

@@ -1,0 +1,169 @@
+.UploadHealthRecordModal {
+    .modal-dialog {
+        max-width: 460px;
+    }
+
+    .modal-content {
+        width: 460px;
+        height: 480px;
+        flex-shrink: 0;
+        border-radius: 15.385px;
+        background: #FFF;
+    }
+
+    .modal-body {
+        width: 100%;
+        height: 100%;
+        padding: 20px !important;
+
+        .upload_view {
+            padding-top: 10px;
+            height: 100%;
+            width: 100%;
+        }
+
+        h2 {
+            color: #0F75BC;
+            font-family: "Anek Malayalam";
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 23.04px;
+            /* 115.2% */
+        }
+
+
+        .single {
+            input {
+                width: 100%;
+            }
+        }
+
+        .button2 {
+            width: 100%;
+            height: 40px;
+        }
+
+        .wrape_upload {
+            margin-top: 20px;
+            margin-bottom: 30px;
+            width: 100%;
+            height: 210px;
+            flex-shrink: 0;
+            border-radius: 15.385px;
+            border: 1px dashed #0F75BC;
+            background: #F2F9FF;
+            overflow: hidden;
+            padding: 10px;
+            position: relative;
+
+            label {
+                border: none;
+                width: 100;
+                width: 100%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 20px;
+                overflow: hidden;
+                position: absolute;
+                left: 0;
+                right: 0;
+                margin: auto;
+                text-align: 0;
+                width: 100%;
+                height: 100%;
+                z-index: 99;
+                background: transparent;
+
+                span {
+                    display: none;
+                }
+
+                svg {
+                    display: none;
+
+                    &::after {
+                        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='48' height='48' viewBox='0 0 48 48' fill='none'%3E%3Cg clip-path='url(%23clip0_1012_99883)'%3E%3Cpath d='M16.5 27L18.615 29.115L22.5 25.245V43.5H25.5V25.245L29.385 29.115L31.5 27L24 19.5L16.5 27Z' fill='%230F75BC'/%3E%3Cpath d='M35.2498 33H34.4998V30H35.2498C37.04 30.0716 38.7853 29.4292 40.1018 28.2139C41.4184 26.9987 42.1982 25.3102 42.2698 23.52C42.3414 21.7298 41.6989 19.9845 40.4837 18.668C39.2684 17.3515 37.58 16.5716 35.7898 16.5H34.4998L34.3498 15.27C34.017 12.7447 32.7776 10.4264 30.8624 8.7471C28.9473 7.06776 26.4869 6.14185 23.9398 6.14185C21.3926 6.14185 18.9323 7.06776 17.0171 8.7471C15.102 10.4264 13.8626 12.7447 13.5298 15.27L13.4998 16.5H12.2098C10.4196 16.5716 8.73113 17.3515 7.5159 18.668C6.30066 19.9845 5.65818 21.7298 5.72979 23.52C5.8014 25.3102 6.58123 26.9987 7.89774 28.2139C9.21424 29.4292 10.9596 30.0716 12.7498 30H13.4998V33H12.7498C10.3444 32.9848 8.02954 32.0809 6.25027 30.4622C4.47099 28.8434 3.35291 26.6241 3.11098 24.2308C2.86905 21.8376 3.52035 19.4394 4.93967 17.4973C6.35898 15.5552 8.44611 14.2064 10.7998 13.71C11.4473 10.6898 13.111 7.98299 15.5133 6.04123C17.9155 4.09947 20.9109 3.04022 23.9998 3.04022C27.0887 3.04022 30.0841 4.09947 32.4863 6.04123C34.8885 7.98299 36.5522 10.6898 37.1998 13.71C39.5535 14.2064 41.6406 15.5552 43.0599 17.4973C44.4792 19.4394 45.1305 21.8376 44.8886 24.2308C44.6467 26.6241 43.5286 28.8434 41.7493 30.4622C39.97 32.0809 37.6552 32.9848 35.2498 33Z' fill='%230F75BC'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_1012_99883'%3E%3Crect width='48' height='48' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E");
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        background-position: center;
+                        display: block;
+                        width: 48px;
+                        height: 48px;
+                        margin: auto;
+                    }
+                }
+            }
+
+            .react-info-wrap {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 0px;
+                position: absolute;
+                left: 0;
+                right: 0;
+                margin: auto;
+                top: 0;
+                bottom: 0;
+
+                .icon_uplo {
+                    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='48' height='48' viewBox='0 0 48 48' fill='none'%3E%3Cg clip-path='url(%23clip0_1012_99883)'%3E%3Cpath d='M16.5 27L18.615 29.115L22.5 25.245V43.5H25.5V25.245L29.385 29.115L31.5 27L24 19.5L16.5 27Z' fill='%230F75BC'/%3E%3Cpath d='M35.2498 33H34.4998V30H35.2498C37.04 30.0716 38.7853 29.4292 40.1018 28.2139C41.4184 26.9987 42.1982 25.3102 42.2698 23.52C42.3414 21.7298 41.6989 19.9845 40.4837 18.668C39.2684 17.3515 37.58 16.5716 35.7898 16.5H34.4998L34.3498 15.27C34.017 12.7447 32.7776 10.4264 30.8624 8.7471C28.9473 7.06776 26.4869 6.14185 23.9398 6.14185C21.3926 6.14185 18.9323 7.06776 17.0171 8.7471C15.102 10.4264 13.8626 12.7447 13.5298 15.27L13.4998 16.5H12.2098C10.4196 16.5716 8.73113 17.3515 7.5159 18.668C6.30066 19.9845 5.65818 21.7298 5.72979 23.52C5.8014 25.3102 6.58123 26.9987 7.89774 28.2139C9.21424 29.4292 10.9596 30.0716 12.7498 30H13.4998V33H12.7498C10.3444 32.9848 8.02954 32.0809 6.25027 30.4622C4.47099 28.8434 3.35291 26.6241 3.11098 24.2308C2.86905 21.8376 3.52035 19.4394 4.93967 17.4973C6.35898 15.5552 8.44611 14.2064 10.7998 13.71C11.4473 10.6898 13.111 7.98299 15.5133 6.04123C17.9155 4.09947 20.9109 3.04022 23.9998 3.04022C27.0887 3.04022 30.0841 4.09947 32.4863 6.04123C34.8885 7.98299 36.5522 10.6898 37.1998 13.71C39.5535 14.2064 41.6406 15.5552 43.0599 17.4973C44.4792 19.4394 45.1305 21.8376 44.8886 24.2308C44.6467 26.6241 43.5286 28.8434 41.7493 30.4622C39.97 32.0809 37.6552 32.9848 35.2498 33Z' fill='%230F75BC'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_1012_99883'%3E%3Crect width='48' height='48' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E");
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-position: center;
+                    display: block;
+                    width: 48px;
+                    height: 48px;
+                }
+            }
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: fill;
+                cursor: pointer;
+            }
+        }
+
+        .orText {
+            color: #8E96A0;
+            text-align: center;
+            font-family: "Anek Malayalam";
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            text-transform: uppercase;
+        }
+
+        .browseBtn {
+            display: flex;
+            width: 140px;
+            height: 36px;
+            padding: 8px 0px;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            color: #0F75BC;
+            text-align: center;
+            font-family: "Anek Malayalam";
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            border-radius: 30px;
+            border: 1px solid #0F75BC;
+            background: #FFF;
+            box-shadow: 0px 4px 20px 0px rgba(15, 117, 188, 0.10);
+            margin-top: 12px !important;
+            margin-bottom: 22px;
+        }
+    }
+}

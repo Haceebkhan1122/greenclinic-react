@@ -1,0 +1,108 @@
+@import '../../../assets/css/variable.scss';
+
+.updateModal {
+    padding: 0 !important;
+    z-index: 99999999999 !important;
+
+    .modal-dialog {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        padding: 0;
+        margin: 0;
+        max-width: 100% !important;
+
+        .modal-content {
+            background-color: $background-color;
+            border-radius: 30px;
+            border: none;
+            border-radius: 0;
+            height: 100%;
+
+            .modal-header {
+                padding-top: 18px;
+                padding-bottom: 18px;
+                padding-right: 20px;
+                min-height: 60px;
+                padding-left: 15px;
+                background: $background-color;
+                box-shadow: 0px 3.84px 18.336px 0px rgba(0, 0, 0, 0.06);
+
+                .h4 {
+                    color: $blue-color;
+                    font-family: "Anek Malayalam";
+                    font-size: 17.28px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: normal;
+
+                    @media (min-width : 0px) and (max-width : 768px) {
+                        display: flex;
+                        align-items: center;
+                    }
+            
+                }
+
+                img {
+                    width: 20px;
+                    height: 20px;
+                    margin-right: 12px;
+                }
+            }
+
+            .modal-body {
+                padding: 0;
+
+                .updates {
+                    border-radius: 10px;
+                    background: $white-color;
+                    margin: 10px;
+                    height: 95%;
+                    overflow-y: auto;
+
+                    ul {
+                        li {
+                            border-bottom: 1px solid rgba(173, 189, 206, 0.50);
+                            padding: 17.1px 24px;
+
+                            &:active {
+                                background-color: $background-color;
+                            }
+
+                            a {
+                                display: flex;
+                                justify-content: space-between;
+                                text-decoration: none;
+
+                                h5 {
+                                    color: $body-text-color;
+                                    font-family: "Anek Malayalam";
+                                    font-size: 15px;
+                                    font-style: normal;
+                                    font-weight: 500;
+                                    margin-top: 0;
+                                    margin-bottom: 7px;
+                                    line-height: 17.409px;
+                                }
+
+                                span {
+                                    color: $dark-gold-color;
+                                    font-family: "Anek Malayalam";
+                                    font-size: 15px;
+                                    font-style: normal;
+                                    font-weight: 500;
+                                    line-height: normal;
+                                }
+
+                                svg {
+                                    margin-right: 0;
+                                    margin-top: 6px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

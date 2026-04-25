@@ -1,0 +1,284 @@
+.profileCardMain {
+    width: 100%;
+    height: 282px;
+    border-radius: 14px;
+    background: #FFF;
+    box-shadow: 0px 8px 20px 0px rgba(0, 40, 85, 0.06);
+
+    @media (max-width: 767px) {
+        height: 200px;
+    }
+
+    .editPatientDrop {
+        button {
+            padding: 0;
+            background: initial;
+            border: 0;
+
+            &:after {
+                display: none;
+                width: 0;
+            }
+
+            &:active {
+                background-color: transparent;
+                border-color: transparent;
+            }
+
+        }
+
+        .dropdown-menu {
+            border-radius: 11.378px;
+            background: #FFF;
+            box-shadow: 0px 4.551px 22.756px 0px rgba(238, 238, 238, 0.80);
+            border: 0;
+        }
+
+        .dropdown-item {
+            display: flex;
+            gap: 10px;
+            color: #313131;
+            font-family: "Anek Malayalam";
+            font-size: 13.653px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            padding-bottom: 9px;
+
+            &:active {
+                background: #fff;
+
+            }
+        }
+    }
+
+    .backIcon {
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='17' viewBox='0 0 16 17' fill='none'%3E%3Cg clip-path='url(%23clip0_3761_23035)'%3E%3Cpath d='M12.6667 7.83332H5.22001L8.47334 4.57999C8.73334 4.31999 8.73334 3.89332 8.47334 3.63332C8.21334 3.37332 7.79334 3.37332 7.53334 3.63332L3.14001 8.02666C2.88001 8.28666 2.88001 8.70666 3.14001 8.96666L7.53334 13.36C7.79334 13.62 8.21334 13.62 8.47334 13.36C8.73334 13.1 8.73334 12.68 8.47334 12.42L5.22001 9.16666H12.6667C13.0333 9.16666 13.3333 8.86666 13.3333 8.49999C13.3333 8.13332 13.0333 7.83332 12.6667 7.83332Z' fill='black'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_3761_23035'%3E%3Crect width='16' height='16' fill='white' transform='translate(0 0.5)'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        display: block;
+        width: 16px;
+        height: 16px;
+
+
+
+
+    }
+
+    h4 {
+        color: #000;
+        font-family: "Anek Malayalam";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20.642px;
+        /* 129.012% */
+        margin: 0 !important;
+    }
+
+    button {
+        display: flex;
+
+        height: 20px;
+        padding: 7px 21px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        border-radius: 20px;
+        background: #D6EDFE;
+        color: #313131;
+        text-align: center;
+        font-family: "Anek Malayalam";
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 19.2px;
+        /* 160% */
+    }
+
+    .togglerIcon {
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M12 4C12.55 4 13.0208 4.19583 13.4125 4.5875C13.8042 4.97917 14 5.45 14 6C14 6.55 13.8042 7.02083 13.4125 7.4125C13.0208 7.80417 12.55 8 12 8C11.45 8 10.9792 7.80417 10.5875 7.4125C10.1958 7.02083 10 6.55 10 6C10 5.45 10.1958 4.97917 10.5875 4.5875C10.9792 4.19583 11.45 4 12 4ZM12 10C12.55 10 13.0208 10.1958 13.4125 10.5875C13.8042 10.9792 14 11.45 14 12C14 12.55 13.8042 13.0208 13.4125 13.4125C13.0208 13.8042 12.55 14 12 14C11.45 14 10.9792 13.8042 10.5875 13.4125C10.1958 13.0208 10 12.55 10 12C10 11.45 10.1958 10.9792 10.5875 10.5875C10.9792 10.1958 11.45 10 12 10ZM12 16C12.55 16 13.0208 16.1958 13.4125 16.5875C13.8042 16.9792 14 17.45 14 18C14 18.55 13.8042 19.0208 13.4125 19.4125C13.0208 19.8042 12.55 20 12 20C11.45 20 10.9792 19.8042 10.5875 19.4125C10.1958 19.0208 10 18.55 10 18C10 17.45 10.1958 16.9792 10.5875 16.5875C10.9792 16.1958 11.45 16 12 16Z' fill='%230F345A'/%3E%3C/svg%3E");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        display: block;
+        width: 24px;
+        height: 24px;
+    }
+
+    .avatarSvg {
+        // background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 40 40' fill='none'%3E%3Cg clip-path='url(%23clip0_3761_23056)'%3E%3Cpath d='M20 3.33334C10.8 3.33334 3.33337 10.8 3.33337 20C3.33337 29.2 10.8 36.6667 20 36.6667C29.2 36.6667 36.6667 29.2 36.6667 20C36.6667 10.8 29.2 3.33334 20 3.33334ZM20 10C23.2167 10 25.8334 12.6167 25.8334 15.8333C25.8334 19.05 23.2167 21.6667 20 21.6667C16.7834 21.6667 14.1667 19.05 14.1667 15.8333C14.1667 12.6167 16.7834 10 20 10ZM20 33.3333C16.6167 33.3333 12.6167 31.9667 9.76671 28.5333C12.5834 26.3333 16.1334 25 20 25C23.8667 25 27.4167 26.3333 30.2334 28.5333C27.3834 31.9667 23.3834 33.3333 20 33.3333Z' fill='%23C3CCD5'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_3761_23056'%3E%3Crect width='40' height='40' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E");
+        // background-repeat: no-repeat;
+        // background-size: cover;
+        // background-position: center;
+        display: block;
+        width: 40px;
+        height: 40px;
+    }
+
+    .gap13 {
+        gap: 13px;
+    }
+
+    .avatarWrap {
+        width: 52px;
+        height: 52px;
+        border-radius: 50%;
+        background: rgba(195, 204, 213, 0.20);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+
+
+    .userDeta {
+        h4 {
+            color: #000;
+            font-family: "Anek Malayalam";
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            margin: 0px !important;
+        }
+
+        h5 {
+            color: #313131;
+            font-family: "Anek Malayalam";
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 18px;
+            margin: 0px !important;
+        }
+
+        span {
+            color: #313131;
+            font-family: "Anek Malayalam";
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 18px;
+        }
+    }
+
+
+    ul {
+        li {
+            color: #313131;
+            font-family: "Anek Malayalam";
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 18px;
+
+            /* 150% */
+            span {
+                color: #313131;
+                font-family: "Anek Malayalam";
+                font-size: 12px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 18px;
+                /* 150% */
+                margin-left: 0px;
+            }
+
+            i {
+                width: 61px;
+                font-style: normal;
+                display: inline-block;
+            }
+        }
+    }
+
+    .btnsWraper {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .bookApp {
+            display: flex;
+            width: 150px;
+            height: 36px;
+            padding: 12px 10px;
+            justify-content: center;
+            align-items: center;
+            gap: 9px;
+            color: #FFF;
+            text-align: center;
+            font-family: "Anek Malayalam";
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            border-radius: 100px;
+            background: #0F75BC;
+        }
+
+        .consultNow {
+            display: flex;
+            width: 124px;
+            height: 36px;
+            padding: 12px 10px;
+            justify-content: center;
+            align-items: center;
+            gap: 9px;
+            color: #0F75BC;
+            background-color: transparent;
+            text-align: center;
+            font-family: "Anek Malayalam";
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            border-radius: 100px;
+            border: 1px solid #0F75BC;
+
+        }
+
+        .disableConsultNow {
+            display: flex;
+            width: 124px;
+            height: 36px;
+            padding: 12px 10px;
+            justify-content: center;
+            align-items: center;
+            gap: 9px;
+            color: #A0A0A0;
+            /* Muted grayish-blue for disabled text */
+            background-color: #F0F0F0;
+            /* Light gray background to indicate disabled state */
+            text-align: center;
+            font-family: "Anek Malayalam";
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            border-radius: 100px;
+            border: 1px solid #A0A0A0;
+            /* Lighter border to match disabled look */
+            cursor: not-allowed;
+            /* Indicate it's disabled */
+            opacity: 0.6;
+        }
+
+        .consultNow {
+            @media (max-width: 767px) {
+                height: 40px !important;
+                width: 141px !important;
+            }
+        }
+
+        .bookApp {
+            @media (max-width: 767px) {
+                height: 40px !important;
+                width: 169px !important;
+            }
+        }
+
+    }
+}

@@ -1,0 +1,99 @@
+.patientTabCardMain {
+    width: 100%;
+    height: 775px;
+    border-radius: 14px;
+    position: relative;
+    background: #FFF;
+    box-shadow: 0px 8px 20px 0px rgba(0, 40, 85, 0.06);
+
+    .wraper_tabs_patient {
+        .css-jhczcq-MuiTabs-root {
+            position: relative;
+
+            .css-1fr578y-MuiTabs-scroller {
+                max-width: 93%;
+
+                .MuiButtonBase-root.MuiTab-root.MuiTab-textColorPrimary {
+                    text-transform: capitalize;
+                    padding-left: 25px;
+                    padding-right: 25px;
+                    box-shadow: 0px -1px 0px 0px #D3DEE9 inset;
+                    font-family: "Anek Malayalam";
+                    font-weight: 400;
+                    font-size: 16px;
+                    color: #313131;
+
+
+                }
+
+                button.MuiButtonBase-root.MuiTab-root.MuiTab-textColorPrimary.Mui-selected.css-1usuzwp-MuiButtonBase-root-MuiTab-root {
+                    font-weight: 600;
+                    color: #0F75BC;
+
+
+                }
+            }
+
+            .MuiButtonBase-root.MuiTabScrollButton-root.MuiTabScrollButton-horizontal {
+                width: 30px;
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                right: 33px;
+                margin: auto;
+
+                &:nth-child(4) {
+                    right: 5px !important;
+                }
+            }
+
+            .MuiButtonBase-root.MuiTabScrollButton-root.MuiTabScrollButton-horizontal.Mui-disabled {
+                opacity: 1;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+.patientTabCardMain .MuiTabs-root div:nth-child(1) {
+    order: 3;
+}
+
+.patientTabCardMain .MuiTabs-root div:nth-child(2) {
+    order: 1;
+}
+
+.patientTabCardMain .MuiTabs-root div:nth-child(3) {
+    order: 2;
+}
+
+.patientTabCardMain .MuiTabs-root div:nth-child(4) {
+    order: 4;
+}
+
+.patientTabCardMain .Mui-disabled {
+    opacity: .3 !important;
+}
+
+
+
+.patientTabCardMain button.MuiButtonBase-root.MuiTab-root.MuiTab-textColorPrimary {
+    box-shadow: 0px -1px 0px 0px #D3DEE9 inset;
+    padding-left: 25px;
+    padding-right: 25px;
+    font-family: "Anek Malayalam";
+    font-weight: 400;
+    font-size: 16px;
+    color: #313131;
+    text-transform: capitalize;
+    letter-spacing: 0;
+}
+
+.patientTabCardMain button.MuiButtonBase-root.MuiTab-root.MuiTab-textColorPrimary.Mui-selected {
+    color: #0F75BC;
+    font-weight: 600;
+}

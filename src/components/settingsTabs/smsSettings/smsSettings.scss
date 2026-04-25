@@ -1,0 +1,97 @@
+
+.smsSettingsMain {
+    width: 100%;
+    height: 684px;
+    border: 0.5px solid #D3DEE9;
+    filter: drop-shadow(0px 8px 20px rgba(0, 40, 85, 0.06));
+    border-radius: 15.481px;
+    margin-bottom: 24px;
+    margin-top: 22px;
+
+
+    @media (min-width : 0px) and (max-width : 768px) {
+        margin-top: 20px;
+        height: max-content;
+    }
+}
+
+.wraper_tabs_smsSettings {
+    position: relative;
+    width: 100%;
+    padding-top: 60px;
+
+    @media(min-width:0) and (max-width:767px) {
+        padding-top: 0px;
+        height: 92vh;
+        overflow: hidden;
+        background-color: #F2F9FF;
+    }
+
+    .consultNowOffilineTabViewTabs {
+        position: relative;
+        z-index: 99;
+
+        @media (min-width : 0px) and (max-width : 768px) {
+            flex-wrap: wrap;
+            overflow-x: scroll;
+            white-space: nowrap;
+            padding-top: 5px;
+            padding-bottom: 12px;
+            border-bottom: 0;
+
+            &::-webkit-scrollbar {
+                display: none;
+
+            }
+
+        }
+
+        li {
+            @media(min-width:0) and (max-width:767px) {
+                width: 100%;
+                margin-bottom: 12px;
+                background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='51' height='56' viewBox='0 0 51 56' fill='none'%3E%3Cg filter='url(%23filter0_d_8328_30096)'%3E%3Cpath d='M18.332 11.6344L24.7487 18.0511L18.332 24.4678' stroke='%23474254' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/g%3E%3Cdefs%3E%3Cfilter id='filter0_d_8328_30096' x='-5.4' y='-3.34727' width='62.8' height='62.8' filterUnits='userSpaceOnUse' color-interpolation-filters='sRGB'%3E%3CfeFlood flood-opacity='0' result='BackgroundImageFix'/%3E%3CfeColorMatrix in='SourceAlpha' type='matrix' values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0' result='hardAlpha'/%3E%3CfeOffset dx='4' dy='10'/%3E%3CfeGaussianBlur stdDeviation='10.2'/%3E%3CfeComposite in2='hardAlpha' operator='out'/%3E%3CfeColorMatrix type='matrix' values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.09 0'/%3E%3CfeBlend mode='normal' in2='BackgroundImageFix' result='effect1_dropShadow_8328_30096'/%3E%3CfeBlend mode='normal' in='SourceGraphic' in2='effect1_dropShadow_8328_30096' result='shape'/%3E%3C/filter%3E%3C/defs%3E%3C/svg%3E");
+                background-repeat: no-repeat;
+                background-position: bottom right;
+                object-position: center;
+                background-size: 31px;
+                height: 49px;
+flex-shrink: 0;
+border-radius: 7.734px;
+background-color: #FFF;
+            }
+
+            button {
+                @media (max-width: 767px) {
+                        width: 100% !important;
+                        text-align: left;
+                        border-radius: 8px !important;
+                        background: #FFF !important;
+                        padding-left: 55px;
+                        height: 49px;
+                        line-height: 49px;
+                        background-color: #fff !important;
+                        border-bottom: 0px solid !important;
+                        color: #474254 !important;
+                        font-size: 15px;
+                        font-style: normal;
+                        font-weight: 400;
+                       
+                    }
+
+            }
+
+            .active {
+                @media(min-width:0) and (max-width:767px) {
+                    background-color: #fff !important;
+                    border-bottom: 0px solid !important;
+                    color: #474254 !important;
+                    font-weight: 400 !important;
+                }
+            }
+
+            @media(min-width:0) and (max-width:767px) {
+            }
+        }
+    }
+} 

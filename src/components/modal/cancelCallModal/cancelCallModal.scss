@@ -1,0 +1,38 @@
+@import '../../../assets/css/variable.scss';
+
+
+
+.cancelCallModal{
+    .centerMainDiv{
+        text-align: center;
+        p{
+            font-size: 25px;
+
+        }
+        .yesCancel{
+            width: 100%;
+            padding: 10px;
+            background-color: #2196f3;
+            color: #ffffff;
+            border: 1px solid #2196f3;
+            border-radius: 20px;
+            font-size: 18px;
+
+        }
+
+        .NoCancel{
+            width: 100%;
+            padding: 10px;
+            background-color: #ffffff;
+            color: #2196f3;
+            border: 1px solid #2196f3;
+            border-radius: 20px;
+            font-size: 18px;
+        }
+
+        .cancelContainer{
+            display: flex;
+            gap: 10px
+        }
+    }
+}

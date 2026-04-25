@@ -1,0 +1,207 @@
+@import '../../../assets/css/variable.scss';
+
+.modalEditMedicine {
+    width: 100%;
+    height: 100%;
+
+
+    .modal-dialog {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .modal-content {
+        width: 528px;
+        height: 580px;
+        flex-shrink: 0;
+        border-radius: 15px;
+        background: #FFF;
+        margin: auto;
+        overflow: hidden;
+        @media (max-width: 767px){
+            width: 100%;
+        }
+    }
+
+    .modal-body {
+        width: 100%;
+        height: 100%;
+        overflow-y: scroll;
+
+        &::-webkit-scrollbar {
+            width: 5px;
+            height: 5px;
+            background-color: #cacaca;
+            display: none;
+        }
+    }
+
+    .single {
+        width: 100%;
+        margin-bottom: 20px;
+
+        input {
+            width: 100%;
+            height: 43px;
+        }
+    }
+
+    .single_field {
+        margin-bottom: 20px;
+
+        select {
+            height: 43px;
+        }
+    }
+
+    h2 {
+        color: #0F75BC;
+        font-family: "Anek Malayalam";
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 23.04px;
+    }
+
+    .addMoreBtn {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        margin-top: 20px;
+        cursor: pointer;
+
+
+        .addMoreIcon {
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20' fill='none'%3E%3Cg clip-path='url(%23clip0_1372_22290)'%3E%3Cpath d='M10.0013 2C5.4013 2 1.66797 5.73333 1.66797 10.3333C1.66797 14.9333 5.4013 18.6667 10.0013 18.6667C14.6013 18.6667 18.3346 14.9333 18.3346 10.3333C18.3346 5.73333 14.6013 2 10.0013 2ZM14.168 11.1667H10.8346V14.5H9.16797V11.1667H5.83464V9.5H9.16797V6.16667H10.8346V9.5H14.168V11.1667Z' fill='%230F75BC'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_1372_22290'%3E%3Crect width='20' height='20' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            display: block;
+            width: 20px;
+            height: 20px;
+        }
+
+        h3 {
+            color: #212121;
+            font-family: "Anek Malayalam";
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 23.04px;
+            margin: 0px !important;
+            /* 144% */
+        }
+    }
+
+
+    .wraper_btns {
+        display: flex;
+        width: 100%;
+        height: 78px;
+        justify-content: center;
+        align-items: center;
+        gap: 24px;
+
+        button {
+            width: 228px;
+            height: 50px;
+            flex-shrink: 0;
+            border-radius: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            outline: none;
+            border: none;
+
+            @media (max-width: 767px){
+                width: 100%;
+                flex-shrink:initial;
+            }
+
+            &:nth-child(1) {
+                color: #0F75BC;
+                border: 1px solid #0F75BC;
+                background-color: #FFF;
+            }
+
+            &:nth-child(2) {
+                color: #FFF;
+                background-color: #0F75BC;
+            }
+        }
+    }
+}
+
+.crossOptionIcon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20' fill='none'%3E%3Cpath d='M6.9987 13.8783L9.9987 10.8783L12.9987 13.8783L13.8768 13.0002L10.8768 10.0002L13.8768 7.00016L12.9987 6.12204L9.9987 9.12204L6.9987 6.12204L6.12057 7.00016L9.12057 10.0002L6.12057 13.0002L6.9987 13.8783ZM10.0002 17.9168C8.90516 17.9168 7.87592 17.7091 6.91245 17.2935C5.94898 16.8779 5.11092 16.314 4.39828 15.6016C3.68564 14.8893 3.12141 14.0516 2.70557 13.0885C2.28988 12.1254 2.08203 11.0965 2.08203 10.0016C2.08203 8.90662 2.28981 7.87738 2.70536 6.91391C3.12092 5.95044 3.68488 5.11238 4.39724 4.39975C5.1096 3.68711 5.94731 3.12287 6.91036 2.70704C7.87342 2.29134 8.90238 2.0835 9.99724 2.0835C11.0922 2.0835 12.1215 2.29127 13.0849 2.70683C14.0484 3.12238 14.8865 3.68634 15.5991 4.3987C16.3118 5.11107 16.876 5.94877 17.2918 6.91183C17.7075 7.87488 17.9154 8.90384 17.9154 9.9987C17.9154 11.0937 17.7076 12.1229 17.292 13.0864C16.8765 14.0499 16.3125 14.8879 15.6002 15.6006C14.8878 16.3132 14.0501 16.8775 13.087 17.2933C12.124 17.709 11.095 17.9168 10.0002 17.9168ZM9.9987 16.6668C11.8598 16.6668 13.4362 16.021 14.7279 14.7293C16.0195 13.4377 16.6654 11.8613 16.6654 10.0002C16.6654 8.13905 16.0195 6.56266 14.7279 5.271C13.4362 3.97933 11.8598 3.3335 9.9987 3.3335C8.13759 3.3335 6.5612 3.97933 5.26953 5.271C3.97786 6.56266 3.33203 8.13905 3.33203 10.0002C3.33203 11.8613 3.97786 13.4377 5.26953 14.7293C6.5612 16.021 8.13759 16.6668 9.9987 16.6668Z' fill='%23313131'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: block;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.cross_wrpa {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+
+    input {
+        width: 100%;
+    }
+}
+
+.wraper_fielddsOptions {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+
+    .wrape_one {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+
+        .one {
+            width: 44%;
+            height: 100%;
+        }
+
+        .two {
+            width: 44%;
+            height: 100%;
+        }
+
+        .wrape_cross {
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-top: 10px;
+
+            .crossOptionIcon {
+                background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20' fill='none'%3E%3Cpath d='M6.9987 13.8783L9.9987 10.8783L12.9987 13.8783L13.8768 13.0002L10.8768 10.0002L13.8768 7.00016L12.9987 6.12204L9.9987 9.12204L6.9987 6.12204L6.12057 7.00016L9.12057 10.0002L6.12057 13.0002L6.9987 13.8783ZM10.0002 17.9168C8.90516 17.9168 7.87592 17.7091 6.91245 17.2935C5.94898 16.8779 5.11092 16.314 4.39828 15.6016C3.68564 14.8893 3.12141 14.0516 2.70557 13.0885C2.28988 12.1254 2.08203 11.0965 2.08203 10.0016C2.08203 8.90662 2.28981 7.87738 2.70536 6.91391C3.12092 5.95044 3.68488 5.11238 4.39724 4.39975C5.1096 3.68711 5.94731 3.12287 6.91036 2.70704C7.87342 2.29134 8.90238 2.0835 9.99724 2.0835C11.0922 2.0835 12.1215 2.29127 13.0849 2.70683C14.0484 3.12238 14.8865 3.68634 15.5991 4.3987C16.3118 5.11107 16.876 5.94877 17.2918 6.91183C17.7075 7.87488 17.9154 8.90384 17.9154 9.9987C17.9154 11.0937 17.7076 12.1229 17.292 13.0864C16.8765 14.0499 16.3125 14.8879 15.6002 15.6006C14.8878 16.3132 14.0501 16.8775 13.087 17.2933C12.124 17.709 11.095 17.9168 10.0002 17.9168ZM9.9987 16.6668C11.8598 16.6668 13.4362 16.021 14.7279 14.7293C16.0195 13.4377 16.6654 11.8613 16.6654 10.0002C16.6654 8.13905 16.0195 6.56266 14.7279 5.271C13.4362 3.97933 11.8598 3.3335 9.9987 3.3335C8.13759 3.3335 6.5612 3.97933 5.26953 5.271C3.97786 6.56266 3.33203 8.13905 3.33203 10.0002C3.33203 11.8613 3.97786 13.4377 5.26953 14.7293C6.5612 16.021 8.13759 16.6668 9.9987 16.6668Z' fill='%23313131'/%3E%3C/svg%3E");
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+                display: block;
+                width: 20px;
+                height: 20px;
+                cursor: pointer;
+            }
+        }
+    }
+}

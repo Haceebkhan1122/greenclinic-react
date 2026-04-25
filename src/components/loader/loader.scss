@@ -1,0 +1,28 @@
+.custom-loadingWrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999999999999999999;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #0000008f;
+    transition: all 0.3s ease-in-out;
+    backdrop-filter: blur(7px);
+}
+
+.custom-loadingWrapper * {
+    color: #fff;
+}
+
+.custom-loadingWrapper img.gif {
+    height: 90px;
+    width: 90px;
+    object-fit: contain;
+}
+
+.expanded-search-items .custom-loadingWrapper img.gif {
+    width: auto;
+}

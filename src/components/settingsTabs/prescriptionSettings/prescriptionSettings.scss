@@ -1,0 +1,95 @@
+@import "../../../assets/css/variable.scss";
+
+.prescription_setting {
+    padding-top: 15px;
+
+
+    @media (max-width: 767px) {
+        padding-top: 0;
+        height: calc(100% - 60px);
+        overflow-y: scroll;
+    }
+
+    .container {
+        padding: 0;
+    }
+
+    .single {
+        display: flex;
+        align-items: center;
+        gap: 18px;
+        padding-left: 24px;
+
+        @media (max-width: 767px) {
+            padding-left: 0;
+            justify-content: space-between;
+        }
+
+        label {
+            color: $dark-color;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+
+            @media (max-width: 767px) {
+                font-size: 14px;
+            }
+        }
+    }
+
+    .prescription_wrap {
+        border-top: 1px solid #D3DEE9;
+        margin-top: 18px;
+        padding: 0 24px 24px;
+
+        .table-responsive {
+            border-radius: 0px 0px 14px 14px;
+            background: #FFF;
+            box-shadow: 0px 8px 20px 0px rgba(0, 40, 85, 0.06);
+            height: calc(100vh - 200px);
+
+            table {
+                th {
+                    background-color: #F0F7FD;
+                    font-weight: 500;
+                    border-bottom: none;
+                    font-size: 13px;
+                }
+
+                td {
+                    border-color: $light-blue-contrast-color;
+                    font-size: 14px;
+                    font-weight: 300;
+                }
+
+                .form-switch {
+                    .form-check-input {
+                        width: 36px;
+                        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3E%3Ccircle r='3' fill='%23FFF'/%3E%3C/svg%3E");
+                        background-color: $light-gray-color;
+                        height: 16px;
+                        box-shadow: none;
+
+                        &:checked {
+                            background-color: $blue-color;
+                            box-shadow: none;
+                        }
+                    }
+                }
+            }
+        }
+
+        .border_left {
+            border-left: 0.24px solid #D3DEE9;
+        }
+
+        h4 {
+            color: $blue-color;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 23.04px;
+        }
+    }
+}

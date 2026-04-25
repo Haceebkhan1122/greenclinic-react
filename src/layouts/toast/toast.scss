@@ -1,0 +1,30 @@
+.toast-wraper {
+    width: 100%;
+    height: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0F75BC;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+
+    span {
+        color: #FFF;
+        font-family: "Anek Malayalam";
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+
+        .bolding {
+            color: #FFF;
+            font-family: "Anek Malayalam";
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+    }
+}

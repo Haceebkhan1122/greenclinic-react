@@ -1,0 +1,87 @@
+@import '../../../assets/css/variable.scss';
+
+.assignDoctor {
+    z-index: 9999999 !important;
+
+    .modal-content {
+        border-radius: 15px;
+        background: $white-color;
+
+        .close {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            z-index: 9;
+        }
+
+        .modal-title {
+            color: $blue-color;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 23.04px;
+        }
+
+        .modal-body {
+            padding-left: 0;
+            padding-right: 0;
+
+            form {
+                padding-left: 1rem;
+                padding-right: 1rem;
+
+                .form-label {
+                    color: $body-text-color;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                }
+
+                .form-select {
+                    border-radius: 25px;
+                    background-color: #F2F9FF;
+                    border: none;
+                }
+
+                .form_btn {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    border-top: 1px solid #E2EAF0;
+                    padding-top: 24px;
+                    margin-top: 36px;
+
+                    @media (min-width : 0px) and (max-width : 768px) {
+                        justify-content: center;
+                        gap: 22px;
+                    }
+
+                    button {
+                        width: 228px;
+                        height: 50px;
+                        font-size: 18px;
+                        font-weight: 600;
+                    }
+
+                    @media (max-width: 767px) {
+                        border-top: none;
+                        margin-top: 0;
+                        button {
+                            width: 138px;
+                            height: 40px;
+                            font-size: 15px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .button2 {
+        &:disabled {
+            opacity: 0.7;
+            cursor: not-allowed;
+        }
+    }
+}

@@ -1,0 +1,225 @@
+@import '../../../../src/assets/css/variable.scss';
+
+.mobilebgColor {
+    @media(min-width:0) and (max-width:767px) {
+        background: #fff;
+        padding: 10px;
+    }
+}
+
+.expensesCategoryTab {
+    @media(min-width:0) and (max-width:767px) {
+        // margin-top: 10px;
+    }
+
+    .catDown {
+        display: flex;
+        width: 162px;
+        height: 36px;
+        padding: 12px 10px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        border-radius: 100px;
+        border: 1px solid #0F75BC;
+        color: #0F75BC;
+        text-align: center;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        position: absolute;
+        top: 8px;
+        right: 22px;
+        text-align: center;
+        z-index: 99;
+        cursor: pointer;
+
+        @media (min-width : 0px) and (max-width : 768px) {
+            display: none;
+        }
+    }
+
+
+    .table__wrape {
+        padding: 0;
+
+        th {
+            height: 48px;
+            background: #F2F5F8;
+            color: #000;
+            font-family: "Anek Malayalam";
+            font-size: 15px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            vertical-align: middle;
+            padding-left: 71px;
+            width: 85%;
+        }
+
+        td {
+            height: 47px;
+            color: #313131;
+            font-size: 15px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            padding-left: 71px;
+            vertical-align: middle;
+        }
+
+        .actions {
+            .deleteIcon {
+                background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M17.5437 7.05014C17.7405 7.05014 17.9292 7.12464 18.0684 7.25726C18.2076 7.38987 18.2857 7.56974 18.2857 7.75728C18.2857 7.94483 18.2076 8.12469 18.0684 8.25731C17.9292 8.38992 17.7405 8.46443 17.5437 8.46443H16.8016L16.7994 8.51463L16.107 17.7577C16.0804 18.1145 15.9128 18.4484 15.6381 18.6922C15.3634 18.936 15.002 19.0716 14.6266 19.0716H8.58696C8.21158 19.0716 7.85014 18.936 7.57544 18.6922C7.30075 18.4484 7.1332 18.1145 7.10654 17.7577L6.4142 8.51534C6.41307 8.49839 6.41258 8.48141 6.41272 8.46443H5.67065C5.47384 8.46443 5.2851 8.38992 5.14593 8.25731C5.00677 8.12469 4.92859 7.94483 4.92859 7.75728C4.92859 7.56974 5.00677 7.38987 5.14593 7.25726C5.2851 7.12464 5.47384 7.05014 5.67065 7.05014H17.5437ZM15.3153 8.46443H7.89907L8.5877 17.6573H14.6266L15.3153 8.46443ZM13.0913 4.92871C13.2881 4.92871 13.4768 5.00321 13.616 5.13583C13.7552 5.26844 13.8334 5.44831 13.8334 5.63585C13.8334 5.8234 13.7552 6.00326 13.616 6.13588C13.4768 6.26849 13.2881 6.343 13.0913 6.343H10.123C9.92623 6.343 9.73748 6.26849 9.59832 6.13588C9.45915 6.00326 9.38097 5.8234 9.38097 5.63585C9.38097 5.44831 9.45915 5.26844 9.59832 5.13583C9.73748 5.00321 9.92623 4.92871 10.123 4.92871H13.0913Z' fill='%23FC5C5C'/%3E%3C/svg%3E");
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+                display: block;
+                width: 24px;
+                height: 24px;
+                cursor: pointer;
+            }
+
+            .editIcon {
+                background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20' fill='none'%3E%3Cpath d='M5.42466 14.5753H6.42192L12.5658 8.43151L11.5685 7.43425L5.42466 13.5781V14.5753ZM15.611 7.39863L12.5836 4.40685L13.5808 3.40959C13.8539 3.13653 14.1893 3 14.587 3C14.9847 3 15.3201 3.13653 15.5932 3.40959L16.5904 4.40685C16.8635 4.67991 17.0059 5.00936 17.0178 5.39521C17.0297 5.78105 16.8991 6.1105 16.626 6.38356L15.611 7.39863ZM14.5781 8.44932L7.0274 16H4V12.9726L11.5507 5.42192L14.5781 8.44932ZM12.0671 7.93288L11.5685 7.43425L12.5658 8.43151L12.0671 7.93288Z' fill='%23118BE2'/%3E%3C/svg%3E");
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+                display: block;
+                width: 24px;
+                height: 24px;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.wraper_all_categoriesMobile {
+    background-color: #FFF;
+    border-radius: 10px;
+    padding: 10px;
+
+    @media(min-width:0) and (max-width:767px) {
+        background-color: #fff0;
+        padding: 0;
+
+    }
+}
+
+.single__card_mobileCat {
+    width: 92%;
+    min-height: 52px;
+    border-radius: 8px;
+    background: #FFF;
+    box-shadow: 4px 10px 20.4px 0px rgba(0, 0, 0, 0.09);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 12px;
+
+    @media(min-width:0) and (max-width:767px) {
+        width: 100%;
+    }
+
+    .descSingle {
+        font-size: 14px;
+    }
+
+    .left {
+        display: flex;
+        flex-direction: column;
+
+        .descSingle {
+            color: $blue-color;
+            font-family: "Anek Malayalam";
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+
+        .descSingleDateMed {
+            color: $blue-color;
+            font-family: "Anek Malayalam";
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+        }
+
+        p {
+            margin: 0px !important;
+        }
+    }
+
+    .rightt {
+        display: flex;
+        flex-direction: column;
+
+        .price {
+            display: inline-flex;
+            height: 19.534px;
+            padding: 6px 5px;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            flex-shrink: 0;
+            border-radius: 4px;
+            background: var(--Mango-light, #FBF5E7);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: $blue-color;
+            font-family: "Anek Malayalam";
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            margin-bottom: 10px;
+        }
+    }
+}
+
+
+.search__barCat {
+    display: flex;
+    align-items: center;
+    width: 96%;
+    max-width: 320px;
+    height: 36px;
+    align-items: center;
+    border-radius: 23.25px;
+    background: #F2F9FF;
+    margin: auto;
+    padding: 0px 10px;
+    gap: 6px;
+
+    @media(min-width:0) and (max-width:767px) {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    svg {
+        width: 24px;
+        height: 24px;
+    }
+
+    input {
+        width: 80%;
+        background-color: transparent;
+
+        &::placeholder {
+            @media (min-width : 0px) and (max-width : 768px) {
+                color: #313131;
+                font-family: "Anek Malayalam";
+                font-size: 12px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+            }
+        }
+    }
+
+
+}

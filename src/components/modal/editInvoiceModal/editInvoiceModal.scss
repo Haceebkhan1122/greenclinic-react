@@ -1,0 +1,118 @@
+@import "../../../assets/css/variable.scss";
+
+.editInovice {
+    .modal-dialog {
+        max-width: 900px;
+
+        .modal-content {
+            border-radius: 15.385px;
+            background: $white-color;
+            border: none;
+
+            .modal-body {
+                padding-bottom: 0;
+                .close {
+                    position: absolute;
+                    right: 10px;
+                    top: 10px;
+                }
+
+                h4 {
+                    color: $blue-color;
+                    font-size: 20px;
+                    font-style: normal;
+                    margin-bottom: 0;
+                    font-weight: 500;
+                    padding-bottom: 16px;
+                    line-height: 23.04px;
+                    border-bottom: 1px solid $light-blue-contrast-color;
+                }
+
+                .form-control,
+                .form-select {
+                    border-radius: 25px;
+                    background-color: $background-color;
+                    border: none;
+                    color: $black4-color;
+                    height: 43px;
+                    font-style: normal;
+                    font-weight: 300;
+                    line-height: normal;
+                }
+
+                .form-label {
+                    color: $body-text-color;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                }
+
+                .add_procedure {
+                    color: #212121;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 23.04px;
+                    display: flex;
+                    text-decoration: none;
+                    margin-bottom: 13px;
+                    gap: 6px;
+
+                    img {
+                        width: 20px;
+                        height: 20px;
+                    }
+                }
+
+                .border-left {
+                    border-left: 1px solid $light-blue-contrast-color;
+                    padding-left: 10px;
+                    height: 100%;
+
+                    .box-value {
+                        border-radius: 20px;
+                        border: 1px solid $background-color;
+                        padding: 10px 20px;
+                        background: rgba(242, 249, 255, 0.45);
+
+                        ul {
+                            li {
+                                display: flex;
+                                justify-content: space-between;
+                                align-items: center;
+                                color: $black-color;
+                                font-size: 16px;
+                                font-style: normal;
+                                font-weight: 400;
+                                line-height: normal;
+                                margin-bottom: 20px;
+
+                                span {
+                                    color: $black4-color;
+                                    font-size: 16px;
+                                    font-style: normal;
+                                    font-weight: 300;
+                                    line-height: normal;
+                                }
+                            }
+                        }
+                    }
+
+                    .button_wrap {
+                        display: flex;
+                        align-items: center;
+                        margin-top: 20px;
+                        justify-content: space-between;
+
+                        button {
+                            width: 150px;
+                            height: 40px;
+                            padding: 0 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

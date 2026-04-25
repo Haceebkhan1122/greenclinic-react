@@ -1,0 +1,182 @@
+@import "../../../assets/css/variable.scss";
+
+.healthRecordsPatientProfile {
+    z-index: 9999999 !important;
+
+    @media (max-width: 767px) {
+        padding-left: 0 !important;
+    }
+
+    .modal-dialog {
+        @media (max-width: 767px) {
+            width: 100%;
+            height: 100%;
+            padding: 0;
+            margin: 0;
+            max-width: 100% !important;
+        }
+
+        .modal-content {
+            border-radius: 15.385px;
+            background: $white-color;
+
+            @media (max-width: 767px) {
+                background-color: #f2f9ff;
+                border: none;
+                border-radius: 0 !important;
+                height: 100%;
+            }
+
+            .modal-body {
+                padding-left: 20px;
+                padding-right: 20px;
+
+                @media (max-width: 767px) {
+                    padding: 0;
+                }
+
+                .button2 {
+                    @media(min-width:0) and (max-width:767px) {
+                        width: 100% !important;
+                    }
+
+
+                }
+
+                h2 {
+                    color: $blue-color;
+                    font-size: 20px;
+                    border-bottom: 1px solid $light-blue-contrast-color;
+                    font-style: normal;
+                    margin-bottom: 0;
+                    padding-bottom: 20px;
+                    font-weight: 500;
+                    line-height: 23.04px;
+
+                    img {
+                        display: none;
+                    }
+
+                    @media (max-width: 767px) {
+                        padding-top: 21px;
+                        padding-left: 20px;
+                        padding-right: 20px;
+                        font-size: 18px;
+                        font-weight: 600;
+                        align-items: center;
+                        background-color: white;
+                        box-shadow: 0px 3.998px 19.088px 0px rgba(0, 0, 0, 0.06);
+                        border-bottom: none;
+                        display: flex;
+
+                        img {
+                            display: block;
+                            width: 18px;
+                            height: 18px;
+                            margin-right: 10px;
+                        }
+                    }
+                }
+
+                .box-fixed {
+                    button {
+                        width: 100%;
+                        box-shadow: 0px 2.635px 13.176px 0px rgba(15, 117, 188, 0.30);
+                        padding: 8.5px 0px;
+                        text-transform: uppercase;
+                    }
+                }
+
+                .token{
+                    display: flex;
+                    justify-content: space-between;
+                    .dropdownUpcoming{
+                        
+                    }
+                }
+
+                .card {
+                    border-radius: 7.665px;
+                    background: #FFF;
+                    padding: 10px 12px;
+                    margin: 15px 20px 10px;
+                    box-shadow: 4px 10px 20.4px 0px rgba(0, 0, 0, 0.09);
+
+                    p {
+                        color: #313131;
+                        font-size: 14px;
+                        font-style: normal;
+                        font-weight: 300;
+                        margin: 0;
+                        line-height: normal;
+                    }
+
+                    .menuIcon {
+                        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='4' viewBox='0 0 12 4' fill='none'%3E%3Cpath d='M-6.55671e-08 2C-4.75361e-08 1.5875 0.146874 1.23437 0.440624 0.940625C0.734375 0.646875 1.0875 0.5 1.5 0.5C1.9125 0.5 2.26562 0.646875 2.55937 0.940625C2.85312 1.23437 3 1.5875 3 2C3 2.4125 2.85312 2.76562 2.55937 3.05937C2.26562 3.35312 1.9125 3.5 1.5 3.5C1.0875 3.5 0.734375 3.35312 0.440624 3.05937C0.146874 2.76562 -8.3598e-08 2.4125 -6.55671e-08 2ZM4.5 2C4.5 1.5875 4.64687 1.23437 4.94062 0.940625C5.23437 0.646875 5.5875 0.5 6 0.5C6.4125 0.5 6.76562 0.646875 7.05937 0.940625C7.35312 1.23437 7.5 1.5875 7.5 2C7.5 2.4125 7.35312 2.76562 7.05937 3.05937C6.76562 3.35312 6.4125 3.5 6 3.5C5.5875 3.5 5.23437 3.35312 4.94062 3.05937C4.64687 2.76562 4.5 2.4125 4.5 2ZM9 2C9 1.5875 9.14687 1.23437 9.44062 0.940625C9.73437 0.646875 10.0875 0.5 10.5 0.5C10.9125 0.5 11.2656 0.646875 11.5594 0.940625C11.8531 1.23438 12 1.5875 12 2C12 2.4125 11.8531 2.76562 11.5594 3.05938C11.2656 3.35313 10.9125 3.5 10.5 3.5C10.0875 3.5 9.73437 3.35312 9.44062 3.05937C9.14687 2.76562 9 2.4125 9 2Z' fill='%230F345A'/%3E%3C/svg%3E");
+                        background-repeat: no-repeat;
+                        background-size: contain;
+                        background-position: center;
+                        display: block;
+                        width: 15px;
+                        height: 5px;
+                    }
+
+                    h4 {
+                        color: #313131;
+                        font-size: 14px;
+                        font-style: normal;
+                        margin: 0;
+                        font-weight: 300;
+                        line-height: normal;
+                    }
+
+                    .amount {
+                        display: flex;
+                        justify-content: space-between;
+
+                        h5 {
+                            color: #0F75BC;
+                            font-size: 14px;
+                            font-style: normal;
+                            margin: 0;
+                            font-weight: 400;
+                            line-height: normal;
+
+                            span {
+                                color: #313131;
+                                font-size: 14px;
+                                font-style: normal;
+                                font-weight: 400;
+                                line-height: normal;
+                            }
+                        }
+                    }
+
+                    .time {
+                        display: flex;
+                        justify-content: space-between;
+
+                        span {
+                            color: #313131;
+                            font-size: 14px;
+                            font-style: normal;
+                            font-weight: 300;
+                            line-height: normal;
+                        }
+
+                        p {
+                            border-radius: 4px;
+                            background: #F2F9FF;
+                            color: #474254;
+                            font-family: "Anek Malayalam";
+                            font-size: 12px;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: normal;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

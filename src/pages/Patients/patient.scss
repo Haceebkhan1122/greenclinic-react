@@ -1,0 +1,329 @@
+@import "../../assets/css/variable.scss";
+
+.patient {
+    .box-white {
+        height: auto;
+    }
+
+    .disabled {
+        pointer-events: none;
+        opacity: 0.5;
+        cursor: not-allowed;
+    }
+
+    .noRsult {
+        text-align: center;
+        padding: 20px;
+        border: none;
+    }
+
+    .btn-icon {
+        display: flex;
+        justify-content: end;
+        gap: 14px;
+
+        button {
+            svg {
+                color: $blue-color;
+                width: 24px;
+                height: 24px;
+            }
+
+            &:last-child {
+                svg {
+                    color: #FC5C5C;
+                }
+            }
+        }
+    }
+
+    .top_wrap {
+
+        .filter-by-div {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .filter {
+                background-color: $background-color;
+                border-radius: 100px;
+                border: none;
+                width: 70%;
+            }
+
+            p {
+                color: $dark-color;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                margin-bottom: 0;
+                line-height: normal;
+
+                @media(min-width:0) and (max-width:767px) {
+                    font-size: 14px !important;
+
+                }
+
+            }
+
+        }
+
+        .button1 {
+            padding: 10px 12px;
+
+
+            width: 100%;
+
+
+
+        }
+
+        .search__bar {
+            justify-content: left;
+            gap: 10px;
+
+            input {
+                width: 100%;
+            }
+        }
+    }
+
+    .bottom_wrap {
+        .table {
+            th {
+                background-color: $light-pink-color;
+                color: $black-color;
+                font-size: 15px;
+                font-style: normal;
+                font-weight: 400;
+                padding-left: 30px;
+                padding-right: 30px;
+                line-height: normal;
+            }
+
+            .yellow-bg {
+                background-color: #F8E9C5;
+            }
+
+            td {
+                vertical-align: middle;
+                font-size: 15px;
+                padding-left: 30px;
+                padding-right: 30px;
+
+                .wrape_actions {
+                    gap: 14px;
+                    justify-content: end;
+                    align-items: center;
+
+
+
+                    a,
+                    button {
+                        width: 24px;
+                        height: 24px;
+
+                        svg,
+                        .deleteIcon {
+                            width: 24px;
+                            color: $blue-color;
+                            height: 24px;
+
+
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .boxBtn {
+        display: flex;
+        padding: 10px 10px 22px;
+        gap: 10px;
+
+        .pagination_hk {
+
+            .pagination_hk {
+                display: flex;
+                gap: 10px;
+
+
+                .countPagination {
+                    color: rgba(49, 49, 49, 0.80);
+                    text-align: center;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 300;
+                    line-height: normal;
+                }
+
+
+                a {
+                    color: rgba(49, 49, 49, 0.80);
+                    text-align: center;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 300;
+                    line-height: normal;
+                }
+            }
+        }
+    }
+
+    .patient-mobile {
+        .search__bar {
+            justify-content: left;
+            gap: 10px;
+            border-radius: 100px;
+            margin-bottom: 10px !important;
+            background: #fff;
+            display: flex;
+            align-items: center;
+            padding: 10px 16px;
+
+            input {
+                width: 100%;
+            }
+        }
+
+        .filter-by-div {
+            display: flex;
+            align-items: center;
+            margin-top: 10px !important;
+            margin-bottom: 0;
+            justify-content: space-between;
+
+            .filter {
+                background-color: $white-color !important;
+                width: 75% !important;
+            }
+
+            p {
+                color: $dark-color;
+                font-size: 16px;
+                display: block;
+                font-style: normal;
+                font-weight: 400;
+                margin-bottom: 0;
+                line-height: normal;
+            }
+        }
+
+        .card {
+            padding: 12px 14px;
+            border-radius: 14px;
+            background: #FFF;
+            box-shadow: 0px 8px 20px 0px rgba(0, 40, 85, 0.06);
+
+            span {
+                color: $body-text-color;
+                font-size: 12px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+            }
+
+            h4 {
+                color: $body-text-color;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                margin-bottom: 0;
+                line-height: normal;
+            }
+
+            p {
+                color: $body-text-color;
+                font-size: 12px;
+                font-style: normal;
+                font-weight: 400;
+                margin-bottom: 0;
+                line-height: normal;
+            }
+
+            .mr-no {
+                border-radius: 4px;
+                position: absolute;
+                top: 10px;
+                right: 10px;
+                color: $body-text-color;
+                font-size: 12px;
+                font-style: normal;
+                font-weight: 600;
+                padding: 6px 5px;
+                border-radius: 3.832px;
+                background: #F6F8FA;
+            }
+
+            span {
+                svg {
+                    width: 16px;
+                    height: 16px;
+                    color: #0F75BC;
+                }
+            }
+
+            .link {
+                svg {
+                    color: black;
+                }
+            }
+        }
+
+        .box-fixed {
+            .button2 {
+                padding: 10px;
+                width: 100%;
+
+                @media(min-width:0) and (max-width:767px) {
+                    width: 100% !important;
+                }
+            }
+        }
+    }
+
+    .wraper_date :where(.css-dev-only-do-not-override-cdzvx5).ant-picker-outlined:focus-within {
+        outline: 0 !important;
+        box-shadow: 0 0 0 2px rgb(5 145 255 / 0%) !important;
+    }
+
+    .wraper_date {
+        .iconCalander {
+            display: flex;
+            width: 83px;
+            height: 40px;
+            padding: 8px 13px;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            flex-shrink: 0;
+            border-radius: 10px;
+            background: #FFF;
+            box-shadow: 0px 4px 20px 0px rgba(238, 238, 238, 0.60);
+            position: relative;
+        }
+
+        .datePickerMob {
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            opacity: 0;
+        }
+    }
+}
+
+.card {
+    .wrape_actions {
+
+        svg {
+            @media(min-width:0) and (max-width:767px) {
+                width: 20px;
+                height: 20px;
+            }
+
+        }
+    }
+}

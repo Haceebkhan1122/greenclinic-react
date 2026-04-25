@@ -1,0 +1,233 @@
+@import "../../assets/css/variable.scss";
+
+.prescriptions {
+
+    .filterIcon {
+        display: none;
+
+        @media (min-width : 0px) and (max-width : 768px) {
+            position: fixed;
+            bottom: 22px;
+            right: 22px;
+            display: block;
+            width: 40px;
+            height: 40px;
+        }
+    }
+    .btn-icon {
+        display: flex;
+        justify-content: end;
+        gap: 14px;
+
+        button {
+            svg {
+                color: $blue-color;
+                width: 24px;
+                height: 24px;
+            }
+
+            &:last-child {
+                svg {
+                    color: #FC5C5C;
+                }
+            }
+        }
+    }
+
+    .top_wrap {
+
+        .filter-by-div {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .filter {
+                background-color: $background-color;
+                border-radius: 100px;
+                border: none;
+                width: 70%;
+            }
+
+            p {
+                color: $dark-color;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                margin-bottom: 0;
+                line-height: normal;
+            }
+        }
+
+        .button1 {
+            padding: 10px 12px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .search__bar {
+            justify-content: left;
+            gap: 10px;
+
+            input {
+                width: 100%;
+            }
+        }
+    }
+
+    .bottom_wrap {
+        .table {
+            th {
+                background-color: $light-pink-color;
+                color: $black-color;
+                font-size: 13px;
+                font-style: normal;
+                font-weight: 400;
+                padding-left: 30px;
+                padding-right: 30px;
+                line-height: normal;
+            }
+
+            .yellow-bg {
+                background-color: #F8E9C5;
+            }
+
+            td {
+                vertical-align: middle;
+                font-size: 15px;
+                padding-left: 30px;
+                padding-right: 30px;
+
+                .wrape_actions {
+                    gap: 14px;
+                    justify-content: end;
+                    align-items: center;
+
+                    button {
+                        @media (min-width : 0px) and (max-width : 768px) {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            text-align: center;
+                        }
+
+                        svg,
+                        .deleteIcon {
+                            width: 15px;
+                            height: 13.929px;
+                            color: $blue-color;
+                        }
+                    }
+
+                    .link {
+                        svg {
+                            color: #313131;
+                            width: 15px;
+                            height: 13.929px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .prescription-mobile {
+        background-color: $white-color !important;
+        padding: 12px 10px;
+        border-radius: 10px;
+        position: relative;
+
+
+        .button1 {
+            padding: 10px 12px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            font-size: 12px;
+            gap: 5px;
+        }
+
+        .search__bar {
+            border-radius: 100px;
+            background: #f2f9ff;
+            display: flex;
+            align-items: center;
+            padding: 7px 16px;
+            gap: 4px;
+
+            input {
+                width: 100%;
+                color: $body-text-color;
+                background-color: transparent;
+                font-size: 12px;
+            }
+        }
+
+        .card {
+            border-radius: 8px;
+            background: #FBFBFB;
+            box-shadow: 4px 10px 20.4px 0px rgba(0, 0, 0, 0.09);
+            padding: 12px 10px;
+            position: relative;
+
+            span {
+                color: $body-text-color;
+                font-size: 12px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+            }
+
+            h4,
+            p {
+                color: $body-text-color;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                margin-bottom: 0;
+                line-height: normal;
+            }
+
+            .mr-no {
+                border-radius: 4px;
+                position: absolute;
+                top: 10px;
+                right: 10px;
+                color: $body-text-color;
+                font-size: 12px;
+                font-style: normal;
+                font-weight: 600;
+                padding: 6px 5px;
+                background: $white-color;
+            }
+            span{
+                svg{
+                    width: 16px;
+                    height: 16px;
+                    color: #0F75BC;
+                }
+            }
+            .link{
+                svg{
+                    color: black;
+                }
+            }
+        }
+    }
+}
+
+.wrape_actionsRE {
+    gap: 14px;
+    justify-content: end;
+    align-items: center;
+
+    button {
+        @media (min-width : 0px) and (max-width : 768px) {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+    }
+}

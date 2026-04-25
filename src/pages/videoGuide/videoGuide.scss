@@ -1,0 +1,19 @@
+@import "../../assets/css/variable.scss";
+
+.video-guide {
+    .boxed-bg {
+        border-radius: 14px;
+        background: #FFF;
+        height: 802px;
+        box-shadow: 0px 2.973px 14.865px 0px rgba(0, 40, 85, 0.20);    
+        padding: 36px 13px;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        @media (max-width: 767px){
+            min-height: 802px;
+            height: 100%;
+            overflow-y: inherit;
+            padding: 13px;
+        }
+    }
+}

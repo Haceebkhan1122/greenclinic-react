@@ -1,0 +1,528 @@
+@import "../../../assets/css/variable.scss";
+
+.examinationTabOffline {
+    .examinationConsultNowTab {
+        padding: 0px 20px;
+        height: 755px;
+        user-select: none;
+
+        .col-lg-12 {
+
+            ul {
+                height: auto;
+                overflow-y: hidden;
+            }
+        }
+
+
+        h3 {
+            color: $blue-color;
+            font-family: "Anek Malayalam";
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 23.04px;
+            border-bottom: 1px solid #8E96A0;
+            ;
+            padding-bottom: 10px;
+            padding-top: 20px;
+            margin-bottom: 0px !important;
+        }
+
+
+        .col-lg-6 {
+            &:nth-child(1) {
+                height: 100%;
+                border-right: 1px solid #D3DEE9;
+            }
+        }
+
+
+        .wrape_fileds {
+            display: block;
+            height: 600px;
+            padding: 16px 0px;
+
+            ul {
+                height: auto;
+                overflow: hidden;
+            }
+
+            .singleTextArea {
+                display: flex;
+                flex-direction: column;
+                align-items: start;
+                justify-content: start;
+                gap: 4px;
+                user-select: none;
+
+
+                label {
+                    color: #313131;
+                    font-family: "Anek Malayalam";
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                }
+
+                textarea {
+                    width: 100%;
+                    resize: none;
+                    height: 60px;
+                    border-radius: 8px;
+                    background: rgba(188, 209, 230, 0.30);
+                    color: #313131;
+                    font-family: "Anek Malayalam";
+                    font-size: 12px;
+                    font-style: normal;
+                    font-weight: 300;
+                    line-height: normal;
+                    padding: 12px;
+                    -webkit-user-select: none;
+                    -ms-user-select: none;
+                    user-select: none;
+                }
+
+                .text {
+                    width: 100%;
+                    resize: none;
+                    border-radius: 8px;
+                    background: rgba(188, 209, 230, 0.30);
+                    color: #313131;
+                    font-family: "Anek Malayalam";
+                    font-size: 12px;
+                    font-style: normal;
+                    font-weight: 300;
+                    line-height: normal;
+                    padding: 12px;
+                    -webkit-user-select: none;
+                    -ms-user-select: none;
+                    user-select: none;
+                }
+            }
+
+            .checksWraping {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+
+                .singleTick {
+                    label {
+                        color: #313131;
+                        font-family: "Anek Malayalam";
+                        font-size: 13px;
+                        font-style: normal;
+                        font-weight: 300;
+                        line-height: normal;
+                        padding-left: 25px;
+                    }
+
+                    input {
+                        width: 18px;
+                        height: 18px;
+                    }
+                }
+
+                .singleTick input:checked label {}
+
+                span {
+                    width: 18px;
+                    height: 18px;
+                    position: absolute;
+                }
+            }
+
+
+
+        }
+
+        .dagnosis-form {
+            .form-group {
+                display: flex;
+                gap: 20px;
+
+                .dropdown {
+                    border-radius: 100px;
+                    border: 1px solid #C5DFF2;
+                    width: 100%;
+                    padding: 4.5px 10px;
+                    position: relative;
+
+                    .tabslidedown {
+                        color: #2196f3;
+                        font-size: 15px;
+                        width: 100%;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: normal;
+
+                        &::before {
+                            content: '';
+                            position: absolute;
+                            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='17' height='16' viewBox='0 0 17 16' fill='none'%3E%3Cpath d='M13.1546 7.33301L8.48796 11.9997L3.82129 7.33301' stroke='%230F75BC' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+                            top: 6px;
+                            margin: 0;
+                            bottom: 0;
+                            right: 10px;
+                            background-position: center;
+                            background-repeat: no-repeat;
+                            background-size: cover;
+                            width: 16px;
+                            height: 16px;
+                        }
+                    }
+
+                    .family {
+                        color: #000000;
+                        font-size: 15px;
+                        width: 100%;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: normal;
+                    }
+
+                    .tabdropdown-slide {
+                        display: none;
+
+                        #search {
+                            background-color: #eaf3fa !important;
+                            border-color: #eaf3fa !important;
+                            width: 100%;
+                            box-sizing: border-box;
+                            border-radius: 100px;
+                            background-image: url('../../../assets/images/svg/search.svg') !important;
+                            background-position: 12px 5px;
+                            background-repeat: no-repeat;
+                            padding: 7px 20px 7px 50px;
+                            color: #757575 !important;
+                            font-size: 14px;
+                            font-style: normal;
+                            font-weight: 400;
+                        }
+
+                        .quick {
+                            padding: 20px 0 16px;
+
+                            h5 {
+                                color: #313131;
+                                font-size: 12px;
+                                margin-top: 0;
+                                font-style: normal;
+                                font-weight: 500;
+                                margin-bottom: 10px;
+                                line-height: normal;
+                            }
+
+                            ul {
+                                display: flex;
+                                flex-wrap: wrap;
+                                list-style-type: none;
+                                flex-direction: row !important;
+                                height: auto;
+                                gap: 16px;
+
+                                li {
+                                    border-radius: 40px;
+                                    background: rgba(17, 139, 226, 0.30);
+                                    padding: 8px 12px;
+                                    text-align: left;
+                                    border-bottom: none;
+                                    color: #118BE2;
+                                    display: inline-block;
+                                    width: auto;
+                                    height: auto;
+                                    font-size: 12px;
+                                    font-style: normal;
+                                    font-weight: 300;
+                                    line-height: normal;
+                                }
+                            }
+                        }
+
+                        .listing-val {
+                            gap: 0;
+
+                            .list-diagnosis {
+                                width: 100%;
+                                border-bottom: 1px solid #D9D9D9;
+                                padding: 12px 0;
+                                height: auto;
+                                justify-content: left;
+
+                                label {
+                                    font-size: 12px;
+                                    height: auto;
+                                    font-weight: 400;
+                                    line-height: 14.52px;
+                                    justify-content: left;
+                                    color: #313131;
+                                }
+
+                                input {
+                                    width: auto;
+                                    height: auto;
+                                }
+                            }
+                        }
+                    }
+
+                    .tabdropdown-slide.open {
+                        display: block;
+                        border-radius: 0px 0px 20px 20px;
+                        top: 32px;
+                        left: 0;
+                        width: 100%;
+                        padding: 20px 16px;
+                        min-height: 350px;
+                        height: 100%;
+                        z-index: 1;
+                        position: absolute;
+                        background: #FFF;
+                        box-shadow: 0px 2px 10px 0px rgba(0, 40, 85, 0.10);
+                        overflow-y: scroll;
+                    }
+                }
+
+                .form-button {
+                    a {
+                        border-radius: 100px;
+                        border: 1px solid $blue-color;
+                        padding: 4px 10px;
+                        text-decoration: none;
+                        text-align: center;
+                        font-size: 15px;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: normal;
+                    }
+                }
+            }
+        }
+
+
+        .wrape_filedsDiagnos {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+            padding: 16px 0px;
+
+            .singleIndicationsTabsWraper {
+                .singleIndicationsTabs {
+                    display: flex;
+                    flex-direction: column;
+                }
+            }
+
+            .singleTextArea {
+                label {
+                    color: #313131;
+                    margin-bottom: 10px;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                }
+            }
+
+            .radiosWraping {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                flex-wrap: wrap;
+                align-items: start;
+                justify-content: start;
+
+
+                .singleTick {
+                    label {
+                        color: #313131;
+                        font-family: "Anek Malayalam";
+                        font-size: 13px;
+                        font-style: normal;
+                        font-weight: 300;
+                        line-height: normal;
+                        padding-left: 9px;
+                    }
+
+                    input {
+                        width: 18px;
+                        height: 18px;
+                    }
+                }
+
+                .singleTick input:checked label {}
+
+                span {
+                    width: 18px;
+                    position: absolute;
+                    height: 18px;
+                }
+            }
+
+            .wraperSelect {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                .single_field {
+                    width: 85%;
+                    height: 30px;
+
+                    select {
+                        width: 100%;
+                        height: 100%;
+
+                        color: $blue-color;
+                        font-family: "Anek Malayalam";
+                        font-size: 15px;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: normal;
+                        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='17' height='16' viewBox='0 0 17 16' fill='none'%3E%3Cpath d='M13.1673 7.33325L8.50065 11.9999L3.83398 7.33325' stroke='%230F75BC' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+                        background-size: 16px;
+                    }
+                }
+
+
+                button {
+                    width: 14%;
+                    display: inline-flex;
+                    height: 30px;
+                    padding: 12px 10px;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 9px;
+                    flex-shrink: 0;
+                    color: $blue-color;
+                    text-align: center;
+                    font-size: 15px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: normal;
+                    border-radius: 100px;
+                    border: 1px solid $blue-color;
+                }
+            }
+
+
+            .singleIndicationsTabs {
+                .nav-tabs {
+                    width: 100%;
+                    height: unset;
+
+                    .nav-item {
+                        .nav-link {
+                            white-space: nowrap;
+                            font-family: "Anek Malayalam";
+                            font-size: 12px;
+                            font-style: normal;
+                            font-weight: 600;
+                            line-height: 20.642px;
+
+                            /* 147.442% */
+                            &.active {
+                                font-size: 14px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+.wrape_indication {
+    width: 100%;
+    height: 367px;
+    flex-shrink: 0;
+    border-radius: 0px 0px 14px 14px;
+    background: #FFF;
+    position: relative;
+    box-shadow: 0px 8px 20px 0px rgba(0, 40, 85, 0.06);
+
+    .tableConsultSub {
+        width: 100%;
+        height: 80%;
+        overflow-y: scroll;
+        padding-bottom: 30px;
+
+        table {
+            th {
+                background: #F0F7FD;
+                color: #313131;
+                font-family: "Anek Malayalam";
+                font-size: 12px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+            }
+
+            td {
+                color: #000;
+                font-family: "Anek Malayalam";
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 300;
+                line-height: normal;
+            }
+        }
+    }
+
+    .btnView {
+        width: 100%;
+        height: 20%;
+        display: flex;
+        background-color: #fff;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        bottom: 0;
+
+
+        span {
+            color: $blue-color;
+            text-align: center;
+            font-family: "Anek Malayalam";
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 40px;
+        }
+    }
+}
+
+
+.inActive {
+    color: #118BE2;
+    font-family: "Anek Malayalam";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-skip-ink: none;
+    text-decoration-thickness: auto;
+    text-underline-offset: auto;
+    text-underline-position: from-font;
+}
+
+
+.activeBtn {
+    display: inline-flex;
+    padding: 4px 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 20px;
+    background: rgba(132, 217, 91, 0.20);
+    color: #84D95B;
+    font-family: "Anek Malayalam";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}

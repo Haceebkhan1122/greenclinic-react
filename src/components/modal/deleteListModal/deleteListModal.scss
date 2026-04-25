@@ -1,0 +1,58 @@
+@import "../../../assets/css/variable.scss";
+
+.deletelistModal {
+    .modal-dialog {
+        max-width: 538px;
+
+        .modal-content {
+            border-radius: 15px;
+            border: none;
+
+            .modal-body {
+                padding: 59px 28px 30px;
+
+                .close_btn {
+                    position: absolute;
+                    top: 26px;
+                    right: 30px;
+                }
+
+                h4 {
+                    color: $body-text-color;
+                    text-align: center;
+                    font-size: 26px;
+                    font-style: normal;
+                    margin-bottom: 0;
+                    font-weight: 400;
+                    line-height: normal;
+                }
+
+                p {
+                    color: $body-text-color;
+                    font-size: 18px;
+                    font-style: normal;
+                    text-align: center;
+                    font-weight: 300;
+                    line-height: normal;
+                    width: 88%;
+                    margin: auto;
+                }
+
+                .button_wrap {
+                    text-align: center;
+                    margin-top: 27px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+
+                    button {
+                        text-transform: uppercase;
+                        width: 228px !important;
+                        height: 50px;
+                    }
+                }
+            }
+        }
+
+    }
+}

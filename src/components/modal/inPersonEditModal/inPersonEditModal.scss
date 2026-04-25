@@ -1,0 +1,462 @@
+@import '../../../assets/css/variable.scss';
+
+.modalInPersonConsult {
+
+    @media (min-width : 0px) and (max-width : 768px) {
+        padding: 0;
+        margin: 0;
+        z-index: 9999999999 !important;
+    }
+
+    .modal-dialog {
+        width: 100%;
+        max-width: 1290px;
+
+        @media (min-width : 0px) and (max-width : 768px) {
+            width: 100%;
+            max-width: 100%;
+            padding: 0;
+            margin: 0;
+        }
+    }
+
+    .back__ico {
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M7.81878 13.0004L13.4154 18.597L11.9913 19.9962L3.99609 12.001L11.9913 4.00586L13.4154 5.40501L7.81878 11.0016H19.9864V13.0004H7.81878Z' fill='%230F75BC'/%3E%3C/svg%3E");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        width: 24px;
+        height: 24px;
+        cursor: pointer;
+        display: none;
+
+        @media (min-width : 0px) and (max-width : 768px) {
+            display: block;
+        }
+    }
+
+    .cross_icc {
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16' fill='none'%3E%3Cpath d='M9.47885 8.13258L15.7348 14.3886L14.3886 15.7348L8.13258 9.47885L8 9.34626L7.86742 9.47885L1.61143 15.7348L0.265165 14.3886L6.52115 8.13258L6.65374 8L6.52115 7.86742L0.265165 1.61143L1.61143 0.265165L7.86742 6.52115L8 6.65374L8.13258 6.52115L14.3886 0.265165L15.7348 1.61143L9.47885 7.86742L9.34626 8L9.47885 8.13258Z' fill='%23313131' stroke='white' stroke-width='0.375'/%3E%3C/svg%3E");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        display: block;
+        width: 16px;
+        height: 16px;
+        position: absolute;
+        right: 22px;
+        cursor: pointer;
+
+        @media (min-width : 0px) and (max-width : 768px) {
+        top: 28px;
+        }
+    }
+
+    .modal-content {
+        width: 1290px;
+        height: 600px;
+        flex-shrink: 0;
+        border-radius: 15.385px;
+        background: #FFF;
+
+        @media (min-width : 0px) and (max-width : 768px) {
+            width: 100% !important;
+            height: 100vh !important;
+            max-width: 100%;
+            overflow-y: scroll;
+            position: fixed;
+            left: 0;
+            top: 0;
+            border-radius: 0px !important;
+            z-index: 9999999999;
+        }
+    }
+
+    .modal-body {
+        width: 100%;
+        height: 100%;
+        padding: 16px;
+
+        @media (min-width : 0px) and (max-width : 768px) {
+            padding: 0px !important;
+        }
+
+        .bg_from {
+            @media (min-width : 0px) and (max-width : 768px) {
+                height: calc(100vh - 85px);
+                overflow-y: auto;
+                background-color: #F2F9FF;;
+            }
+
+            h2 {
+                width: 97%;
+                margin: auto;
+                border-bottom: 0.24px solid #E2EAF0;
+                padding-bottom: 21px;
+                padding-top: 12px;
+                margin-bottom: 20px;
+                color: #0F75BC;
+                font-family: "Anek Malayalam";
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 23.04px;
+                padding-left: 0px;
+                display: flex;
+                align-items: center;
+                gap: 10px;
+
+                @media (min-width : 0px) and (max-width : 768px) {
+                    font-size: 16px !important;
+                    height: 80px;
+                    display: flex;
+                    width: 100%;
+                    padding: 0 12px;
+                    padding-left: 18px !important ; 
+                    border-bottom: 0px !important;
+                    margin-bottom: 0px !important;
+                }
+            }
+
+            .mobile_wrapeee {
+                display: flex;
+                flex-direction: row;
+
+                @media (min-width : 0px) and (max-width : 768px) {
+                    width: 90%;
+                    margin: auto;
+                    height: 924px;
+                    flex-shrink: 0;
+                    border-radius: 10px;
+                    background: #FFF;
+                    margin-right: 17px !important;
+                    padding: 12px 0px;
+                    overflow-y: scroll;
+                    display: flex;
+                    flex-direction: row;
+                }
+            }
+
+            form {
+                @media (min-width : 0px) and (max-width : 768px) {
+                    height: fit-content;
+                    max-height: fit-content;
+                    overflow-y: scroll;
+                    width: 100%;
+                    padding: 0 12px;
+                }
+
+                &::-webkit-scrollbar {
+                    display: none;
+                }
+
+                input,
+                select {
+                    border-radius: 25px;
+                    background-color: $background-color;
+                    border: none;
+                    height: 43px;
+                    width: 100%;
+                    padding: 6.794px 13.588px;
+                    color: #5E6366 !important;
+                }
+
+                input {
+                    &::placeholder {
+                        color: #5E6366 !important;
+                        font-family: "Anek Malayalam";
+                        font-size: 16px !important;
+                        font-style: normal;
+                        font-weight: 300;
+                        line-height: normal;
+                    }
+                }
+
+                label {
+                    color: $body-text-color;
+                    font-family: "Anek Malayalam";
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 400;
+                    margin-bottom: 0;
+                    line-height: normal;
+                }
+
+                .ant-input-affix-wrapper {
+                    background-color: #f2f9ff;
+                    border: none;
+                    border-radius: 25px;
+                    padding-top: 0;
+                    height: 43px;
+
+                    .ant-input {
+                        background-color: transparent;
+                        border-radius: 0;
+                        padding: 0;
+                    }
+                }
+
+                .MuiFormGroup-root {
+                    display: flex;
+                    border-radius: 23.178px;
+                    border: 0.927px solid $background-color;
+                    background: $background-color;
+                    flex-direction: row;
+                    gap: 20px;
+                    padding: 0 20px;
+
+                    @media (max-width: 767px) {
+                        padding: 0 14px;
+                    }
+
+                    .MuiFormControlLabel-root {
+                        margin-bottom: 0;
+                    }
+
+                    .MuiTypography-root {
+                        color: $body-text-color;
+                        font-family: "Anek Malayalam";
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: normal;
+
+                        @media (max-width: 767px) {
+                            font-size: 14px;
+                        }
+                    }
+                }
+
+                h4 {
+                    color: $blue-color;
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 26px;
+                }
+
+                .passCri {
+                    color: $blue-color;
+                    font-size: 13px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 26px;
+                }
+
+                .ant-checkbox-wrapper {
+                    .ant-checkbox-input {
+                        height: auto;
+                        border: 1px solid $light-blue-contrast-color;
+                    }
+
+                    .ant-checkbox-inner {
+                        width: 22px;
+                        border-radius: 50%;
+                        height: 22px;
+                    }
+                }
+            }
+
+            .scheduleInPerson {
+                @media (min-width : 0px) and (max-width : 768px) {
+                    height: 487px;
+                    overflow-y: scroll;
+                    width: 100%;
+                    padding: 0 12px;
+                }
+            }
+
+            .platform_fee {
+                color: $black-color;
+                font-size: 10px;
+                font-style: normal;
+                margin-top: 9px;
+                font-weight: 300;
+                margin-bottom: 0;
+                line-height: normal;
+
+                .anticon {
+                    color: $blue-color;
+                    font-size: 12px;
+                    margin-right: 6px;
+                }
+            }
+        }
+
+        ul {
+            li {
+                padding-bottom: 10px;
+                margin-bottom: 15px;
+                justify-content: space-between;
+                border-bottom: 1px solid $light-blue-contrast-color;
+
+                .days {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                }
+
+                .timing {
+                    text-align: right;
+
+                    .timing-inputs {
+                        display: flex;
+                        text-align: left;
+                        align-items: center;
+                        margin-top: 10px;
+                        justify-content: space-between;
+
+                        label {
+                            color: $body-text-color;
+                            font-family: "Anek Malayalam";
+                            font-size: 12px;
+                            font-style: normal;
+                            font-weight: 600;
+                            margin-bottom: 10px;
+                            line-height: normal;
+                        }
+
+                        input {
+                            border-radius: 100px;
+                            background: $background-color;
+                            border: none;
+                            padding: 12px;
+                            width: 100%;
+                        }
+                    }
+
+                    button {
+                        margin-top: 10px;
+                        margin-left: 0;
+                        padding: 0;
+                    }
+                }
+            }
+        }
+    }
+
+    .form_btn2 {
+        border-top: 1px solid #e2eaf0;
+        margin: 0 0 10px;
+        padding-top: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        @media (max-width: 767px) {
+            border-top: none;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: 0;
+            width: 100%;
+            padding: 22px;
+            border-radius: 14px 14px 0px 0px;
+            background: #FFF;
+            box-shadow: 0px -8px 20px 0px rgba(0, 40, 85, 0.06);
+            justify-content: center;
+
+            div {
+                display: flex;
+                width: 100%;
+                justify-content: space-evenly;
+                align-items: center;
+
+                button {
+                    padding: 0;
+                    width: 150px;
+                    margin-left: 0;
+                }
+            }
+        }
+    }
+
+    .scheduleInPerson {
+        height: 422px;
+        overflow-y: scroll;
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+
+        ul {
+            height: 380px;
+        }
+    }
+
+
+    .bottom_bar_btn {
+        display: none !important;
+
+        @media (min-width : 0px) and (max-width : 768px) {
+                width: 100%;
+                height: 85px;
+                flex-shrink: 0;
+                border-radius: 14px 14px 0px 0px;
+                background: #FFF;
+                box-shadow: 0px -8px 20px 0px rgba(0, 40, 85, 0.06);
+                position: fixed;
+                bottom: 0;
+                left: 0;
+                display: flex !important;
+                justify-content: center;
+                align-items: center;
+                gap: 18px;
+            }
+
+        button {
+            display: flex;
+            width: 150px;
+            height: 40px;
+            padding: 8.958px 7.465px;
+            justify-content: center;
+            align-items: center;
+            gap: 7.465px;
+            border-radius: 74.648px;
+            text-align: center;
+            font-family: "Anek Malayalam";
+            font-size: 15px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+
+            &:nth-child(1) {
+                border: 0.746px solid #0F75BC;
+                color: #0F75BC;
+            }
+
+            &:nth-child(2) {
+                background-color: #0F75BC;
+                color: #FFF;
+            }
+        }
+    }
+
+    .button12 {
+        display: flex;
+        width: 103px !important;
+        height: 40px;
+        padding: 12px 10px;
+        justify-content: center;
+        align-items: center;
+        gap: 9px;
+        flex-shrink: 0;
+        border-radius: 100px;
+        border: 1px solid #0F75BC;
+        color: #0F75BC;
+        text-align: center;
+        font-family: "Anek Malayalam";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        position: absolute;
+        right: 22px;
+        bottom: 22px;
+
+        @media (min-width : 0px) and (max-width : 768px) {
+            position: unset !important;
+        }
+    }
+}

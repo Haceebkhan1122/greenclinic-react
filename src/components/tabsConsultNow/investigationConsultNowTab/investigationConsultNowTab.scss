@@ -1,0 +1,155 @@
+.investigationConsultNowTab {
+    width: 100%;
+    height: 100%;
+    padding: 0px 20px;
+
+
+    .topCard {
+        width: 100%;
+        padding: 20px 0px;
+        border-bottom: 1px solid #8E96A0;;
+        padding-top: 14px !important;
+
+        h3 {
+            color: #0F75BC;
+            font-family: "Anek Malayalam";
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 23.04px;
+            border-bottom: 0.24px solid #8E96A0;;
+            padding-bottom: 10px;
+            margin-bottom: 15px;
+            /* 115.2% */
+        }
+
+
+        .single {
+            input {
+                width: 100%;
+                height: 43px;
+            }
+        }
+
+        select {
+            height: 43px;
+        }
+
+        .wraper_btn {
+
+            width: 100%;
+            display: flex;
+            align-items: end;
+            justify-content: end;
+            button {
+                display: flex;
+                width: 219px;
+                height: 50px;
+                padding: 12px 10px;
+            justify-content: center;
+            align-items: center;
+            gap: 9px;
+            flex-shrink: 0;
+            color: #0F75BC;
+            text-align: center;
+            font-family: "Anek Malayalam";
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            border-radius: 100px;
+            border: 1px solid #0F75BC;
+            margin-top: 20px;
+            align-self: flex-end;
+        }
+        }
+    }
+
+    .bottomCard {
+        width: 100%;
+        padding: 20px 0px;
+        padding-top: 12px !important;
+
+        h3 {
+            margin: 0px !important; 
+        }
+
+        .nav-tabs {
+            height: 54px;
+        }
+
+        .wrape_indication {
+            height: 200px;
+        }
+
+        .btnView {
+            height: 27%;
+        }
+
+        .tableConsultSub {
+        }
+
+        h3 {
+            color: #0F75BC;
+            font-family: "Anek Malayalam";
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 23.04px;
+            border-bottom: 0.24px solid #8E96A0;;
+            padding-bottom: 10px;
+            margin-bottom: 15px;
+            /* 115.2% */
+        }
+
+
+        .single {
+            input {
+                width: 100%;
+                height: 43px;
+            }
+        }
+
+        select {
+            height: 43px;
+        }
+
+        .wraper_btn {
+
+            width: 100%;
+            display: flex;
+            align-items: end;
+            justify-content: end;
+            button {
+                display: flex;
+                width: 219px;
+                height: 50px;
+                padding: 12px 10px;
+            justify-content: center;
+            align-items: center;
+            gap: 9px;
+            flex-shrink: 0;
+            color: #0F75BC;
+            text-align: center;
+            font-family: "Anek Malayalam";
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            border-radius: 100px;
+            border: 1px solid #0F75BC;
+            margin-top: 20px;
+            align-self: flex-end;
+        }
+        }
+    }
+
+    .wrape_actions {
+        svg {
+            fill: #0F75BC;
+            width: 16px;
+            height: 16px;
+            
+        }
+    }
+}

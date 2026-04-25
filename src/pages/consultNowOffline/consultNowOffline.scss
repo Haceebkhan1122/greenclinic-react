@@ -1,0 +1,489 @@
+@import "../../assets/css/variable.scss";
+
+.consult_now {
+    width: 100%;
+    min-height: 100vh;
+    box-shadow: 0px 8px 20px 0px rgba(0, 40, 85, 0.0784313725);
+    background-color: white;
+    border-radius: 15px;
+    position: relative;
+}
+
+.consult_now.consult_offline {
+    .patient_detial {
+        position: absolute;
+        top: 9px;
+        margin-bottom: 0;
+
+        @media (min-width:0px) and (max-width:767px) {
+            position: relative;
+        }
+    }
+
+
+    .wraperOfflineTabs {
+
+        .tabs_offline {
+            justify-content: end;
+            padding-right: 148px;
+            height: 60px;
+
+            @media (min-width:0px) and (max-width:767px) {
+                display: none;
+            }
+
+            .nav-link {
+                position: relative;
+                color: $body-text-color !important;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 300;
+                line-height: normal;
+
+                &:before {
+                    border-radius: 20px;
+                    border: 1px solid #E2EAF0;
+                    content: '';
+                    background: #F2F9FF;
+                    width: 14px;
+                    top: 22px;
+                    height: 14px;
+                    position: absolute;
+                    left: -4px;
+                }
+            }
+
+            .nav-link.active {
+                font-weight: 500;
+                border-bottom: none !important;
+
+                &:before {
+                    border-radius: 20px;
+                    border: 2.5px solid #ffffff;
+                    content: '';
+                    box-shadow: 0px 0px 0px 2px $blue-color;
+                    background-color: $blue-color;
+                }
+            }
+        }
+    }
+
+    .wraperOfflineTabs.patient_close{
+        .tabs_offline {
+            .nav-item {
+                display: none;
+            }
+        }
+    }
+
+    .visit {
+        background-color: $blue-color;
+        color: $white-color;
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        text-decoration: none;
+        border-radius: 50px;
+        padding: 4.5px 14px;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+
+        @media (min-width:0px) and (max-width:767px) {
+            position: initial;
+
+        }
+    }
+
+    .close_patient{
+        position: absolute;
+        right: 26px;
+        top: 22px;
+    }
+
+    .print_action {
+        height: 10%;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        background-color: $white-color;
+        border-top: 1px solid #D3DEE9;
+        padding: 14px 15px;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        gap: 20px;
+        width: 100%;
+
+        @media (min-width:0px) and (max-width:767px) {
+            position: fixed;
+            height: auto;
+            padding: 20px;
+            border-radius: 14px 14px 0px 0px;
+            background: #FFF;
+            gap: 11px;
+            box-shadow: 0px -8px 20px 0px rgba(0, 40, 85, 0.06);
+            justify-content: center;
+        }
+
+        button {
+            img {
+                width: 50px;
+                height: 50px;
+
+                @media (min-width:0px) and (max-width:767px) {
+                    width: 43.015px;
+                    height: 43.015px;
+                }
+            }
+        }
+
+        .button1 {
+            padding: 10px 19px;
+            font-size: 20px;
+            font-weight: 500;
+            width: 220px;
+        }
+
+        .button2 {
+            padding: 10px 19px;
+            font-size: 20px;
+            font-weight: 500;
+            box-shadow: 0px 4px 20px 0px rgba(15, 117, 188, 0.30);
+            width: 220px !important;
+
+            @media (min-width:0px) and (max-width:767px) {
+                font-size: 15px;
+                width: 144.934px !important;
+                height: 40px;
+                font-weight: 500 !important;
+                padding: 0 !important;
+                text-transform: uppercase;
+            }
+        }
+    }
+}
+
+
+
+.add-prescriptions {
+    .tabs_offline {
+        display: none;
+    }
+    .patient_details {
+        border-bottom: 1px solid #D3DEE9;
+        padding: 11px 20px 9px;
+    }
+    .button1 {
+        padding: 8px 35px;
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        justify-content: end;
+    }
+    .wraper_date {
+        width: 100%;
+        height: 44.594px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 14.865px;
+        flex-shrink: 0;
+        border-radius: 23.04px;
+        background: #F2F9FF;
+        position: relative;
+        .left_arrow {
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='7' height='12' viewBox='0 0 7 12' fill='none'%3E%3Cpath d='M6.07629 10.9909L1.22049 6.1351L6.07629 1.2793' stroke='%23313131' stroke-width='1.78376' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            display: block;
+            position: absolute;
+            left: 12px;
+            width: 7.648px;
+            height: 10.648px;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+        }
+        input {
+            color: var(--Black-60, #45464E);
+            font-family: "Anek Malayalam";
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            text-align: center;
+            line-height: normal;
+            &::placeholder {
+                color: var(--Black-60, #45464E);
+                font-family: "Anek Malayalam";
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+            }
+        }
+        .right_arrow {
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='7' height='12' viewBox='0 0 7 12' fill='none'%3E%3Cpath d='M1.16534 1.27864L6.02114 6.13444L1.16534 10.9902' stroke='%23313131' stroke-width='1.78376' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            display: block;
+            position: absolute;
+            right: 12px;
+            width: 7.648px;
+            height: 10.648px;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+        }
+    }
+    .search-box {
+        display: none;
+        @media (max-width: 767px) {
+            display: block;
+            position: absolute;
+            top: 15px;
+            right: 19px;
+        }
+    }
+    .search-bar {
+        width: 318px;
+        height: 43px;
+        display: flex;
+        align-items: center;
+        flex-shrink: 0;
+        border-radius: 24px;
+        background: #F2F9FF;
+        position: relative;
+        &.searcWithRes {
+            border-bottom-right-radius: 0px !important;
+            border-bottom-left-radius: 0px !important;
+        }
+        input {
+            width: calc(100% - 40px);
+            height: 100%;
+            border: none;
+            outline: none;
+            color: $body-text-color;
+            background: #F2F9FF;
+            font-family: "Anek Malayalam";
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 19.2px;
+            margin-left: 50px;
+            &::placeholder {
+                color: $body-text-color;
+                font-family: "Anek Malayalam";
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 19.2px;
+                /* 137.143% */
+            }
+        }
+        .searchIconWraper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            flex-shrink: 0;
+            position: absolute;
+            left: 20px;
+            .arrow {
+                background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='19' height='18' viewBox='0 0 19 18' fill='none'%3E%3Cpath d='M13.449 11H12.659L12.379 10.73C13.359 9.59 13.949 8.11 13.949 6.5C13.949 2.91 11.039 0 7.44897 0C3.85897 0 0.948975 2.91 0.948975 6.5C0.948975 10.09 3.85897 13 7.44897 13C9.05897 13 10.539 12.41 11.679 11.43L11.949 11.71V12.5L16.949 17.49L18.439 16L13.449 11ZM7.44897 11C4.95897 11 2.94897 8.99 2.94897 6.5C2.94897 4.01 4.95897 2 7.44897 2C9.93897 2 11.949 4.01 11.949 6.5C11.949 8.99 9.93897 11 7.44897 11Z' fill='%235F6368'/%3E%3C/svg%3E");
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+                display: block;
+                width: 15.005px;
+                height: 15.005px;
+            }
+        }
+        .searchResults {
+            width: 100%;
+            height: 211px;
+            flex-shrink: 0;
+            border-radius: 18px;
+            border: 0.5px solid $dark-green-color;
+            background: $white-color;
+            top: 100%;
+            left: 0;
+            border-top-right-radius: 0px;
+            border-top-left-radius: 0px;
+            overflow-y: scroll;
+            display: flex;
+            flex-direction: column;
+            border-top: 0.2px solid rgba(0, 0, 0, 0.50);
+            z-index: 99;
+            padding-left: 15px;
+            padding-right: 10px;
+            padding-top: 12px;
+            &::-webkit-scrollbar {
+                display: none;
+            }
+            .singeResult {
+                width: 100%;
+                padding: 12px;
+                display: flex;
+                align-items: center;
+                span {
+                    color: $body-text-color;
+                    font-family: "Anek Malayalam";
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 19.2px;
+                    /* 137.143% */
+                }
+            }
+            .allSearchResults {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                gap: 12px;
+                border-top: 0.2px solid rgba(0, 0, 0, 0.50);
+                padding: 12px 0px;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                padding-left: 25px;
+                padding-right: 25px;
+                .arrow {
+                    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='15' height='16' viewBox='0 0 15 16' fill='none'%3E%3Cpath d='M14.7583 14.0731L11.925 11.248C12.8392 10.0834 13.3352 8.64526 13.3333 7.16472C13.3333 5.84617 12.9423 4.55724 12.2098 3.46091C11.4773 2.36459 10.4361 1.5101 9.21789 1.00552C7.99972 0.500935 6.65927 0.368913 5.36607 0.626148C4.07286 0.883383 2.88497 1.51832 1.95262 2.45067C1.02027 3.38302 0.385336 4.57091 0.128101 5.86411C-0.129134 7.15732 0.00288854 8.49777 0.507473 9.71594C1.01206 10.9341 1.86654 11.9753 2.96287 12.7078C4.0592 13.4404 5.34813 13.8314 6.66667 13.8314C8.14722 13.8332 9.58538 13.3372 10.75 12.423L13.575 15.2564C13.6525 15.3345 13.7446 15.3965 13.8462 15.4388C13.9477 15.4811 14.0567 15.5029 14.1667 15.5029C14.2767 15.5029 14.3856 15.4811 14.4872 15.4388C14.5887 15.3965 14.6809 15.3345 14.7583 15.2564C14.8364 15.1789 14.8984 15.0867 14.9407 14.9852C14.9831 14.8836 15.0048 14.7747 15.0048 14.6647C15.0048 14.5547 14.9831 14.4458 14.9407 14.3442C14.8984 14.2427 14.8364 14.1505 14.7583 14.0731ZM1.66667 7.16472C1.66667 6.17581 1.95991 5.20911 2.50932 4.38687C3.05873 3.56462 3.83962 2.92376 4.75325 2.54532C5.66688 2.16688 6.67222 2.06786 7.64212 2.26079C8.61203 2.45372 9.50294 2.92992 10.2022 3.62918C10.9015 4.32845 11.3777 5.21936 11.5706 6.18927C11.7635 7.15917 11.6645 8.1645 11.2861 9.07813C10.9076 9.99176 10.2668 10.7727 9.44452 11.3221C8.62228 11.8715 7.65558 12.1647 6.66667 12.1647C5.34059 12.1647 4.06882 11.6379 3.13114 10.7003C2.19345 9.76257 1.66667 8.4908 1.66667 7.16472Z' fill='%23313131'/%3E%3C/svg%3E");
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-position: center;
+                    display: block;
+                    width: 15.005px;
+                    height: 15.005px;
+                }
+                span {
+                    color: $body-text-color;
+                    font-family: "Anek Malayalam";
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 400;
+                    width: 100%;
+                    line-height: 19.2px;
+                    word-break: break-all;
+                    /* 137.143% */
+                }
+            }
+        }
+        .cross_input {
+            width: 100%;
+            padding-right: 25px;
+            .cross {
+                position: absolute;
+                right: 12px;
+                top: 14px;
+                img {
+                    width: 14px;
+                    height: 14px;
+                }
+            }
+        }
+    }
+}
+
+
+.from-prescriptions {
+    .tabs_offline {
+        .nav-item {
+            visibility: hidden;
+        }
+    }
+}
+
+
+.mobileDropdown {
+    .dropdown-menu {
+        border-radius: 12px;
+        background: #FFF;
+        box-shadow: 0px 4px 15px 0px rgba(61, 70, 112, 0.08);
+        border: 0;
+        padding: 17px 0;
+    }
+
+    .btn.show {
+        color: #0F75BC;
+    }
+
+    .btn-primary {
+        border-radius: 19.764px;
+        border: 0.659px solid #0F75BC;
+        background-color: initial;
+        background: #fff !important;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #0F75BC;
+        text-align: center;
+        font-family: "Anek Malayalam";
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        text-transform: uppercase;
+        width: 110px;
+        gap: 15px;
+        height: 40px;
+
+        &:hover {
+            color: #0F75BC !important;
+        }
+
+        &::after {
+            display: none;
+        }
+    }
+
+    .linkBox {
+        padding: 0 16px;
+        position: relative;
+
+        input {
+            position: absolute;
+            width: 100%;
+            left: 0;
+            height: 100%;
+            z-index: 999;
+            opacity: 0;
+
+            &:checked+label {
+                &::before {
+                    background-image: url("data:image/svg+xml,%0A%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='20' height='20' rx='4' fill='%230F75BC'/%3E%3Cpath d='M14.6667 6.79199L8.25 13.2087L5.33333 10.292' stroke='white' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+                }
+            }
+
+        }
+
+
+
+        label {
+            margin-bottom: 10px;
+            color: #0F75BC;
+            text-align: right;
+            font-family: "Anek Malayalam";
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            padding-left: 30px;
+            position: relative;
+
+            &::before {
+                content: '';
+                background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20' fill='none'%3E%3Crect x='0.5' y='0.5' width='19' height='19' rx='3.5' stroke='%23D1D1D6'/%3E%3C/svg%3E");
+                width: 20px;
+                height: 20px;
+                position: absolute;
+                left: 0;
+                top: 0;
+            }
+        }
+    }
+
+}

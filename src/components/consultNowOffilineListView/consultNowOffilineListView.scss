@@ -1,0 +1,879 @@
+@import "../../assets/css/variable.scss";
+
+.consultNowOffilineListView {
+    position: relative;
+    width: 100%;
+
+    .list-nav {
+        height: 54px;
+        margin-bottom: 0px !important;
+        border-bottom: 1px solid rgb(222, 226, 230);
+
+        .nav-item {
+            .nav-link {
+                color: $body-text-color;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 20.642px;
+                border: none;
+                padding: 16px;
+            }
+
+            .nav-link.active {
+                border-bottom: 2px solid $blue-color !important;
+                color: $blue-color !important;
+                font-weight: 600;
+            }
+        }
+    }
+
+    .medicineBox {
+        .form-select {
+            width: 118px;
+            padding: 0;
+        }
+    }
+
+    .examinationListOffline {
+
+        .vitalHead {
+            border-bottom: 0.24px solid #8E96A0;
+            padding-bottom: 10px;
+            padding-top: 20px;
+
+            h3 {
+                color: $blue-color;
+                font-family: "Anek Malayalam";
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 23.04px;
+                margin-bottom: 0px !important;
+                padding: 0;
+                border: none;
+            }
+
+            span {
+                color: $blue-color;
+                text-align: center;
+                font-family: "Anek Malayalam";
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+                text-decoration-line: underline;
+                text-decoration-style: solid;
+                text-decoration-skip-ink: none;
+                text-decoration-thickness: auto;
+                text-underline-offset: auto;
+                text-underline-position: from-font;
+            }
+
+        }
+
+        ul {
+            display: flex;
+            flex-direction: column;
+
+            li {
+                width: 100%;
+                height: 68px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                border-bottom: 0.24px solid #8E96A0;
+                ;
+
+                label {
+                    color: #0F345A;
+                    font-family: "Anek Malayalam";
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 300;
+                    line-height: normal;
+                }
+
+                input {
+                    width: 143px;
+                    height: 30px;
+                    background-color: #EBF1F7;
+                    outline: none;
+                    padding: 0 10px;
+                    border: none;
+                    border-radius: 12px;
+
+                }
+            }
+
+        }
+    }
+
+    .examinationConsultNowList {
+        padding: 0px 20px;
+        height: auto;
+        user-select: none;
+
+
+        h3 {
+            color: $blue-color;
+            font-family: "Anek Malayalam";
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 23.04px;
+            border-bottom: 1px solid #8E96A0;
+            ;
+            padding-bottom: 10px;
+            padding-top: 20px;
+            margin-bottom: 0px !important;
+        }
+
+
+        .col-lg-6 {
+            &:nth-child(1) {
+                height: 100%;
+                border-right: 1px solid #D3DEE9;
+            }
+        }
+
+
+        .wrape_fileds {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+            padding: 16px 0px;
+
+            .singleTextArea {
+                display: flex;
+                flex-direction: column;
+                align-items: start;
+                justify-content: start;
+                gap: 4px;
+                user-select: none;
+
+
+                label {
+                    color: #313131;
+                    font-family: "Anek Malayalam";
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                }
+
+                textarea {
+                    width: 100%;
+                    resize: none;
+                    height: 60px;
+                    border-radius: 8px;
+                    background: rgba(188, 209, 230, 0.30);
+                    color: #313131;
+                    font-family: "Anek Malayalam";
+                    font-size: 12px;
+                    font-style: normal;
+                    font-weight: 300;
+                    line-height: normal;
+                    padding: 12px;
+                    -webkit-user-select: none;
+                    -ms-user-select: none;
+                    user-select: none;
+                }
+
+                .text {
+                    width: 100%;
+                    resize: none;
+                    border-radius: 8px;
+                    background: rgba(188, 209, 230, 0.30);
+                    color: #313131;
+                    font-family: "Anek Malayalam";
+                    font-size: 12px;
+                    font-style: normal;
+                    font-weight: 300;
+                    line-height: normal;
+                    padding: 12px;
+                    -webkit-user-select: none;
+                    -ms-user-select: none;
+                    user-select: none;
+                }
+            }
+
+            .checksWraping {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+
+                .singleTick {
+                    label {
+                        color: #313131;
+                        font-family: "Anek Malayalam";
+                        font-size: 13px;
+                        font-style: normal;
+                        font-weight: 300;
+                        line-height: normal;
+                        padding-left: 25px;
+                    }
+
+                    input {
+                        width: 18px;
+                        height: 18px;
+                    }
+                }
+
+                .singleTick input:checked label {}
+
+                span {
+                    width: 18px;
+                    height: 18px;
+                    position: absolute;
+                }
+            }
+
+
+
+        }
+
+        .dagnosis-form {
+            .form-group {
+                display: flex;
+                gap: 20px;
+
+                .dropdown {
+                    border-radius: 100px;
+                    border: 1px solid #C5DFF2;
+                    width: 100%;
+                    padding: 4.5px 10px;
+                    position: relative;
+
+                    .tabslidedown {
+                        color: #2196f3;
+                        font-size: 15px;
+                        width: 100%;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: normal;
+    
+                        &::before {
+                            content: '';
+                            position: absolute;
+                            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='17' height='16' viewBox='0 0 17 16' fill='none'%3E%3Cpath d='M13.1546 7.33301L8.48796 11.9997L3.82129 7.33301' stroke='%230F75BC' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+                            top: 6px;
+                            margin: 0;
+                            bottom: 0;
+                            right: 10px;
+                            background-position: center;
+                            background-repeat: no-repeat;
+                            background-size: cover;
+                            width: 16px;
+                            height: 16px;
+                        }
+                    }
+                    .family {
+                        color: #000;
+                        font-size: 15px;
+                        width: 100%;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: normal;
+                    }
+
+                    .tabdropdown-slide {
+                        display: none;
+
+                        #search {
+                            background-color: #eaf3fa !important;
+                            border-color: #eaf3fa !important;
+                            width: 100%;
+                            box-sizing: border-box;
+                            border-radius: 100px;
+                            background-image: url('../../assets/images/svg/search.svg') !important;
+                            background-position: 12px 5px;
+                            background-repeat: no-repeat;
+                            padding: 7px 20px 7px 50px;
+                            color: #757575 !important;
+                            font-size: 14px;
+                            font-style: normal;
+                            font-weight: 400;
+                        }
+
+                        .quick {
+                            padding: 20px 0 16px;
+
+                            h5 {
+                                color: #313131;
+                                font-size: 12px;
+                                margin-top: 0;
+                                font-style: normal;
+                                font-weight: 500;
+                                margin-bottom: 10px;
+                                line-height: normal;
+                            }
+
+                            ul {
+                                display: flex;
+                                flex-wrap: wrap;
+                                list-style-type: none;
+                                height: auto;
+                                flex-direction: row !important;
+                                gap: 16px;
+
+                                li {
+                                    border-radius: 40px;
+                                    background: rgba(17, 139, 226, 0.30);
+                                    padding: 8px 12px;
+                                    text-align: left;
+                                    border-bottom: none;
+                                    color: #118BE2;
+                                    display: inline-block;
+                                    width: auto;
+                                    height: auto;
+                                    font-size: 12px;
+                                    font-style: normal;
+                                    font-weight: 300;
+                                    line-height: normal;
+                                }
+                            }
+                        }
+
+                        .listing-val {
+                            gap: 0;
+
+                            .list-diagnosis {
+                                width: 100%;
+                                border-bottom: 1px solid #D9D9D9;
+                                padding: 12px 0;
+                                height: auto;
+                                justify-content: left;
+
+                                label {
+                                    font-size: 12px;
+                                    height: auto;
+                                    font-weight: 400;
+                                    line-height: 14.52px;
+                                    justify-content: left;
+                                    color: #313131;
+                                }
+
+                                input {
+                                    width: auto;
+                                    height: auto;
+                                }
+                            }
+                        }
+                    }
+
+                    .tabdropdown-slide.open {
+                        display: block;
+                        border-radius: 0px 0px 20px 20px;
+                        top: 32px;
+                        left: 0;
+                        width: 100%;
+                        padding: 20px 16px;
+                        min-height: 350px;
+                        height: 100%;
+                        z-index: 1;
+                        position: absolute;
+                        background: #FFF;
+                        box-shadow: 0px 2px 10px 0px rgba(0, 40, 85, 0.10);
+                        overflow-y: scroll;
+                    }
+                }
+
+                .form-button {
+                    a {
+                        border-radius: 100px;
+                        border: 1px solid $blue-color;
+                        padding: 4px 10px;
+                        text-decoration: none;
+                        text-align: center;
+                        font-size: 15px;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: normal;
+                    }
+                }
+            }
+        }
+
+
+        .wrape_filedsDiagnos {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+            padding: 16px 0px;
+
+            .singleTextArea {
+                label {
+                    color: #313131;
+                    margin-bottom: 10px;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                }
+
+                .customRadioo {
+                    label {
+                        margin-bottom: 0;
+                    }
+                }
+            }
+
+            .radiosWraping {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                flex-wrap: wrap;
+                align-items: start;
+                justify-content: start;
+
+
+                .singleTick {
+                    label {
+                        color: #313131;
+                        font-family: "Anek Malayalam";
+                        font-size: 13px;
+                        font-style: normal;
+                        font-weight: 300;
+                        line-height: normal;
+                        padding-left: 9px;
+                    }
+
+                    input {
+                        width: 18px;
+                        height: 18px;
+                    }
+                }
+
+                .singleTick input:checked label {}
+
+                span {
+                    width: 18px;
+                    height: 18px;
+                    position: absolute;
+                }
+            }
+
+            .wraperSelect {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                .single_field {
+                    width: 85%;
+                    height: 30px;
+
+                    select {
+                        width: 100%;
+                        height: 100%;
+
+                        color: $blue-color;
+                        font-family: "Anek Malayalam";
+                        font-size: 15px;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: normal;
+                        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='17' height='16' viewBox='0 0 17 16' fill='none'%3E%3Cpath d='M13.1673 7.33325L8.50065 11.9999L3.83398 7.33325' stroke='%230F75BC' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+                        background-size: 16px;
+                    }
+                }
+
+
+                button {
+                    width: 14%;
+                    display: inline-flex;
+                    height: 30px;
+                    padding: 12px 10px;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 9px;
+                    flex-shrink: 0;
+                    color: $blue-color;
+                    text-align: center;
+                    font-size: 15px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: normal;
+                    border-radius: 100px;
+                    border: 1px solid $blue-color;
+                }
+            }
+
+
+            .singleIndicationsTabs {
+                .nav-tabs {
+                    width: 100%;
+                    height: unset;
+
+                    .nav-item {
+                        .nav-link {
+                            white-space: nowrap;
+                            font-family: "Anek Malayalam";
+                            font-size: 12px;
+                            font-style: normal;
+                            font-weight: 600;
+                            line-height: 20.642px;
+
+                            /* 147.442% */
+                            &.active {
+                                font-size: 14px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .wrape_indication {
+        width: 100%;
+        height: 367px;
+        flex-shrink: 0;
+        border-radius: 0px 0px 14px 14px;
+        background: #FFF;
+        position: relative;
+        box-shadow: 0px 8px 20px 0px rgba(0, 40, 85, 0.06);
+
+        .tableConsultSub {
+            width: 100%;
+            height: 80%;
+            overflow-y: scroll;
+
+            table {
+                th {
+                    background: #F0F7FD;
+                    color: #313131;
+                    font-family: "Anek Malayalam";
+                    font-size: 12px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: normal;
+                }
+
+                td {
+                    color: #000;
+                    font-family: "Anek Malayalam";
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 300;
+                    line-height: normal;
+                }
+            }
+        }
+
+        .btnView {
+            width: 100%;
+            height: 20%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            bottom: 0;
+
+
+            span {
+                color: $blue-color;
+                text-align: center;
+                font-family: "Anek Malayalam";
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+            }
+        }
+    }
+
+    .inActive {
+        color: #118BE2;
+        font-family: "Anek Malayalam";
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        text-decoration-line: underline;
+        text-decoration-style: solid;
+        text-decoration-skip-ink: none;
+        text-decoration-thickness: auto;
+        text-underline-offset: auto;
+        text-underline-position: from-font;
+    }
+
+    .activeBtn {
+        display: inline-flex;
+        padding: 4px 10px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        border-radius: 20px;
+        background: rgba(132, 217, 91, 0.20);
+        color: #84D95B;
+        font-family: "Anek Malayalam";
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+    }
+
+    .markupBtn {
+        position: absolute;
+        display: flex;
+        width: 219px;
+        height: 50px;
+        padding: 8px 0px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+
+        border-radius: 30px;
+        background: $blue-color;
+        color: #FFF;
+        text-align: center;
+        font-family: "Anek Malayalam";
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        bottom: 22px;
+        right: 22px;
+        box-shadow: 0px 4px 20px 0px rgba(15, 117, 188, 0.30);
+    }
+
+    .medication_list {
+        padding: 20px;
+        height: auto;
+        user-select: none;
+
+        .nav-tabs {
+            height: auto;
+        }
+
+        h3 {
+            color: $blue-color;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 23.04px;
+            border-bottom: 1px solid #8E96A0;
+            padding-bottom: 10px;
+            padding-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .form-select,
+        .form-control {
+            border-radius: 25px;
+            height: 40px !important;
+            background-color: $background-color !important;
+            border: none;
+            color: $black4-color;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: normal;
+        }
+
+        .form-control {
+            height: 40px !important;
+        }
+
+        .form-check-label {
+            color: $black4-color;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: normal;
+        }
+
+        .form-label {
+            color: $body-text-color;
+            width: 100%;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal
+        }
+
+        .form-check-inline {
+            position: relative;
+
+            .form-check-input {
+                -webkit-appearance: none;
+                -moz-appearance: none;
+                appearance: none;
+                width: 20px;
+                height: 20px;
+                position: relative;
+                border-radius: 50%;
+                border: 0px solid #e2eaf0;
+                z-index: 99;
+                overflow: hidden;
+            }
+
+            .form-check-input:checked[type=radio]:before {
+                width: 11px !important;
+                height: 11px !important;
+                border-radius: 50%;
+                position: absolute;
+                left: 0;
+                top: 4.2px;
+                right: 0;
+                margin: auto;
+                background-color: var(--primary-color);
+                overflow: hidden;
+                content: '';
+            }
+        }
+
+        .button1 {
+            padding: 10px 44px;
+            color: $blue-color;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            width: 100%
+        }
+
+        .ant-divider {
+            margin: 20px 0;
+        }
+
+        .medicineOffline {
+            border-radius: 14px;
+            border: 0.5px solid #D3DEE9;
+            position: relative;
+            background: #FFF;
+            box-shadow: 0px 8px 20px 0px rgba(0, 40, 85, 0.06);
+
+            .search__bar {
+                position: absolute;
+                top: 5px;
+                right: 17px;
+
+                input {
+                    border-radius: 25px;
+                    width: 279px;
+                    padding: 6px 13px;
+                    font-size: 12px;
+                    font-style: normal;
+                    font-weight: 300;
+                    background: #F2F9FF;
+                }
+            }
+
+            .nav-tabs {
+                .nav-link.active {
+                    background-color: transparent;
+                }
+            }
+
+            .tab-content {
+                padding: 10px 17px;
+
+                .list {
+                    display: flex;
+                    flex-wrap: wrap;
+                    height: 85px;
+                    overflow-y: scroll;
+
+                    li {
+                        width: 33%;
+                        margin: 10px 0;
+                        font-size: 14px;
+
+                        span {
+                            width: 4px;
+                            height: 4px;
+                            background-color: #000;
+                            display: inline-block;
+                            border-radius: 50%;
+                            margin-right: 10px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .wrape_indication {
+            height: 278px;
+            margin-bottom: 20px;
+
+            .table__wrape.tableConsultSub {
+                height: 100%;
+
+                td {
+                    padding: 12px;
+
+                    button {
+                        span {
+                            width: 16px;
+                            height: 16px;
+                            color: $blue-color;
+                        }
+                    }
+
+                    .delete {
+                        span {
+                            color: $red-color;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .wrapeFollowUp {
+        .form-checked {
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+
+            .date-pick {
+                display: flex;
+                align-items: center;
+
+                p {
+                    margin-right: 10px;
+                    font-size: 12px;
+                    font-weight: normal;
+                    margin-bottom: 0;
+                    color: #333
+                }
+
+                .date-input {
+                    position: relative;
+
+                    input {
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        opacity: 0;
+                    }
+                }
+            }
+
+            img {
+                width: 21.107px;
+                height: 21.107px;
+            }
+
+            input {
+                width: 18px;
+                height: 18px;
+                border: 2px solid #D1D1D6;
+                border-radius: 2px;
+            }
+
+            label,
+            h4 {
+                color: $body-text-color;
+                margin-bottom: 0;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+            }
+        }
+    }
+}

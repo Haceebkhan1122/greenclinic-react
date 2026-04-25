@@ -1,0 +1,192 @@
+@import "../../assets/css/variable.scss";
+
+.modal_appointment {
+    .ant-tabs-nav {
+        &:before {
+            content: none;
+        }
+
+        .ant-tabs-tab {
+            border-radius: 12.615px 12.615px 0px 0px;
+            border-bottom: 1px solid $light-blue-contrast-color;
+            margin: 0;
+            justify-content: center;
+            width: 146.667px;
+
+            .ant-tabs-tab-btn {
+                color: $body-text-color;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 16.819px;
+            }
+        }
+
+        .ant-tabs-tab-active {
+            .ant-tabs-tab-btn {
+                color: $blue-color;
+                font-weight: 600;
+            }
+        }
+    }
+
+    .ant-tabs-content-holder {
+        .report_show {
+            border-radius: 25px;
+            background: #F2F9FF;
+            padding: 11px 20px 6px;
+
+            .form-check-label {
+                color: $black4-color;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 300;
+                line-height: normal;
+            }
+
+            .form-check-input {
+                width: 16px;
+                height: 16px;
+            }
+        }
+
+        /* Hide the default radio button */
+        .wraperGenders .form-check-input {
+            display: none;
+        }
+
+        /* Style the label to act as a radio button */
+        .wraperGenders .radioLabel {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: 300;
+            position: relative;
+            padding-left: 28px;
+            /* Space for custom radio */
+            color: var(--black4-color);
+            transition: color 0.1s ease-in-out;
+        }
+
+        /* Custom circle */
+        .wraperGenders .radioLabel::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 18px;
+            height: 18px;
+            border: 2px solid var(--black4-color);
+            border-radius: 50%;
+            background-color: transparent;
+            transition: all 0.1s ease-in-out;
+        }
+
+        /* Fill circle when radio is checked */
+        .wraperGenders .form-check-input:checked+.radioLabel::before {
+            background-color: var(--primary-color);
+            /* Active color */
+            border-color: var(--primary-color);
+        }
+
+        /* Change text color when active */
+        .wraperGenders .form-check-input:checked+.radioLabel {
+            color: var(--primary-color);
+            font-weight: 500;
+        }
+
+        /* Hide default radio input */
+        .wraperGenders .form-check-input {
+            display: none;
+        }
+
+        /* Custom radio button */
+        .wraperGenders .radioLabel {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: 300;
+            position: relative;
+            padding-left: 28px;
+            /* Space for custom circle */
+            color: var(--black4-color);
+            transition: color 0.3s ease-in-out;
+        }
+
+        /* Circle */
+        .wraperGenders .radioLabel::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 18px;
+            height: 18px;
+            border: 2px solid var(--black4-color);
+            border-radius: 50%;
+            background-color: transparent;
+            transition: all 0.3s ease-in-out;
+        }
+
+        /* Fill circle when selected */
+        .wraperGenders .form-check-input:checked+.radioLabel::before {
+            background-color: var(--primary-color);
+            /* Active fill color */
+            border-color: var(--primary-color);
+        }
+
+        /* Change text color when active */
+        .wraperGenders .form-check-input:checked+.radioLabel {
+            color: var(--primary-color);
+            font-weight: 500;
+        }
+
+        .wraperGenders .form-check-label {
+            color: var(--black4-color);
+            /* Use CSS variable for flexibility */
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: normal;
+            transition: color 0.3s ease-in-out;
+            /* Smooth transition for color change */
+        }
+
+        .wraperGenders .form-check-input {
+            width: 16px;
+            height: 16px;
+            cursor: pointer;
+        }
+
+        /* Change label color when radio is checked */
+        .wraperGenders .form-check-input:checked+.form-check-label {
+            color: var(--primary-color);
+            /* Change to your preferred active color */
+            font-weight: 500;
+            /* Slightly bold when selected */
+        }
+
+
+
+        .btn_wrap {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+
+
+
+            button {
+                width: 134px;
+                height: 50px;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+            }
+        }
+    }
+}

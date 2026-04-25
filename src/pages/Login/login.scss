@@ -1,0 +1,344 @@
+@import '../../assets/css/variable.scss';
+
+.loginPage {
+    width: 100%;
+    height: 100vh;
+    padding: 20px 0px 20px 10px;
+
+    @media (max-width: 767px) {
+        padding: 32px 0;
+    }
+
+    .col-lg-12 {
+        .row {
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+    .left-wrap {
+        border-radius: 20px 0px 0px 20px;
+        width: 100%;
+        height: calc(100vh - 40px);
+        background: $white-color;
+        box-shadow: 0px 3px 15px 0px rgba(0, 40, 85, 0.20);
+
+        @media (max-width: 767px) {
+            display: none;
+        }
+
+        .slick-slider {
+            .slick-track {
+                .slick-slide {
+                    padding-top: 60px;
+                    position: relative;
+                    height: calc(100vh - 39px);
+
+                    h3 {
+                        color: #0F75BC;
+                        text-align: center;
+                        font-family: "Anek Malayalam";
+                        font-size: 32px;
+                        font-style: normal;
+                        font-weight: 500;
+                        margin-bottom: 0;
+                        line-height: 140%;
+                        /* 44.8px */
+                        letter-spacing: 0.32px;
+                    }
+
+                    p {
+                        color: $body-text-color;
+                        text-align: center;
+                        font-family: "Anek Malayalam";
+                        font-size: 20px;
+                        font-style: normal;
+                        margin: 25px 110px 32px;
+                        font-weight: 300;
+                        line-height: 140%;
+                        /* 28px */
+                        letter-spacing: 0.2px;
+                    }
+
+                    img {
+                        position: absolute;
+                        bottom: -1px;
+                        left: 0;
+                        right: 0;
+                        margin: auto;
+                    }
+
+                    .img1 {
+                        width: 660px;
+                        height: 560px;
+                        object-fit: contain;
+
+                        @media (max-width: 1537px) {
+                            width: 500px;
+                            height: 380px;
+                        }
+                    }
+
+                    .img2 {
+                        width: 680px;
+                        height: 560px;
+                        object-fit: contain;
+
+                        @media (max-width: 1537px) {
+                            width: 500px;
+                            height: 410px;
+                            object-fit: contain;
+                        }
+                    }
+
+                    .img3 {
+                        width: 100%;
+                        height: 580px;
+
+                        @media (max-width: 1537px) {
+                            height: 410px;
+                            object-fit: inherit;
+                        }
+                    }
+                }
+            }
+        }
+
+        .slick-dots-bottom {
+            bottom: auto;
+            top: 247px;
+
+            li {
+                width: 60px;
+                height: 8px;
+                background: $background-color;
+                margin-inline: 10px;
+                border-radius: 100px;
+
+                button {
+                    border-radius: 100px;
+                    background: $background-color;
+                    height: 8px;
+
+                    &::before {
+                        content: none;
+                    }
+
+                }
+
+                &::after {
+                    height: 8px;
+                    background-color: transparent;
+                }
+            }
+
+            .slick-active {
+                button {
+                    background: $blue-color;
+                    opacity: 1;
+                }
+            }
+        }
+
+    }
+
+    .right-wrap {
+        text-align: center;
+
+        .log-img {
+            padding-bottom: 40px;
+
+            img {
+                width: 167.991px;
+                height: auto;
+                object-fit: cover;
+                margin: 0 auto;
+
+                @media (max-width: 767px) {
+                    width: 195.84px;
+                }
+            }
+        }
+
+        .text {
+            padding-bottom: 51px;
+
+            @media (max-width: 767px) {
+                padding-bottom: 36px;
+            }
+
+            h3 {
+                color: #0F75BC;
+                text-align: center;
+                margin-bottom: 0;
+                font-family: "Anek Malayalam";
+                font-size: 36px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+            }
+
+            p {
+                color: $dark-grey-color;
+                text-align: center;
+                font-family: "Anek Malayalam";
+                font-size: 22px;
+                font-style: normal;
+                margin-bottom: 0;
+                font-weight: 400;
+                line-height: normal;
+
+                @media (max-width: 767px) {
+                    font-size: 17.28px;
+                    width: 240px;
+                    margin: 0 auto;
+                }
+            }
+        }
+
+        .otp-form {
+            .single_field {
+                margin-bottom: 27px;
+                text-align: left;
+                width: 434.145px;
+                margin-left: auto;
+                margin-right: auto;
+
+                @media (max-width: 767px) {
+                    margin-bottom: 20px;
+                    width: 100%;
+                }
+
+                .ant-input-password {
+                    border: none;
+                    border-radius: 130.244px;
+                    color: $dark-grey-color;
+                    font-size: 16px;
+                    padding-right: 20px;
+                    font-style: normal;
+                    font-weight: 400;
+
+                    &:focus {
+                        box-shadow: none;
+                    }
+
+                    input {
+                        padding: 14px 12px;
+                        border-radius: 0;
+                        background-color: transparent;
+
+                        @media (max-width: 767px) {
+                            padding: 7px 15px !important;
+                        }
+                    }
+
+                    .ant-input-suffix {
+                        span {
+                            color: $black-color;
+
+                            svg {
+                                width: 20px;
+                                height: 20px;
+                            }
+                        }
+                    }
+                }
+
+                input {
+                    border-radius: 130.244px;
+                    background: $white-color;
+                    padding: 18px 21px;
+                    width: 100%;
+                    border: none;
+                    color: $dark-grey-color;
+                    font-family: "Anek Malayalam";
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+
+                    &::placeholder{
+                        color: $dark-grey-color;
+                    }
+
+                    &:focus-visible {
+                        outline: none;
+                    }
+
+                    @media (max-width: 767px) {
+                        padding: 11px 47.5px 11px 15.5px !important;
+                    }
+                }
+
+                a {
+                    color: $blue-color;
+                    font-family: "Anek Malayalam";
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    text-decoration: none;
+                    line-height: normal;
+                }
+            }
+        }
+
+        .form-button {
+            width: 434.145px;
+            margin: 0 auto;
+            @media (max-width: 767px){
+                width: 100%;
+            }
+            button {
+                border-radius: 130.244px;
+                background: #0F75BC;
+                width: 100%;
+                border: none;
+                color: $white-color;
+                text-align: center;
+                font-family: "Anek Malayalam";
+                font-size: 20px;
+                font-style: normal;
+                height: 68px;
+                font-weight: 600;
+                line-height: normal;
+
+                @media (max-width: 767px) {
+                    height: 40px !important;
+                    font-size: 15px !important;
+                }
+                &:hover{
+                    background: $blue-color !important;
+                }
+            }
+        }
+
+        .dont-account {
+            color: $dark-grey-color;
+            margin-top: 12px;
+            text-align: center;
+            font-family: "Anek Malayalam";
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+
+            a {
+                color: #0F75BC;
+                font-family: "Anek Malayalam";
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 700;
+                text-decoration: none;
+                line-height: normal;
+            }
+
+            @media (max-width: 767px) {
+                font-size: 14px !important;
+
+                a {
+                    font-size: 14px !important;
+                }
+            }
+        }
+    }
+}

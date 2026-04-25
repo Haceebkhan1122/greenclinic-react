@@ -1,0 +1,43 @@
+@import "../../../assets/css/variable.scss";
+
+.printInovice {
+    z-index: 9999999 !important;
+
+    .modal-dialog {
+        max-width: 524px;
+
+        .modal-content {
+            border-radius: 16.77px;
+            background: #FFF;
+
+            .close {
+                position: absolute;
+                top: 10px;
+                right: 10px;
+                z-index: 9;
+                cursor: pointer;
+
+                img {
+                    width: 34px;
+                    height: 34px;
+                }
+            }
+
+            .modal-body {
+                padding: 40px 56px;
+
+                .button2 {
+                    margin-top: 29px;
+                    text-transform: uppercase;
+                    border-radius: 96.667px;
+                    width: 320px !important;
+                    height: 50px
+                }
+
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

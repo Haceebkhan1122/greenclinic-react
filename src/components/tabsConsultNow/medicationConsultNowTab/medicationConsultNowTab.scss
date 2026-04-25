@@ -1,0 +1,160 @@
+@import "../../../assets/css/variable.scss";
+
+.medication_tab {
+    padding: 0px 20px 85px;
+    height: 755px;
+    user-select: none;
+
+    h3 {
+        color: $blue-color;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 23.04px;
+        border-bottom: 1px solid #8E96A0;
+        padding-bottom: 10px;
+        padding-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .form-select,
+    .form-control {
+        border-radius: 25px;
+        height: 40px !important;
+        background-color: $background-color !important;
+        border: none;
+        color: $black4-color;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+    }
+
+    .form-control {
+        height: 40px !important;
+    }
+
+    .form-check-label {
+        color: $black4-color;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+    }
+
+    .form-label {
+        color: $body-text-color;
+        width: 100%;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal
+    }
+
+    .form-check-inline {
+        position: relative;
+
+        .form-check-input {
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            width: 20px;
+            height: 20px;
+            position: relative;
+            border-radius: 50%;
+            border: 0px solid #e2eaf0;
+            z-index: 99;
+            overflow: hidden;
+        }
+
+        .form-check-input:checked[type=radio]:before {
+            width: 11px !important;
+            height: 11px !important;
+            border-radius: 50%;
+            position: absolute;
+            left: 0;
+            top: 4.2px;
+            right: 0;
+            margin: auto;
+            background-color: var(--primary-color);
+            overflow: hidden;
+            content: '';
+        }
+    }
+
+    .button1 {
+        padding: 10px 44px;
+        color: #0F75BC;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+
+    .ant-divider {
+        margin: 20px 0;
+    }
+
+    .default-text {
+        color: #0F75BC;
+        font-size: 14px;
+        font-style: normal;
+        text-decoration: none;
+        font-weight: 500;
+        line-height: normal;
+    }
+
+    .medicine {
+        border-radius: 14px;
+        border: 0.5px solid #D3DEE9;
+        background: #FFF;
+        box-shadow: 0px 8px 20px 0px rgba(0, 40, 85, 0.06);
+
+        .ant-tabs-nav {
+            display: block;
+
+            .ant-tabs-nav-wrap {
+                display: block;
+
+                .ant-tabs-tab {
+                    width: 100%;
+                    padding: 12px;
+                    justify-content: center;
+                    margin-left: 0;
+                }
+            }
+        }
+
+        .ant-tabs-content {
+            padding: 17px 25px;
+
+            .list {
+                list-style-type: initial;
+            }
+        }
+    }
+
+    .wrape_indication {
+        height: 301px;
+
+        .tableConsultSub {
+            td {
+                padding: 12px;
+
+                button {
+                    span {
+                        width: 12px;
+                        height: 12.8px;
+                        color: $blue-color;
+                    }
+                }
+
+                .delete {
+                    span {
+                        color: $red-color;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,160 @@
+@import "../../../assets/css/variable.scss";
+
+.searchModal {
+    z-index: 9999999999 !important;
+
+    .modal-dialog {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        max-width: 100% !important;
+
+        .modal-content {
+            background-color: $background-color;
+            border-radius: 30px;
+            border: none;
+            border-radius: 0 !important;
+            height: 100%;
+
+            .modal-header {
+                padding-top: 18px;
+                padding-bottom: 18px;
+                padding-right: 20px;
+                min-height: 60px;
+                padding-left: 15px;
+                background: $background-color;
+                box-shadow: 0px 3.84px 18.336px 0px rgba(0, 0, 0, 0.06);
+
+                img {
+                    width: 20px;
+                    height: 20px;
+                    margin-right: 15px;
+                }
+
+                .search-in {
+                    border-radius: 18px;
+                    background: #FFF;
+                    position: relative;
+                    height: 34px;
+                    width: 100%;
+
+                    input {
+                        border: 0.5px solid #D3DEE9;
+                        width: 100%;
+                        border-radius: 18px;
+                        height: 34px;
+                        padding: 0 30px 0 10px;
+                    }
+
+                    button {
+                        position: absolute;
+                        top: 50%;
+                        right: 14px;
+                        transform: translateY(-50%);
+
+                        img {
+                            margin-right: 0;
+                            width: 14px;
+                            height: 14px;
+                        }
+                    }
+                }
+            }
+
+            .modal-body {
+                padding: 0;
+
+                .search_result {
+                    border-radius: 10px;
+                    background: #FFF;
+                    margin: 10px;
+                    padding: 10px;
+                    min-height: 645px;
+                    max-height: 645px;
+                    overflow-y: scroll;
+
+                    .no_result {
+                        height: 625px;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+
+                        img {
+                            width: 163px;
+                            height: 163px;
+                        }
+
+                        h6 {
+                            color: #959494;
+                            font-size: 15px;
+                            font-style: normal;
+                            font-weight: 600;
+                            margin: 5px 0 21px;
+                            text-align: center;
+                            line-height: normal;
+                        }
+
+                        p {
+                            color: #959494;
+                            text-align: center;
+                            font-size: 14px;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: normal;
+                        }
+                    }
+
+                    .box_bg {
+                        border-radius: 10px;
+                        border: 0.967px solid $light-blue-contrast-color;
+                        background: #FBFBFB;
+                        display: flex;
+                        align-items: center;
+                        padding: 11px 13px;
+                        margin-bottom: 10px;
+                        gap: 17px;
+
+                        .one_char {
+                            background-color: rgba(15, 117, 188, 0.10);
+                            color: $blue-color;
+                            text-align: center;
+                            border-radius: 50%;
+                            width: 54.139px;
+                            height: 54.139px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            font-size: 14.502px;
+                            font-style: normal;
+                            font-weight: 600;
+                            line-height: normal;
+                        }
+
+                        div {
+                            span {
+                                color: $black-color;
+                                font-size: 14px;
+                                font-style: normal;
+                                font-weight: 500;
+                                line-height: normal;
+                                letter-spacing: 0.84px;
+                            }
+
+                            p {
+                                margin: 0;
+                                color: $blue-color;
+                                font-size: 14px;
+                                font-style: normal;
+                                font-weight: 500;
+                                line-height: normal;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

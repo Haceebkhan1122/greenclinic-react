@@ -1,0 +1,86 @@
+.signupCompleteRequest {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-color: #F2F9FF;
+    overflow: hidden;
+
+    img {
+        position: absolute;
+        width: 100% !important;
+        left: 0;
+        height: 100%;
+        right: 0;
+        bottom: 0;
+    }
+
+    .reqCard {
+        width: 47%;
+        height: 95vh;
+        flex-shrink: 0;
+        border-radius: 14px;
+        background: #0F75BC;
+        box-shadow: 0px 3px 15px 0px rgba(0, 40, 85, 0.2);
+        z-index: 99;
+        position: absolute;
+        right: 20px;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        gap: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        h4 {
+            color: var(--Blue-Light, #F2F9FF);
+            text-align: center;
+            font-family: "Anek Malayalam";
+            font-size: 36px;
+            font-style: normal;
+            font-weight: 800;
+            line-height: normal;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+            margin-bottom: 18px !important;
+        }
+
+        p {
+            margin: 0;
+            color: var(--Blue-Light, #F2F9FF);
+            text-align: center;
+            font-family: "Anek Malayalam";
+            font-size: 22px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            margin-bottom: 18px !important;
+        }
+
+        button {
+            display: flex;
+            width: 343px;
+            height: 68px;
+            padding: 12px 0px;
+            justify-content: center;
+            align-items: center;
+            flex-shrink: 0;
+            border-radius: 130px;
+            background: #FFF;
+            color: #0F75BC;
+            text-align: center;
+            font-size: 22px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+
+            &:hover {
+                background-color: #FFF !important;
+            }
+        }
+    }
+}

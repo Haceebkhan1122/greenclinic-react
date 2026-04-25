@@ -1,0 +1,202 @@
+.indicationsModal {
+    overflow: hidden;
+
+    @media(min-width:0) and (max-width:767px) {
+        z-index: 9999999 !important;
+    }
+
+    .modal-dialog {
+        max-width: 450px;
+    }
+
+    .modal-content {
+        width: 450px;
+        height: auto;
+        padding: 20px;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 16px;
+        border-radius: 15px;
+        background: #FFF;
+        @media (max-width: 767px) and (min-width: 320px){
+            width: 100%;
+        }
+    }
+
+    .modal-body {
+
+
+        width: 100%;
+        height: auto;
+        padding: 0;
+
+        .cross {
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16' fill='none'%3E%3Cpath d='M9.47885 8.13258L15.7348 14.3886L14.3886 15.7348L8.13258 9.47885L8 9.34626L7.86742 9.47885L1.61143 15.7348L0.265165 14.3886L6.52115 8.13258L6.65374 8L6.52115 7.86742L0.265165 1.61143L1.61143 0.265165L7.86742 6.52115L8 6.65374L8.13258 6.52115L14.3886 0.265165L15.7348 1.61143L9.47885 7.86742L9.34626 8L9.47885 8.13258Z' fill='%23313131' stroke='white' stroke-width='0.375'/%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            display: block;
+            width: 16px;
+            height: 16px;
+            position: absolute;
+            right: 12px;
+            top: 4px;
+            z-index: 99;
+
+        }
+
+        .wraper_indicationModal {
+            position: relative;
+            height: auto;
+
+            h3 {
+                color: #0F75BC;
+                font-family: "Anek Malayalam";
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 23.04px;
+                border-bottom: 1px solid #8E96A0;
+                padding-bottom: 11px;
+                margin-bottom: 12px;
+            }
+
+            .search-bar {
+                display: flex;
+                align-items: center;
+                gap: 8px;
+                width: 100%;
+                height: 40px;
+                flex-shrink: 0;
+                border-radius: 24px;
+                background: #F2F9FF;
+                overflow: hidden;
+                padding-left: 20.95px;
+                margin: auto;
+
+                @media (min-width : 0px) and (max-width : 768px) {
+                    width: 100%;
+                    height: 36px;
+                    padding: 0;
+                    margin: auto;
+                    padding-left: 12px;
+                    margin-bottom: 20px !important;
+
+                }
+
+                .ico {
+                    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='25' height='25' viewBox='0 0 25 25' fill='none'%3E%3Cg clip-path='url(%23clip0_2446_13465)'%3E%3Cpath d='M16.2498 14.848H15.4598L15.1798 14.578C16.1598 13.438 16.7498 11.958 16.7498 10.348C16.7498 6.75802 13.8398 3.84802 10.2498 3.84802C6.65976 3.84802 3.74976 6.75802 3.74976 10.348C3.74976 13.938 6.65976 16.848 10.2498 16.848C11.8598 16.848 13.3398 16.258 14.4798 15.278L14.7498 15.558V16.348L19.7498 21.338L21.2398 19.848L16.2498 14.848ZM10.2498 14.848C7.75976 14.848 5.74976 12.838 5.74976 10.348C5.74976 7.85802 7.75976 5.84802 10.2498 5.84802C12.7398 5.84802 14.7498 7.85802 14.7498 10.348C14.7498 12.838 12.7398 14.848 10.2498 14.848Z' fill='%2319B3B5'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_2446_13465'%3E%3Crect width='24' height='24' fill='white' transform='translate(0.75 0.609009)'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E");
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-position: center;
+                    display: block;
+                    width: 24px;
+                    height: 24px;
+
+                    @media (min-width : 0px) and (max-width : 768px) {
+                        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M20 19L16.1396 15.1396M16.1396 15.1396C16.7999 14.4793 17.3237 13.6953 17.6811 12.8326C18.0385 11.9698 18.2224 11.0451 18.2224 10.1112C18.2224 9.17735 18.0385 8.25264 17.6811 7.38987C17.3237 6.5271 16.7999 5.74316 16.1396 5.08283C15.4793 4.42249 14.6953 3.89868 13.8326 3.54131C12.9698 3.18394 12.0451 3 11.1112 3C10.1774 3 9.25264 3.18394 8.38987 3.54131C7.5271 3.89868 6.74316 4.42249 6.08283 5.08283C4.74921 6.41644 4 8.2252 4 10.1112C4 11.9972 4.74921 13.806 6.08283 15.1396C7.41644 16.4732 9.2252 17.2224 11.1112 17.2224C12.9972 17.2224 14.806 16.4732 16.1396 15.1396Z' stroke='%23313131' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+                    }
+                }
+
+                label {}
+
+                input {
+                    width: calc(100% - 24px);
+                    height: 100%;
+                    outline: none;
+                    border: none;
+                    background-color: transparent;
+                    color: #313131;
+                    font-family: "Anek Malayalam";
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 20.642px;
+
+                    @media (min-width : 0px) and (max-width : 768px) {
+                        font-size: 12px;
+                    }
+
+                    &::placeholder {
+                        color: #313131;
+                        font-family: "Anek Malayalam";
+                        font-size: 14px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 20.642px;
+                        /* 147.442% */
+
+                        @media (min-width : 0px) and (max-width : 768px) {
+                            font-size: 12px;
+                        }
+                    }
+                }
+            }
+
+            ul {
+                width: 100%;
+                max-height: 76%;
+                margin-top: 20px;
+                height: 300px;
+                overflow-y: scroll;
+                min-height: 50px;
+
+                &::-webkit-scrollbar {}
+
+                &::-webkit-scrollbar-track {}
+
+                &::-webkit-scrollbar-thumb {}
+
+                li {
+                    border-bottom: 0.5px solid rgba(173, 189, 206, 0.50);
+                    padding-bottom: 12px;
+                    padding-right: 12px;
+                    margin-bottom: 18px;
+                }
+            }
+        }
+
+        .btDo {
+            button {
+                display: flex;
+                width: 150px;
+                height: 36px;
+                padding: 12px 10px;
+                justify-content: center;
+                align-items: center;
+                gap: 9px;
+                color: #FFF;
+                text-align: center;
+                font-family: "Anek Malayalam";
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+                border-radius: 100px;
+                background: #0F75BC;
+                margin-top: 14px;
+            }
+        }
+
+        .single {
+            label {
+                color: #313131;
+                text-align: center;
+                font-family: "Anek Malayalam";
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 20.642px;
+                /* 147.442% */
+                margin-left: 15px;
+            }
+
+        }
+    }
+}
+
+.indicationsModal.lowHeight {
+    ul {
+        display: none;
+    }
+}

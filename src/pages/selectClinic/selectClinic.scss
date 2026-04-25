@@ -1,0 +1,222 @@
+@import '../../assets/css/variable.scss';
+
+.select_clinic {
+    width: 100%;
+    height: 100vh;
+    padding: 20px 0px;
+
+    @media (max-width: 767px) {
+        padding: 32px 0;
+    }
+
+    .col-lg-12 {
+        .row {
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+    .left-wrap {
+        border-radius: 20px 0px 0px 20px;
+        width: 100%;
+        height: calc(100vh - 40px);
+        background: $white-color;
+        box-shadow: 0px 3px 15px 0px rgba(0, 40, 85, 0.20);
+
+        @media (max-width: 767px) {
+            display: none;
+        }
+
+        .slick-slider {
+            .slick-track {
+                .slick-slide {
+                    padding-top: 60px;
+                    position: relative;
+                    height: calc(100vh - 39px);
+
+                    h3 {
+                        color: #0F75BC;
+                        text-align: center;
+                        font-family: "Anek Malayalam";
+                        font-size: 32px;
+                        font-style: normal;
+                        font-weight: 500;
+                        margin-bottom: 0;
+                        line-height: 140%;
+                        /* 44.8px */
+                        letter-spacing: 0.32px;
+                    }
+
+                    p {
+                        color: $body-text-color;
+                        text-align: center;
+                        font-family: "Anek Malayalam";
+                        font-size: 20px;
+                        font-style: normal;
+                        margin: 25px 110px 32px;
+                        font-weight: 300;
+                        line-height: 140%;
+                        /* 28px */
+                        letter-spacing: 0.2px;
+                    }
+
+                    img {
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                        right: 0;
+                        margin: auto;
+                    }
+
+                    .img1 {
+                        width: 660px;
+                        height: 560px;
+                        object-fit: contain;
+
+                        @media (max-width: 1537px) {
+                            width: 500px;
+                            height: 380px;
+                        }
+                    }
+
+                    .img2 {
+                        width: 680px;
+                        height: 560px;
+                        object-fit: contain;
+
+                        @media (max-width: 1537px) {
+                            width: 500px;
+                            height: 400px;
+                            object-fit: contain;
+                        }
+                    }
+
+                    .img3 {
+                        width: 100%;
+                        height: 580px;
+
+                        @media (max-width: 1537px) {
+                            height: 400px;
+                            object-fit: inherit;
+                        }
+                    }
+                }
+            }
+        }
+
+        .slick-dots-bottom {
+            bottom: auto;
+            top: 247px;
+
+            li {
+                width: 60px;
+                height: 8px;
+                background: $background-color;
+                margin-inline: 10px;
+                border-radius: 100px;
+
+                button {
+                    border-radius: 100px;
+                    background: $background-color;
+                    height: 8px;
+
+                    &::before {
+                        content: none;
+                    }
+                }
+
+                &::after {
+                    height: 8px;
+                    background-color: transparent;
+                }
+            }
+
+            .slick-active {
+                button {
+                    background: $blue-color;
+                    opacity: 1;
+                }
+            }
+        }
+
+    }
+
+    .right-wrap {
+        text-align: center;
+
+        .log-img {
+            padding-bottom: 40px;
+
+            img {
+                width: 167.991px;
+                height: auto;
+                margin: 0 auto;
+                object-fit: cover;
+
+                @media (max-width: 767px) {
+                    width: 195.84px;
+                }
+            }
+        }
+
+        .form-row {
+            .p-dropdown {
+                height: 58px;
+                width: 100%;
+                border-radius: 50px;
+                padding: 16px 21px;
+                text-align: left;
+
+                @media (max-width: 767px) {
+                    height: 44px;
+                    padding: 10px 21px;
+                }
+            }
+        }
+
+        .form-button {
+            margin-top: 27px;
+
+            .button2 {
+                border-radius: 130.244px;
+                background: $blue-color;
+                width: 100% !important;
+                border: none;
+                color: $white-color;
+                text-align: center;
+                font-family: "Anek Malayalam";
+                font-size: 20px;
+                font-style: normal;
+                height: 68px;
+                font-weight: 600;
+                line-height: normal;
+
+                @media (max-width: 767px) {
+                    height: 40px;
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+}
+
+.p-dropdown-items-wrapper {
+    background-color: #FBFBFB;
+
+    .p-dropdown-item {
+        padding: 17px 31.877px;
+        font-size: 18.595px;
+        font-style: normal;
+        font-weight: 400 !important;
+
+        @media (max-width: 767px) {
+            padding: 11.252px 25px;
+            font-size: 16px;
+        }
+    }
+
+    .p-focus {
+        background: #F2F9FF;
+        color: #0F75BC;
+    }
+}

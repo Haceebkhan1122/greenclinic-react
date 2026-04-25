@@ -1,0 +1,141 @@
+@import '../../../assets/css/variable.scss';
+
+.messagePrescModal {
+    width: 100%;
+    height: 100%;
+
+    .modal-dialog {
+        max-width: 600px;
+    }
+
+    .modal-content {
+        width: 600px;
+        height: 515px;
+        border-radius: 15.385px;
+        background: #FFF;
+        @media (max-width: 767px){
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .modal-body {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 16px 52px;
+        @media (max-width: 767px){
+            padding: 16px 28px;
+        }
+
+        h2 {
+            color: #0F75BC;
+            font-family: "Anek Malayalam";
+            font-size: 22px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            border-bottom: 0.2px solid rgba(49, 49, 49, 0.40);
+            padding-bottom: 8px;
+            margin-bottom: 30px;
+        }
+
+        .single {
+            margin-bottom: 15px;
+
+            input {
+                width: 100%;
+
+            }
+        }
+
+        h5 {
+            color: #313131;
+            font-family: "Anek Malayalam";
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+        }
+
+
+        .singleTick {
+            margin-bottom: 16px;
+
+            label {
+                width: fit-content;
+                color: #313131;
+                text-align: right;
+                font-family: "Anek Malayalam";
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+            }
+
+            input {
+                width: 18px;
+                height: 18px;
+
+                &:checked+span {
+                    width: 20px;
+                    height: 20px;
+                    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='25' viewBox='0 0 24 25' fill='none'%3E%3Cg clip-path='url(%23clip0_4476_2740)'%3E%3Cpath d='M19 3.5H5C3.89 3.5 3 4.4 3 5.5V19.5C3 20.6 3.89 21.5 5 21.5H19C20.11 21.5 21 20.6 21 19.5V5.5C21 4.4 20.11 3.5 19 3.5Z' fill='%230F75BC'/%3E%3Cpath d='M5 12.5001L10 17.5001L19 8.50008L17.59 7.08008L10 14.6701L6.41 11.0901L5 12.5001Z' fill='white'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_4476_2740'%3E%3Crect width='24' height='24' fill='white' transform='translate(0 0.5)'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E");
+                }
+            }
+        }
+
+
+        .wraper_btns {
+            display: flex;
+            width: 100%;
+            height: 98px;
+            justify-content: center;
+            align-items: center;
+            gap: 24px;
+            margin-top: 15px;
+
+            button {
+                width: 228px;
+                height: 50px;
+                flex-shrink: 0;
+                border-radius: 100px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+                outline: none;
+                border: none;
+
+                @media (min-width : 0px) and (max-width : 768px) {
+                    width: 130px;
+                    height: 50px;
+                    font-size: 18px;
+                }
+
+                &:nth-child(2) {
+                    color: #0F75BC;
+                    border: 1px solid #0F75BC;
+                    background-color: #FFF;
+
+                    @media (min-width : 0px) and (max-width : 768px) {
+                        border: 1px solid #FC5C5C;
+                        color: #FC5C5C;
+                        font-weight: 600;
+                    }
+                }
+
+                &:nth-child(1) {
+                    color: #FFF;
+                    background-color: #0F75BC;
+                }
+            }
+        }
+    }
+
+}

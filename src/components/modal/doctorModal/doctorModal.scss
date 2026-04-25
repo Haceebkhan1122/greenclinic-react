@@ -1,0 +1,448 @@
+@import '../../../assets/css/variable.scss';
+
+.step_form {
+    z-index: 9999999 !important;
+
+    @media (max-width: 767px) {
+        padding-left: 0 !important;
+    }
+
+    .modal-dialog {
+        max-width: 84%;
+
+        @media (max-width: 767px) {
+            width: 100%;
+            height: 100%;
+            padding: 0;
+            margin: 0;
+            max-width: 100% !important;
+        }
+
+        .modal-content {
+            border-radius: 15.385px;
+            background: $white-color;
+
+            @media (max-width: 767px) {
+                background-color: #f2f9ff;
+                border: none;
+                border-radius: 0;
+            }
+
+            .close {
+                position: absolute;
+                top: 10px;
+                right: 10px;
+                z-index: 9;
+            }
+
+            .modal-body {
+                padding-left: 20px;
+                padding-right: 20px;
+
+                @media (max-width: 767px) {
+                    padding: 0;
+                }
+
+                h2 {
+                    color: $blue-color;
+                    font-size: 20px;
+                    border-bottom: 1px solid $light-blue-contrast-color;
+                    font-style: normal;
+                    margin-bottom: 20px;
+                    padding-bottom: 20px;
+                    font-weight: 500;
+                    line-height: 23.04px;
+
+                    img {
+                        display: none;
+                    }
+
+                    @media (max-width: 767px) {
+                        padding-top: 21px;
+                        padding-left: 20px;
+                        padding-right: 20px;
+                        font-size: 16px;
+                        background-color: white;
+                        box-shadow: 0px 3.998px 19.088px 0px rgba(0, 0, 0, 0.06);
+                        border-bottom: none;
+                        display: flex;
+
+                        img {
+                            display: block;
+                            width: 18px;
+                            height: 18px;
+                            margin-right: 10px;
+                        }
+                    }
+                }
+
+                @media (max-width: 767px) {
+                    .bg_from {
+                        border-radius: 10px;
+                        background: #FFF;
+                        margin: 0 10px;
+                        padding: 10px;
+                    }
+                }
+
+                form {
+
+                    input,
+                    select {
+                        border-radius: 25px;
+                        background-color: $background-color;
+                        border: none;
+                        height: 43px;
+                        width: 100%;
+                        padding: 6.794px 13.588px;
+                    }
+
+                    label {
+                        color: $body-text-color;
+                        font-family: "Anek Malayalam";
+                        font-size: 14px;
+                        font-style: normal;
+                        font-weight: 400;
+                        margin-bottom: 0;
+                        line-height: normal;
+                    }
+
+                    .ant-input-affix-wrapper {
+                        background-color: #f2f9ff;
+                        border: none;
+                        border-radius: 25px;
+                        padding-top: 0;
+                        height: 43px;
+
+                        .ant-input {
+                            background-color: transparent;
+                            border-radius: 0;
+                            padding: 0;
+                        }
+                    }
+
+                    .MuiFormGroup-root {
+                        display: flex;
+                        border-radius: 23.178px;
+                        border: 0.927px solid $background-color;
+                        background: $background-color;
+                        flex-direction: row;
+                        gap: 20px;
+                        padding: 0 20px;
+
+                        @media (max-width: 767px) {
+                            padding: 0 14px;
+                        }
+
+                        .MuiFormControlLabel-root {
+                            margin-bottom: 0;
+                        }
+
+                        .MuiTypography-root {
+                            color: $body-text-color;
+                            font-family: "Anek Malayalam";
+                            font-size: 16px;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: normal;
+
+                            @media (max-width: 767px) {
+                                font-size: 14px;
+                            }
+                        }
+                    }
+
+                    h4 {
+                        color: $blue-color;
+                        font-size: 18px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: 26px;
+                    }
+
+                    .passCri {
+                        color: $blue-color;
+                        font-size: 13px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: 26px;
+                    }
+
+                    .ant-checkbox-wrapper {
+                        .ant-checkbox-input {
+                            height: auto;
+                            border: 1px solid $light-blue-contrast-color;
+                        }
+
+                        .ant-checkbox-inner {
+                            width: 22px;
+                            border-radius: 50%;
+                            height: 22px;
+                        }
+                    }
+                }
+
+                .form_btn1 {
+                    text-align: end;
+                    border-top: 1px solid $light-blue-contrast-color;
+                    margin: 0 0 10px;
+                    padding-top: 20px;
+
+                    @media (max-width: 767px) {
+                        border-top: none;
+                        text-align: center;
+                        padding: 0;
+                        margin: 0;
+                    }
+                }
+
+
+                .form_btn2 {
+                    border-top: 1px solid #e2eaf0;
+                    margin: 0 0 10px;
+                    padding-top: 20px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+
+                    @media (max-width: 767px) {
+                        border-top: none;
+                        position: fixed;
+                        bottom: 0;
+                        left: 0;
+                        right: 0;
+                        margin: 0;
+                        width: 100%;
+                        padding: 22px;
+                        border-radius: 14px 14px 0px 0px;
+                        background: #FFF;
+                        box-shadow: 0px -8px 20px 0px rgba(0, 40, 85, 0.06);
+                        justify-content: center;
+                        div{
+                            display: flex;
+                            width: 100%;
+                            justify-content: space-evenly;
+                            align-items: center;
+                            button{
+                                padding: 0;
+                                width: 150px;
+                                margin-left: 0;
+                            }
+                        }
+                    }
+                }
+
+                button {
+                    margin-left: 10px;
+                    padding: 0 25px;
+                    height: 40px;
+
+                    @media (max-width: 767px) {
+                        width: 138px;
+                    }
+                }
+
+                .doctor_form {
+                    padding-bottom: 41px;
+
+                    @media (max-width: 767px) {
+                        padding-bottom: 30px;
+                        margin-bottom: 90px;
+                    }
+                }
+
+                h3 {
+                    color: $body-text-color;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 500;
+                    margin-bottom: 14px;
+                    line-height: 23.04px;
+                }
+
+                .platform_fee {
+                    color: $black-color;
+                    font-size: 10px;
+                    font-style: normal;
+                    margin-top: 9px;
+                    font-weight: 300;
+                    margin-bottom: 0;
+                    line-height: normal;
+
+                    .anticon {
+                        color: $blue-color;
+                        font-size: 12px;
+                        margin-right: 6px;
+                    }
+                }
+
+                .scheduleInPerson {
+                    border-left: 1px solid $light-blue-contrast-color;
+
+                    @media (max-width: 767px) {
+                        border-left: none;
+                        padding: 0;
+                    }
+
+                    ul {
+                        li {
+                            padding-bottom: 10px;
+                            margin-bottom: 15px;
+                            justify-content: space-between;
+                            border-bottom: 1px solid $light-blue-contrast-color;
+
+                            .days {
+                                display: flex;
+                                align-items: center;
+                                justify-content: space-between;
+                            }
+
+                            .timing {
+                                text-align: right;
+
+                                .timing-inputs {
+                                    display: flex;
+                                    text-align: left;
+                                    align-items: center;
+                                    margin-top: 10px;
+                                    justify-content: space-between;
+
+                                    label {
+                                        color: $body-text-color;
+                                        font-family: "Anek Malayalam";
+                                        font-size: 12px;
+                                        font-style: normal;
+                                        font-weight: 600;
+                                        margin-bottom: 10px;
+                                        line-height: normal;
+                                    }
+
+                                    input {
+                                        border-radius: 100px;
+                                        background: $background-color;
+                                        border: none;
+                                        padding: 12px;
+                                        width: 100%;
+                                    }
+                                }
+
+                                button {
+                                    margin-top: 10px;
+                                    margin-left: 0;
+                                    padding: 0;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .scheduleInVideo {
+                    border-left: 1px solid $light-blue-contrast-color;
+                    @media (max-width: 767px) {
+                        border-left: none;
+                        padding: 0;
+                    }
+
+                    ul {
+                        li {
+                            padding-bottom: 10px;
+                            margin-bottom: 15px;
+                            justify-content: space-between;
+                            border-bottom: 1px solid $light-blue-contrast-color;
+
+                            .days {
+                                display: flex;
+                                align-items: center;
+                                justify-content: space-between;
+                            }
+
+                            .timing {
+                                text-align: right;
+
+                                .timing-inputs {
+                                    display: flex;
+                                    text-align: left;
+                                    align-items: center;
+                                    margin-top: 10px;
+                                    justify-content: space-between;
+
+                                    label {
+                                        color: $body-text-color;
+                                        font-family: "Anek Malayalam";
+                                        font-size: 12px;
+                                        font-style: normal;
+                                        font-weight: 600;
+                                        margin-bottom: 10px;
+                                        line-height: normal;
+                                    }
+
+                                    input {
+                                        border-radius: 100px;
+                                        background: $background-color;
+                                        border: none;
+                                        padding: 12px;
+                                        width: 100%;
+                                    }
+                                }
+
+                                button {
+                                    margin-top: 10px;
+                                    margin-left: 0;
+                                    padding: 0;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .single_field_checks {
+        display: flex;
+        position: relative;
+
+        label {
+            position: relative;
+            display: flex;
+            align-items: center;
+            padding-left: 40px;
+
+            input {
+                appearance: none;
+                width: 22px !important;
+                height: 22px !important;
+                border-radius: 50%;
+                overflow: hidden;
+                padding: 0 !important;
+                position: absolute;
+                left: 0;
+
+                &:checked + span {
+                    width: 22px;
+                    height: 22px;
+                    border-radius: 50%;
+                    position: absolute;
+                    left: 0;
+                    background-image: url("data:image/svg+xml,%3Csvg width='22' height='22' viewBox='0 0 22 22' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='11' cy='11' r='10.25' stroke='%2384D95B' stroke-width='1.5'/%3E%3Cg clip-path='url(%23clip0_173_15892)'%3E%3Cpath d='M9.25007 13.4501L6.80007 11.0001L5.9834 11.8167L9.25007 15.0834L16.2501 8.08339L15.4334 7.26672L9.25007 13.4501Z' fill='%2384D95B' stroke='%2384D95B' stroke-width='0.5'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_173_15892'%3E%3Crect width='14' height='14' fill='white' transform='translate(4 4)'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A");
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-position: center;
+                }
+            }
+
+            span {
+            
+            }
+
+        }
+    }
+}
+
+
+.errorTxt {
+    color: red;
+    font-size: 14px;
+    padding-left: 7px;
+    padding-top: 7px;
+}

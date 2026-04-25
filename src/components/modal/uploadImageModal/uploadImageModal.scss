@@ -1,0 +1,130 @@
+@import "../../../assets/css/variable.scss";
+
+.upload_image {
+    z-index: 9999999 !important;
+
+    @media (max-width: 767px) {
+        padding-left: 0 !important;
+    }
+
+    .modal-dialog {
+        max-width: 600px;
+
+        .modal-content {
+            border-radius: 15.385px;
+            background: $white-color;
+
+            @media (max-width: 767px) {
+                background-color: $background-color;
+                border: none;
+                border-radius: 0;
+            }
+
+            .close {
+                position: absolute;
+                top: 20px;
+                right: 20px;
+                z-index: 9;
+            }
+
+            .modal-body {
+                padding: 30px;
+
+
+                h4 {
+                    color: $blue-color;
+                    font-size: 22px;
+                    border-bottom: 1px solid $light-blue-contrast-color;
+                    font-style: normal;
+                    margin-bottom: 10px;
+                    padding-bottom: 9px;
+                    font-weight: 500;
+                    line-height: normal;
+                }
+
+                .form {
+                    text-align: center;
+
+                    div {
+                        text-align: left;
+
+                        label {
+                            margin-bottom: 6px;
+                        }
+                    }
+
+                    .drop-area {
+                        border: 2px dashed #ccc;
+                        padding: 50px;
+                        text-align: center;
+                        margin: 20px 0 0;
+
+                        h3 {
+                            font-size: 30px;
+                            font-weight: 500;
+                            color: $blue-color;
+                        }
+
+                        p {
+                            font-size: 25px;
+                            font-weight: 500;
+                            color: $blue-color;
+                            margin: 10px 0 15px 0;
+                        }
+
+                        .file-preview {
+                            img {
+                                width: 200px;
+                                height: 200px;
+                                object-fit: cover;
+                                margin: auto;
+                            }
+                        }
+
+                        .button-remove {
+                            position: absolute;
+                            cursor: pointer;
+                            border: 1px solid #000;
+                            top: -10px;
+                            right: 110px;
+                            padding: 4px;
+                            background-color: #fff;
+                            border-radius: 50%;
+                        }
+
+                        .input-file {
+                            display: none;
+                        }
+
+                        .file-label {
+                            font-size: 20px;
+                            font-weight: 500;
+                            border: none;
+                            outline: none;
+                            background: #fff;
+                            color: var(--blue-color);
+                            margin-bottom: 0;
+                            padding: 10px;
+                            border-radius: 5px;
+                            cursor: pointer;
+                            width: auto;
+                            height: auto;
+                            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+                        }
+                    }
+
+                    .form-control {
+                        border-radius: 20px;
+                        background: #F2F9FF;
+                        border: none;
+                    }
+
+                    .button2 {
+                        padding: 8px 30px;
+                        margin-top: 20px;
+                    }
+                }
+            }
+        }
+    }
+}

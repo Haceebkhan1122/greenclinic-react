@@ -1,0 +1,289 @@
+@import '../../../assets/css/variable.scss';
+
+.clinic_Configuration {
+
+    .top_wrap {
+        padding-bottom: 18px;
+        padding-top: 18px;
+        margin-bottom: 24px;
+        border-bottom: 1px solid #D3DEE9;
+
+        @media (max-width: 767px) {
+            border-bottom: none;
+            padding-bottom: 0;
+        }
+
+        .hovering_btn {
+            border-radius: 24px;
+            border: 1px solid $blue-color;
+            height: 44px;
+
+            span {
+                color: $blue-color;
+                font-family: "Anek Malayalam";
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+            }
+        }
+
+        .update {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+
+            @media (max-width: 767px) {
+                .anticon-info-circle {
+                    display: none;
+                }
+            }
+
+            .mr_number {
+                display: flex;
+                align-items: center;
+                gap: 12px;
+
+                h6 {
+                    color: $dark-color;
+                    font-family: "Anek Malayalam";
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                    margin-bottom: 0;
+
+                    @media (max-width: 767px) {
+                        font-size: 14px;
+                    }
+                }
+
+                input {
+                    border-radius: 24px;
+                    background: $background-color;
+                    width: 140px;
+                    padding: 11px 14.199px;
+                    border: none;
+
+                    @media (max-width: 767px) {
+                        width: 73px;
+                        padding: 7px 14.199px
+                    }
+                }
+
+                button {
+                    border-radius: 24px;
+                    color: $white-color;
+                    text-align: center;
+                    font-family: "Anek Malayalam";
+                    font-size: 16px;
+                    font-style: normal;
+                    height: 44px;
+                    font-weight: 600;
+                    padding: 0 34px;
+                    line-height: normal;
+                    background: $blue-color;
+
+                    @media (max-width: 767px) {
+                        height: 28px;
+                        padding: 0 8px;
+                        font-size: 11px;
+                    }
+                }
+            }
+        }
+    }
+
+    .bottom-wrap {
+        padding-bottom: 60px;
+        
+        @media (min-width : 0px) and (max-width : 768px) {
+            height: 60%;
+            overflow-y: scroll;
+            padding-bottom: 20px;
+            position: absolute;
+            top: 137px;
+        }
+
+        .row {
+            gap: 20px;
+        }
+
+        .box {
+            border-radius: 15px;
+            border: 1px solid $light-blue-contrast-color;
+            background: $white-color;
+            box-shadow: 0px 1.984px 9.918px 0px rgba(0, 40, 85, 0.10);
+            padding: 15px 16px 27px;
+
+            @media (max-width: 767px) {
+                border: none;
+            }
+
+            .edit {
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 1px;
+
+                div {
+                    display: flex;
+                    gap: 16px;
+                }
+
+                h6 {
+                    color: $blue-color;
+                    font-size: 16px;
+                    margin-bottom: 0;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: 19.042px;
+                }
+
+                button {
+                    border: none;
+                    background-color: transparent;
+
+                    .anticon-edit {
+                        color: $blue-color;
+                        font-size: 16px;
+                    }
+                }
+            }
+
+            span {
+                color: $body-text-color;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 300;
+                line-height: 19.042px;
+            }
+
+            .box-wrap {
+                border-radius: 8px;
+                margin-top: 6px;
+                border: 1px solid #E2EAF0;
+                padding: 10px 8px;
+                justify-content: space-between;
+                display: flex;
+                align-items: center;
+
+                p {
+                    color: $body-text-color;
+                    font-size: 14px;
+                    margin-bottom: 0;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: normal;
+                }
+
+                a {
+                    color: $blue-color;
+                    font-size: 14px;
+                    border: none;
+                    background-color: transparent;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: normal;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+
+}
+
+.ant-tooltip {
+    .ant-tooltip-arrow {
+
+        &::before,
+        &::after {
+            content: none;
+        }
+    }
+
+    .ant-tooltip-content {
+        .ant-tooltip-inner {
+            border-radius: 4px;
+            background: #D3DEE9;
+            box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.04);
+            width: 261px;
+            color: $lightgray-shade-color;
+            font-size: 11px;
+            font-style: normal;
+            font-weight: 450;
+        }
+    }
+}
+
+
+.customTool {
+    position: relative;
+
+    .ico {}
+
+
+    .inforMrIcon {
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20' fill='none'%3E%3Cpath d='M9.16602 14.1665H10.8327V9.1665H9.16602V14.1665ZM9.99935 7.49984C10.2355 7.49984 10.4334 7.41998 10.5931 7.26025C10.7528 7.10053 10.8327 6.90261 10.8327 6.6665C10.8327 6.43039 10.7528 6.23248 10.5931 6.07275C10.4334 5.91303 10.2355 5.83317 9.99935 5.83317C9.76324 5.83317 9.56532 5.91303 9.4056 6.07275C9.24588 6.23248 9.16602 6.43039 9.16602 6.6665C9.16602 6.90261 9.24588 7.10053 9.4056 7.26025C9.56532 7.41998 9.76324 7.49984 9.99935 7.49984ZM9.99935 18.3332C8.84657 18.3332 7.76324 18.1144 6.74935 17.6769C5.73546 17.2394 4.85352 16.6457 4.10352 15.8957C3.35352 15.1457 2.75977 14.2637 2.32227 13.2498C1.88477 12.2359 1.66602 11.1526 1.66602 9.99984C1.66602 8.84706 1.88477 7.76373 2.32227 6.74984C2.75977 5.73595 3.35352 4.854 4.10352 4.104C4.85352 3.354 5.73546 2.76025 6.74935 2.32275C7.76324 1.88525 8.84657 1.6665 9.99935 1.6665C11.1521 1.6665 12.2355 1.88525 13.2493 2.32275C14.2632 2.76025 15.1452 3.354 15.8952 4.104C16.6452 4.854 17.2389 5.73595 17.6764 6.74984C18.1139 7.76373 18.3327 8.84706 18.3327 9.99984C18.3327 11.1526 18.1139 12.2359 17.6764 13.2498C17.2389 14.2637 16.6452 15.1457 15.8952 15.8957C15.1452 16.6457 14.2632 17.2394 13.2493 17.6769C12.2355 18.1144 11.1521 18.3332 9.99935 18.3332ZM9.99935 16.6665C11.8605 16.6665 13.4368 16.0207 14.7285 14.729C16.0202 13.4373 16.666 11.8609 16.666 9.99984C16.666 8.13873 16.0202 6.56234 14.7285 5.27067C13.4368 3.979 11.8605 3.33317 9.99935 3.33317C8.13824 3.33317 6.56185 3.979 5.27018 5.27067C3.97852 6.56234 3.33268 8.13873 3.33268 9.99984C3.33268 11.8609 3.97852 13.4373 5.27018 14.729C6.56185 16.0207 8.13824 16.6665 9.99935 16.6665Z' fill='%230F75BC'/%3E%3C/svg%3E");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        display: block;
+        width: 20px;
+        height: 20px;
+    }
+
+    .contentToolMr {
+        width: 261px;
+        height: 26px;
+        border-radius: 4px;
+        background: #D3DEE9;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.04);
+        padding: 10px;
+        position: absolute;
+        left: 0;
+        top: -29px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        p {
+            color: #404040;
+        font-size: 11px;
+        font-style: normal;
+        font-weight: 450;
+        line-height: normal;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: 0;
+        }
+
+    }
+
+    .contentTool {
+        width: 313px;
+        min-height: 67px;
+        flex-shrink: 0;
+        border-radius: 4px;
+        background: #D3DEE9;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.04);
+        padding: 10px;
+        position: absolute;
+        left: 0;
+        top: -73px;
+
+        p {
+
+            color: #404040;
+            font-family: "Anek Malayalam";
+            font-size: 11px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            margin: 0;
+
+        }
+
+    }
+}

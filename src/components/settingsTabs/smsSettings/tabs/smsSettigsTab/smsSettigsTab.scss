@@ -1,0 +1,512 @@
+@import '../../../../../assets/css/variable.scss';
+
+.wraper_smsTab {
+    .left {
+        width: 100%;
+        height: 539px;
+        display: flex;
+        flex-direction: column;
+        border-right: 0.5px solid #D3DEE9;
+        border-bottom: 0.5px solid #D3DEE9;
+        padding: 0px 24px;
+        overflow-y: scroll;
+        padding-bottom: 20px !important;
+
+        &::-webkit-scrollbar {
+            width: 5px;
+            height: 5px;
+        }
+
+        &::-webkit-slider-thumb {
+            width: 5px;
+            height: 5px;
+            background-color: rgba(149, 148, 148, 0.40);
+        }
+
+        &::-webkit-scrollbar-track {
+            width: 5px;
+            height: 5px;
+        }
+
+        h3 {
+            color: $blue-color;
+            font-family: "Anek Malayalam";
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 23.04px;
+            margin-top: 17px;
+        }
+
+        .field_check {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: 1px solid #E2EAF0;
+            padding-bottom: 14px;
+            margin-bottom: 16px;
+
+            label {
+                @media (min-width : 0px) and (max-width : 768px) {
+                    color: #313131;
+                    font-size: 16px;
+                    font-weight: 400;
+                }
+            }
+
+            input {
+                width: 36px;
+                height: 16px;
+
+                @media (min-width : 0px) and (max-width : 768px) {
+                    width: 48px;
+                    height: 21px;
+                }
+            }
+        }
+
+        h5 {
+            color: #313131;
+            font-family: "Anek Malayalam";
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            margin-top: 16px;
+            margin-bottom: 10px;
+        }
+
+
+        .wrape_langs {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding-bottom: 16px;
+
+            @media (min-width : 0px) and (max-width : 768px) {
+                gap: 50px;
+            }
+        }
+
+        .customRadio {
+            label {
+                color: #313131;
+                font-family: "Anek Malayalam";
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+            }
+        }
+
+        .single_field {
+            width: 100%;
+        }
+
+        .select_time {
+            width: 120px;
+
+            @media (min-width : 0px) and (max-width : 768px) {
+                width: 75px;
+                height: 20px;
+                font-size: 14px;
+                font-weight: 300;
+                padding: 0px 10px 0px 5px;
+                background-size: 10px;
+                margin-bottom: 10px;
+            }
+        }
+
+        .wrape_ti {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .scmSms {
+            padding-bottom: 3px;
+        }
+    }
+
+    .right {
+        width: 100%;
+        height: 539px;
+        overflow-y: scroll;
+        border-right: 0.5px solid #D3DEE9;
+        border-bottom: 0.5px solid #D3DEE9;
+        padding: 0px 24px;
+
+        h3 {
+            color: $blue-color;
+            font-family: "Anek Malayalam";
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 23.04px;
+            /* 115.2% */
+            padding-top: 17px;
+            padding-left: 16px;
+        }
+
+        .table__wrape {
+            width: 100%;
+            height: 100%;
+
+            &::-webkit-scrollbar {
+                display: none;
+            }
+
+            table {
+                thead {
+                    th {
+                        height: 36px;
+                        background-color: #F0F7FD;
+                        vertical-align: middle;
+                        color: #313131;
+                        font-family: "Anek Malayalam";
+                        font-size: 13px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: normal;
+                        padding-left: 16px;
+                    }
+                }
+
+                tbody {
+                    td {
+                        height: 65px;
+                        vertical-align: middle;
+                        color: #000;
+                        font-family: "Anek Malayalam";
+                        font-size: 14px;
+                        font-style: normal;
+                        font-weight: 300;
+                        line-height: normal;
+                        padding-bottom: 5px;
+                        vertical-align: middle;
+                        padding-left: 16px;
+
+                        &:nth-child(3) {
+                            width: 45%;
+                        }
+                    }
+                }
+
+
+                .wrape_actions {
+
+                    td {
+                        padding-left: 0px;
+                    }
+
+                    input {
+                        width: 36px;
+                        height: 16px;
+
+
+                    }
+                }
+            }
+        }
+    }
+
+    .bottomFixBar {
+        height: 79px;
+        width: 100%;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        border-radius: 15px;
+        background: #FFF;
+        box-shadow: 0px 8px 20px 0px rgba(0, 40, 85, 0.08);
+        padding-right: 24px;
+        border-top: 1px solid #D9D9D9;
+        border-radius: 0px;
+
+        button {
+            display: flex;
+            width: 220px;
+            height: 50px;
+            padding: 8px 0px;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            flex-shrink: 0;
+            border-radius: 30px;
+            background: $blue-color;
+            color: #FFF;
+            text-align: center;
+            font-family: "Anek Malayalam";
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            border: none;
+            outline: none;
+        }
+    }
+}
+
+.accordianSmsSettings {
+    .left {
+        width: 100%;
+        height: 539px;
+        display: flex;
+        flex-direction: column;
+        overflow-y: scroll;
+        padding-bottom: 20px !important;
+
+        &::-webkit-scrollbar {
+
+            width: 5px;
+            height: 5px;
+            display: none;
+        }
+
+        &::-webkit-slider-thumb {
+            width: 5px;
+            height: 5px;
+            background-color: rgba(149, 148, 148, 0.40);
+        }
+
+        &::-webkit-scrollbar-track {
+            width: 5px;
+            height: 5px;
+        }
+
+        h3 {
+            color: #0F75BC;
+            font-family: "Anek Malayalam";
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 23.04px;
+            margin-top: 17px;
+        }
+
+        .field_check {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: 1px solid #E2EAF0;
+            padding-bottom: 14px;
+            margin-bottom: 16px;
+
+            label {
+                @media (min-width : 0px) and (max-width : 768px) {
+                    color: #313131;
+                    font-size: 16px;
+                    font-weight: 400;
+                }
+            }
+
+            input {
+                width: 36px;
+                height: 16px;
+
+                @media (min-width : 0px) and (max-width : 768px) {
+                    width: 48px;
+                    height: 21px;
+                }
+            }
+        }
+
+        h5 {
+            color: #313131;
+            font-family: "Anek Malayalam";
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            margin-top: 16px;
+            margin-bottom: 10px;
+        }
+
+
+        .wrape_langs {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding-bottom: 16px;
+
+            @media (min-width : 0px) and (max-width : 768px) {
+                gap: 50px;
+            }
+        }
+
+        .customRadio {
+            label {
+                color: #313131;
+                font-family: "Anek Malayalam";
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+            }
+        }
+
+        .single_field {
+            width: 100%;
+        }
+
+        .select_time {
+            width: 120px;
+
+            @media (min-width : 0px) and (max-width : 768px) {
+                width: 75px;
+                height: 20px;
+                font-size: 14px;
+                font-weight: 300;
+                padding: 0px 10px 0px 5px;
+                background-size: 10px;
+                margin-bottom: 10px;
+            }
+        }
+
+        .wrape_ti {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .scmSms {
+            padding-bottom: 3px;
+        }
+
+
+    }
+}
+
+.wholesms {
+    width: 100%;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #cacaca;
+    padding-bottom: 18px;
+
+    .customSelect label {
+        font-size: 16px !important;
+    }
+
+    .wrape_ti {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .single_field {
+        width: 100%;
+    }
+
+    .customSelect .form-select {
+
+        @media (min-width : 0px) and (max-width : 768px) {
+            width: 91px;
+            height: 20px;
+            background-size: 10px;
+            font-size: 14px;
+        }
+    }
+}
+
+.cardsTemplates {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+
+    .singleCardTemplate {
+        width: 100%;
+        height: 141px;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: start;
+        border-radius: 8px;
+        background: #FFF;
+        box-shadow: 4px 10px 20.4px 0px rgba(0, 0, 0, 0.09);
+        padding: 14px 20px;
+
+        @media (max-width: 767px) {
+            height: auto;
+        }
+
+
+        h4 {
+            color: #313131;
+            font-family: "Anek Malayalam";
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            margin-bottom: 0px;
+        }
+
+        span {
+            color: #000;
+            font-family: "Anek Malayalam";
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: normal;
+        }
+
+        p {
+            color: #000;
+            font-family: "Anek Malayalam";
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: normal;
+            margin-bottom: 7px;
+        }
+
+        .singleAction {
+            width: 100%;
+            display: flex;
+            justify-content: end;
+            align-items: center;
+            gap: 12px;
+
+            .editIcon {
+                background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M4.18866 18.8082H5.72072L15.1593 9.35616L13.6272 7.82192L4.18866 17.274V18.8082ZM19.8376 7.76712L15.1867 3.16438L16.7187 1.63014C17.1382 1.21005 17.6535 1 18.2645 1C18.8755 1 19.3907 1.21005 19.8102 1.63014L21.3423 3.16438C21.7618 3.58447 21.9806 4.09132 21.9989 4.68493C22.0171 5.27854 21.8165 5.78539 21.397 6.20548L19.8376 7.76712ZM18.2508 9.38356L6.6509 21H2V16.3425L13.5999 4.72603L18.2508 9.38356ZM14.3933 8.58904L13.6272 7.82192L15.1593 9.35616L14.3933 8.58904Z' fill='%23118BE2'/%3E%3C/svg%3E");
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+                display: block;
+                width: 24px;
+                height: 24px;
+            }
+
+            input {
+                width: 48px;
+                height: 21.333px;
+            }
+        }
+    }
+}
+
+
+.singleCm {
+    height: 100%;
+}
+
+.wraper_patientRemainder {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    .form-switch {
+        input {
+            width: 36px;
+            height: 16px;
+            background-color: #D9D9D9;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3E%3Ccircle r='3' fill='%23FFF'/%3E%3C/svg%3E");
+
+        }
+    }
+}

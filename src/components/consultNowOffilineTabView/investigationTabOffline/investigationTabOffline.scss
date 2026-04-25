@@ -1,0 +1,321 @@
+@import "../../../assets/css/variable.scss";
+
+.investigationTabOffline {
+    width: 100%;
+    height: 100%;
+    padding: 0 20px 50px;
+
+    .customSelect {
+        .form-select {
+            background-image: none;
+        }
+    }
+
+    .ant-select-selection-placeholder {
+        color: #5E6366;
+        font-family: "Anek Malayalam";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+    }
+
+
+    .wrapeFollowUp {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 34px 0px;
+
+        .date-pick {
+            display: flex;
+            align-items: center;
+
+            p {
+                margin-right: 10px;
+                font-size: 12px;
+                font-weight: normal;
+                margin-bottom: 0;
+                color: #333
+            }
+
+            .date-input {
+                position: relative;
+
+                input {
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    opacity: 0;
+                }
+            }
+        }
+
+        .form-checked {
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+
+            img {
+                width: 21.107px;
+                height: 21.107px;
+            }
+
+            label,
+            h4 {
+                color: $body-text-color;
+                margin-bottom: 0;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+            }
+
+            .form-check-input {
+                -webkit-appearance: none;
+                -moz-appearance: none;
+                appearance: none;
+                width: 20px;
+                height: 20px;
+                position: relative;
+                border-radius: 2px;
+                border: 2px solid #ABAFB1;
+                cursor: pointer;
+                background-image: none !important;
+                z-index: 99;
+                background-color: transparent !important;
+                overflow: hidden;
+                &:checked {
+                    background-color: transparent !important;
+                }
+            }
+
+
+            .form-check-input:checked[type=checkbox]:before {
+                content: '';
+                display: block;
+                position: absolute;
+                top: 2px;
+                left: 6px;
+                width: 5px;
+                height: 10px;
+                border: solid #0079bf;
+                border-width: 0 2px 2px 0;
+                transform: rotate(45deg);
+            }
+        }
+
+
+        li {
+            width: 100%;
+            display: flex;
+            height: 43px;
+            padding: 0px 15px;
+            align-items: center;
+            gap: 10px;
+            align-self: stretch;
+            border-radius: 7px;
+            border: 1px solid #67737b;
+            background: #FFF;
+            box-shadow: 0px 3.2px 16px 0px rgba(238, 238, 238, 0.60);
+            justify-content: space-between;
+            align-items: center;
+            padding: 0px 15px;
+
+            h4 {
+                color: #313131;
+                font-family: "Anek Malayalam";
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+                margin: 0px !important;
+            }
+        }
+    }
+
+
+    .customTextArea {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: start;
+
+        label {}
+
+        textarea {
+            width: 100%;
+            resize: none;
+            height: 94px;
+            flex-shrink: 0;
+            border-radius: 14px;
+            border: 1px solid #F2F9FF;
+            background: #F2F9FF;
+            font-family: "Anek Malayalam";
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: normal;
+            padding: 12px;
+            -webkit-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+    }
+
+    h3 {
+        color: #0F75BC;
+        font-family: "Anek Malayalam";
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 23.04px;
+        border-bottom: 0.24px solid #8E96A0;
+        padding-bottom: 10px;
+        padding-top: 20px;
+        margin-bottom: 15px;
+    }
+
+    .single {
+        input {
+            width: 100%;
+            height: 43px;
+        }
+    }
+
+    select {
+        height: 43px;
+    }
+
+    .wraper_btn {
+
+        width: 100%;
+        display: flex;
+        align-items: end;
+        justify-content: end;
+
+        button {
+            width: 100%;
+            display: flex;
+            width: 219px;
+            height: 50px;
+            padding: 12px 10px;
+            justify-content: center;
+            align-items: center;
+            gap: 9px;
+            flex-shrink: 0;
+            color: #0F75BC;
+            text-align: center;
+            font-family: "Anek Malayalam";
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            border-radius: 100px;
+            border: 1px solid #0F75BC;
+            margin-top: 20px;
+            align-self: flex-end;
+        }
+    }
+
+
+    h3 {
+        margin: 0px !important;
+    }
+
+    .nav-tabs {
+        height: 54px;
+    }
+
+    .wrape_indication {
+        height: 435px;
+    }
+
+    .btnView {
+        height: 27%;
+    }
+
+    .tableConsultSub {
+        width: 100%;
+        height: 100%;
+    }
+
+
+    .tabsCurrent {
+        .nav-link {
+            width: 169px;
+        }
+    }
+
+    h3 {
+        color: #0F75BC;
+        font-family: "Anek Malayalam";
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 23.04px;
+        border-bottom: 0.24px solid #8E96A0;
+        ;
+        padding-bottom: 10px;
+        margin-bottom: 15px;
+        /* 115.2% */
+    }
+
+
+    .single {
+        input {
+            width: 100%;
+            height: 43px;
+        }
+    }
+
+    select {
+        height: 43px;
+    }
+
+    .wraper_btn {
+        width: 100%;
+        display: flex;
+        align-items: end;
+        justify-content: end;
+
+        button {
+            display: flex;
+            width: 100%;
+            height: 50px;
+            padding: 12px 10px;
+            justify-content: center;
+            align-items: center;
+            gap: 9px;
+            flex-shrink: 0;
+            color: #0F75BC;
+            text-align: center;
+            font-family: "Anek Malayalam";
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            border-radius: 100px;
+            border: 1px solid #0F75BC;
+            margin-top: 20px;
+            align-self: flex-end;
+        }
+    }
+
+    .single_field {
+        margin-top: 19px;
+        margin-bottom: 20px;
+    }
+
+    .wrape_actions {
+        svg {
+            fill: #0F75BC;
+            width: 16px;
+            height: 16px;
+
+        }
+    }
+}

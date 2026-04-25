@@ -1,0 +1,43 @@
+@import "../../../assets/css/variable.scss";
+
+.lab_reading {
+    padding: 0px 20px;
+    height: 755px;
+    user-select: none;
+
+    h3 {
+        color: $blue-color;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 23.04px;
+        border-bottom: 1px solid #8E96A0;
+        padding-bottom: 10px;
+        padding-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    table {
+        width: auto;
+
+        td {
+            border-bottom: none;
+        }
+
+        p,
+        input {
+            color: $body-text-color;
+            text-align: center;
+            background: $background-color;
+            padding: 7px 8px;
+            margin: 0;
+            border-radius: 13.5px;
+            width: 128px;
+            font-style: normal;
+            font-size: 14px;
+            border: 1px solid $light-blue-contrast-color;
+            font-weight: 500;
+            line-height: normal;
+        }
+    }
+}

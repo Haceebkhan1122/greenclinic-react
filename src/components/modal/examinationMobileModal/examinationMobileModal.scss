@@ -1,0 +1,155 @@
+@import "../../../assets/css/variable.scss";
+
+.examinationMobile {
+    z-index: 9999999 !important;
+
+    @media (max-width: 767px) {
+        padding-left: 0 !important;
+    }
+
+    .modal-dialog {
+        @media (max-width: 767px) {
+            width: 100%;
+            height: 100%;
+            padding: 0;
+            margin: 0;
+            max-width: 100% !important;
+        }
+
+        .modal-content {
+            border-radius: 15.385px;
+            background: $white-color;
+
+            @media (max-width: 767px) {
+                background-color: #f2f9ff;
+                border: none;
+                border-radius: 0 !important;
+                height: 100%;
+            }
+
+            .close {
+                position: absolute;
+                top: 10px;
+                right: 10px;
+                z-index: 9;
+            }
+
+            .modal-body {
+                padding-left: 20px;
+                padding-right: 20px;
+
+                @media (max-width: 767px) {
+                    padding: 0;
+                }
+
+                h2 {
+                    color: $blue-color;
+                    font-size: 20px;
+                    border-bottom: 1px solid $light-blue-contrast-color;
+                    font-style: normal;
+                    margin-bottom: 20px;
+                    padding-bottom: 20px;
+                    font-weight: 500;
+                    line-height: 23.04px;
+
+                    img {
+                        display: none;
+                    }
+
+                    @media (max-width: 767px) {
+                        padding-top: 21px;
+                        padding-left: 20px;
+                        padding-right: 20px;
+                        font-size: 16px;
+                        align-items: center;
+                        background-color: white;
+                        box-shadow: 0px 3.998px 19.088px 0px rgba(0, 0, 0, 0.06);
+                        border-bottom: none;
+                        display: flex;
+
+                        img {
+                            display: block;
+                            width: 18px;
+                            height: 18px;
+                            margin-right: 10px;
+                        }
+                    }
+                }
+
+                .box {
+                    border-radius: 10px;
+                    background: #FFF;
+                    margin: 0 20px;
+                    padding: 10px;
+
+                    ul {
+                        .lii {
+                            height: 42px;
+                            border-bottom: 0.24px solid rgba(142, 142, 142, 0.30);
+                            padding-bottom: 8px;
+        
+        
+                            h5 {
+                                color: #313131;
+                                font-size: 14px;
+                                font-style: normal;
+                                font-weight: 300;
+                                line-height: normal;
+                                margin-bottom: 0px !important;
+                            }
+        
+                            span {
+                                color: #313131;
+                                text-align: right;
+                                font-size: 14px;
+                                font-style: normal;
+                                font-weight: 300;
+                                line-height: normal;
+                            }
+                        }
+                    }
+
+                    .wrapeCompl {
+                        width: 100%;
+                        padding-top: 24px;
+                        flex-direction: column;
+                        gap: 10px;
+
+                        .singleTextArea {
+                            display: flex;
+                            width: 100%;
+                            flex-direction: column;
+                            border-bottom: 0.24px solid rgba(142, 142, 142, 0.30);
+                            align-items: start;
+                            justify-content: start;
+                            gap: 4px;
+                            user-select: none;
+
+                            label {
+                                color: #0F75BC;
+                                font-size: 14px;
+                                font-style: normal;
+                                font-weight: 400;
+                                line-height: normal;
+                            }
+
+                            textarea {
+                                width: 100%;
+                                resize: none;
+                                color: #313131;
+                                font-size: 12px;
+                                height: 40px;
+                                font-style: normal;
+                                font-weight: 300;
+                                line-height: normal;
+                                -webkit-user-select: none;
+                                -ms-user-select: none;
+                                user-select: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,61 @@
+@import "../../assets/css/variable.scss";
+
+.card {
+    border: none !important;
+    border-radius: 10px !important;
+    background: #FFF;
+    box-shadow: 0px 3px 15px 0px rgba(0, 40, 85, 0.10);
+    margin-bottom: 9px;
+
+    .card-body {
+        padding: 6px 19px;
+
+        h5 {
+            color: $body-text-color;
+            font-family: "Anek Malayalam";
+            font-size: 14px;
+            font-style: normal;
+            margin: 0;
+            font-weight: 500;
+            text-align: left;
+            line-height: normal;
+        }
+
+        p {
+            color: $black-color;
+            font-size: 12px;
+            text-align: left;
+            font-style: normal;
+            font-weight: 300;
+            line-height: normal;
+        }
+    }
+}
+
+.video_modal {
+    z-index: 9999 !important;
+
+    .modal-dialog {
+        max-width: 752.814px;
+
+        .modal-content {
+            background-color: transparent;
+            border: none;
+
+            .modal-body {
+                background-color: transparent;
+                border-radius: 18.756px;
+                padding: 0;
+
+                .wraper__modal {
+                    .close {
+                        position: absolute;
+                        top: 12px;
+                        right: 14px;
+                        z-index: 9;
+                    }
+                }
+            }
+        }
+    }
+}

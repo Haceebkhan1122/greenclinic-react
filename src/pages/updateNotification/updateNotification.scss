@@ -1,0 +1,136 @@
+@import "../../assets/css/variable.scss";
+
+.update-notification {
+    .boxed-bg {
+        width: 100%;
+        min-height: 802px;
+        box-shadow: 0px 8px 20px 0px rgba(0, 40, 85, 0.0784313725);
+        background-color: $white-color;
+        border-radius: 15px;
+        position: relative;
+
+        @media (max-width: 767px) {
+            padding: 10px;
+        }
+
+        .tabs-li {
+            border-right: 1px solid rgba(173, 189, 206, 0.50);
+            height: 802px;
+
+            .nav-tabs {
+                border-bottom: none;
+                padding: 17px 25px 7px !important;
+                gap: 21px;
+
+                .nav-item {
+                    .nav-link {
+                        color: #8799AC;
+                        border: none;
+                        text-decoration: none;
+                        border-color: transparent;
+                        background-color: transparent;
+                        font-family: "Anek Malayalam";
+                        font-size: 18px;
+                        font-style: normal;
+                        padding: 0;
+                        font-weight: 400;
+                    }
+
+                    .nav-link.active {
+                        color: $blue-color;
+                        font-weight: 500;
+                    }
+                }
+            }
+
+            .tab-content {
+                padding: 0 0 17px 8px;
+                overflow-y: scroll;
+                height: 751px;
+
+                .tab-pane {
+                    margin-right: 3px;
+
+                    .nav-link {
+                        opacity: 1;
+                        display: flex;
+                        align-items: start;
+                        justify-content: space-between;
+                        border-radius: 0;
+                        padding: 16px 5px 16px 20px;
+                        border-bottom: 1px solid rgba(173, 189, 206, 0.50);
+
+                        &:hover {
+                            background-color: #F2F9FF;
+                        }
+
+                        div {
+                            h5 {
+                                color: $body-text-color;
+                                font-size: 16px;
+                                font-style: normal;
+                                font-weight: 500;
+                                line-height: 18.783px;
+                                margin: 0 0 9px;
+                            }
+
+                            p {
+                                color: #8799AC;
+                                font-size: 16px;
+                                font-style: normal;
+                                font-weight: 500;
+                                margin: 0;
+                                line-height: normal;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .video-listing {
+            h5 {
+                color: $blue-color;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 18.783px;
+                margin: 16px 0 18px;
+            }
+
+            .card {
+                @media (max-width: 767px) {
+                    box-shadow: 0px 3px 15px 0px rgba(0, 40, 85, 0.10);
+                }
+
+                .popup-youtube {
+                    width: 320px;
+                    height: 180px;
+                }
+
+                .card-body {
+                    padding: 6px 19px;
+
+                    h5 {
+                        color: $body-text-color;
+                        font-family: "Anek Malayalam";
+                        font-size: 14px;
+                        font-style: normal;
+                        margin: 0;
+                        font-weight: 500;
+                        text-align: left;
+                        line-height: normal;
+                    }
+
+                    p {
+                        color: $black-color;
+                        font-size: 12px;
+                        font-style: normal;
+                        font-weight: 300;
+                        line-height: normal;
+                    }
+                }
+            }
+        }
+    }
+}

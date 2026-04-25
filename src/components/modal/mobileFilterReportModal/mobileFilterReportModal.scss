@@ -1,0 +1,175 @@
+@import "../../../assets/css/variable.scss";
+
+.mobileFilterReportModal {
+    z-index: 9999999 !important;
+    width: 100%;
+    height: 100%;
+
+
+    .modal-dialog {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .modal-content {
+        width: 320px;
+        height: 330px;
+        flex-shrink: 0;
+        border-radius: 18px;
+        background: #FFF;
+        box-shadow: 0px 4px 29.6px 0px rgba(0, 0, 0, 0.09);
+    }
+
+    .modal-body {
+        width: 100%;
+        height: 100%;
+        overflow-y: scroll;
+        padding: 12px;
+        display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+        &::-webkit-scrollbar {
+            width: 5px;
+            height: 5px;
+            background-color: #cacaca;
+            display: none;
+        }
+
+    }
+
+    .single {
+        width: 100%;
+        margin-bottom: 20px;
+
+        input {
+            width: 100%;
+            height: 43px;
+        }
+    }
+
+    .single_field {
+        margin-bottom: 20px;
+
+        select {
+            height: 43px;
+        }
+    }
+
+    h2 {
+        color: $blue-color;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 23.04px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+
+        .filterIcoo {
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M19 2H5C4.20435 2 3.44129 2.31607 2.87868 2.87868C2.31607 3.44129 2 4.20435 2 5V6.17C1.99986 6.58294 2.08497 6.99147 2.25 7.37V7.43C2.39128 7.75097 2.59139 8.04266 2.84 8.29L9 14.41V21C8.99966 21.1699 9.04264 21.3372 9.12487 21.4859C9.20711 21.6346 9.32589 21.7599 9.47 21.85C9.62914 21.9486 9.81277 22.0006 10 22C10.1565 21.9991 10.3107 21.9614 10.45 21.89L14.45 19.89C14.6149 19.8069 14.7536 19.6798 14.8507 19.5227C14.9478 19.3656 14.9994 19.1847 15 19V14.41L21.12 8.29C21.3686 8.04266 21.5687 7.75097 21.71 7.43V7.37C21.8888 6.99443 21.9876 6.58578 22 6.17V5C22 4.20435 21.6839 3.44129 21.1213 2.87868C20.5587 2.31607 19.7956 2 19 2ZM13.29 13.29C13.1973 13.3834 13.124 13.4943 13.0742 13.6161C13.0245 13.7379 12.9992 13.8684 13 14V18.38L11 19.38V14C11.0008 13.8684 10.9755 13.7379 10.9258 13.6161C10.876 13.4943 10.8027 13.3834 10.71 13.29L5.41 8H18.59L13.29 13.29ZM20 6H4V5C4 4.73478 4.10536 4.48043 4.29289 4.29289C4.48043 4.10536 4.73478 4 5 4H19C19.2652 4 19.5196 4.10536 19.7071 4.29289C19.8946 4.48043 20 4.73478 20 5V6Z' fill='%23118BE2'/%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            display: block;
+            width: 24px;
+            height: 24px;
+        }
+    }
+
+
+    .wraper_btns {
+        display: flex;
+        width: 100%;
+        margin-top: 48px;
+        justify-content: center;
+        align-items: center;
+        gap: 24px;
+
+        button {
+            width: 228px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 18px;
+        }
+    }
+
+    .ant-picker {
+        width: 100%;
+        height: 44px;
+        color: var(--Gray, #C9C9C9);
+        font-family: "Anek Malayalam";
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        border-radius: 87.688px;
+        background: var(--Blue-Light, #F2F9FF);
+    }
+
+    .sta {
+        color: #313131;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        margin-top: 10px;
+    }
+
+    .wrape__radios {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .single {
+        width: 48%;
+
+        .wrapeInp {
+            input {
+                width: 20px;
+                height: 20px;
+            }
+        }
+
+        label {
+            font-size: 14px !important;
+        }
+    }
+
+    .saveBtn {
+        display: flex;
+        width: 296px;
+        height: 40px;
+        padding: 12px 10px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        flex-shrink: 0;
+        color: #FFF;
+        text-align: center;
+        font-family: "Anek Malayalam";
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        text-transform: uppercase;
+        border-radius: 100px;
+        background: #0F75BC;
+    }
+}
+
+.crossOptionIcon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20' fill='none'%3E%3Cpath d='M6.9987 13.8783L9.9987 10.8783L12.9987 13.8783L13.8768 13.0002L10.8768 10.0002L13.8768 7.00016L12.9987 6.12204L9.9987 9.12204L6.9987 6.12204L6.12057 7.00016L9.12057 10.0002L6.12057 13.0002L6.9987 13.8783ZM10.0002 17.9168C8.90516 17.9168 7.87592 17.7091 6.91245 17.2935C5.94898 16.8779 5.11092 16.314 4.39828 15.6016C3.68564 14.8893 3.12141 14.0516 2.70557 13.0885C2.28988 12.1254 2.08203 11.0965 2.08203 10.0016C2.08203 8.90662 2.28981 7.87738 2.70536 6.91391C3.12092 5.95044 3.68488 5.11238 4.39724 4.39975C5.1096 3.68711 5.94731 3.12287 6.91036 2.70704C7.87342 2.29134 8.90238 2.0835 9.99724 2.0835C11.0922 2.0835 12.1215 2.29127 13.0849 2.70683C14.0484 3.12238 14.8865 3.68634 15.5991 4.3987C16.3118 5.11107 16.876 5.94877 17.2918 6.91183C17.7075 7.87488 17.9154 8.90384 17.9154 9.9987C17.9154 11.0937 17.7076 12.1229 17.292 13.0864C16.8765 14.0499 16.3125 14.8879 15.6002 15.6006C14.8878 16.3132 14.0501 16.8775 13.087 17.2933C12.124 17.709 11.095 17.9168 10.0002 17.9168ZM9.9987 16.6668C11.8598 16.6668 13.4362 16.021 14.7279 14.7293C16.0195 13.4377 16.6654 11.8613 16.6654 10.0002C16.6654 8.13905 16.0195 6.56266 14.7279 5.271C13.4362 3.97933 11.8598 3.3335 9.9987 3.3335C8.13759 3.3335 6.5612 3.97933 5.26953 5.271C3.97786 6.56266 3.33203 8.13905 3.33203 10.0002C3.33203 11.8613 3.97786 13.4377 5.26953 14.7293C6.5612 16.021 8.13759 16.6668 9.9987 16.6668Z' fill='%23313131'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: block;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}

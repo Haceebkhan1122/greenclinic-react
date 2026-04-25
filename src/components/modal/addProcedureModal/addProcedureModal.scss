@@ -1,0 +1,161 @@
+.custom_field_form {
+    width: 100%;
+    height: 100%;
+    border-left: 1px solid #D3DEE9;
+    padding: 20px 24px;
+    position: relative;
+
+    .backIcon {
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='16' viewBox='0 0 10 16' fill='none'%3E%3Cpath d='M8.5 15L1.5 8L8.5 1' stroke='%23313131' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        display: block;
+        width: 14px;
+        height: 14px;
+    }
+
+    @media (min-width : 0px) and (max-width : 768px) {
+        padding: 0;
+        border: none;
+    }
+
+
+    .fieldsWrape {
+        width: 100%;
+        overflow-y: auto;
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+
+        h2 {
+            color: #0F75BC;
+            font-family: "Anek Malayalam";
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 23.04px;
+            display: flex;
+            align-items: center;
+
+            .backIcon {
+                margin-right: 8px;
+                width: 23.985px;
+height: 23.985px;
+                background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M7.81878 13.0004L13.4154 18.597L11.9913 19.9962L3.99609 12.001L11.9913 4.00586L13.4154 5.40501L7.81878 11.0016H19.9864V13.0004H7.81878Z' fill='%230F75BC'/%3E%3C/svg%3E");
+
+            }
+
+            @media (min-width : 0px) and (max-width : 768px) {
+                    color: #0F75BC;
+                    font-family: "Anek Malayalam";
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 19.903px;
+                    /* 124.393% */
+                }
+        }
+
+        .single {
+            width: 100%;
+            display: flex;
+            margin-bottom: 8px;
+            margin-top: 15px;
+
+            input {
+                width: 100%;
+            }
+        }
+
+        .single_field {
+            margin-top: 15px;
+            margin-bottom: 18px;
+        }
+
+        .singleTick {
+            input {
+                width: 14px;
+                height: 14px;
+                border-radius: 3px;
+
+                label {
+                    color: #000;
+                    font-family: "Anek Malayalam";
+                    font-size: 12px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                    padding-left: 23px;
+                }
+            }
+        }
+
+        .wrape_checks_req {
+            width: 100%;
+
+            .field_check {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-top: 10px;
+
+                input {
+                    width: 36px;
+                    height: 16px;
+                }
+            }
+        }
+
+        .wrape_btn {
+            width: 100%;
+            display: flex;
+            justify-content: end;
+            align-items: center;
+            padding-right: 24px;
+            gap: 20px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+
+
+            @media (min-width : 0px) and (max-width : 768px) {
+                padding-right: 0px;
+            }
+
+            button {
+                display: flex;
+                width: 150px;
+                height: 41.787px;
+                padding: 12px 10px;
+                justify-content: center;
+                align-items: center;
+                gap: 9px;
+                flex-shrink: 0;
+                border-radius: 100px;
+                text-align: center;
+                font-size: 15px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+
+                @media (min-width : 0px) and (max-width : 768px) {
+                    width: 46%;
+                }
+
+
+                &:nth-child(1) {
+                    border: 1px solid #0F75BC;
+                    color: #0F75BC;
+                    background-color: #FFF;
+                }
+
+                &:nth-child(2) {
+                    background-color: #0F75BC;
+                    color: #FFF;
+                }
+            }
+        }
+    }
+}

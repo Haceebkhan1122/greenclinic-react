@@ -1,0 +1,120 @@
+@import "../../../assets/css/variable.scss";
+
+.healthRecordsMobile {
+    z-index: 9999999 !important;
+
+    @media (max-width: 767px) {
+        padding-left: 0 !important;
+    }
+
+    .modal-dialog {
+        @media (max-width: 767px) {
+            width: 100%;
+            height: 100%;
+            padding: 0;
+            margin: 0;
+            max-width: 100% !important;
+        }
+
+        .modal-content {
+            border-radius: 15.385px;
+            background: $white-color;
+
+            @media (max-width: 767px) {
+                background-color: #f2f9ff;
+                border: none;
+                border-radius: 0 !important;
+                height: 100%;
+            }
+
+            .close {
+                position: absolute;
+                top: 10px;
+                right: 10px;
+                z-index: 9;
+            }
+
+            .modal-body {
+                padding-left: 20px;
+                padding-right: 20px;
+
+                @media (max-width: 767px) {
+                    padding: 0;
+                }
+
+                h2 {
+                    color: $blue-color;
+                    font-size: 20px;
+                    border-bottom: 1px solid $light-blue-contrast-color;
+                    font-style: normal;
+                    margin-bottom: 20px;
+                    padding-bottom: 20px;
+                    font-weight: 500;
+                    line-height: 23.04px;
+
+                    img {
+                        display: none;
+                    }
+
+                    @media (max-width: 767px) {
+                        padding-top: 21px;
+                        padding-left: 20px;
+                        padding-right: 20px;
+                        font-size: 16px;
+                        align-items: center;
+                        background-color: white;
+                        box-shadow: 0px 3.998px 19.088px 0px rgba(0, 0, 0, 0.06);
+                        border-bottom: none;
+                        display: flex;
+
+                        img {
+                            display: block;
+                            width: 18px;
+                            height: 18px;
+                            margin-right: 10px;
+                        }
+                    }
+                }
+
+                .box {
+                    border-radius: 10px;
+                    background: #FFF;
+                    margin: 0 20px;
+                    padding: 10px;
+                    height: 640px;
+                    overflow-y: scroll;
+
+                    .card {
+                        border-radius: 8px;
+                        background: #FFF;
+                        box-shadow: 4px 10px 20.4px 0px rgba(0, 0, 0, 0.09);
+                        padding: 10px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        flex-direction: row;
+
+                        h4 {
+                            color: #0F75BC;
+                            font-size: 14px;
+                            font-style: normal;
+                            font-weight: 500;
+                            line-height: 20.642px;
+                            text-decoration: underline;
+                            margin-bottom: 0;
+                        }
+
+                        h5 {
+                            color: #313131;
+                            font-size: 14px;
+                            font-style: normal;
+                            margin-bottom: 0;
+                            font-weight: 400;
+                            line-height: normal;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

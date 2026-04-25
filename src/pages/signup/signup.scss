@@ -1,0 +1,647 @@
+@import '../../assets/css/variable.scss';
+
+.signPage {
+    width: 100%;
+    height: 100vh;
+    background-color: #F2F9FF;
+    padding: 30px 0px;
+
+
+    .top-wrape {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0px 30px;
+        margin-bottom: 20px;
+
+        h1 {
+            color: #0F75BC;
+            font-family: "Anek Malayalam";
+            font-size: 34px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 23.04px;
+            display: flex;
+            gap: 10px;
+            align-items: center;
+
+            @media (max-width: 767px) {
+                font-size: 17.28px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 10px;
+                position: relative;
+                top: 5px;
+            }
+        }
+
+        img {
+            width: auto;
+            height: 70px;
+
+            @media (max-width: 767px) {
+                height: 35.686px;
+                width: auto;
+            }
+        }
+    }
+
+    .bottomCard {
+        width: 100%;
+        min-height: 767px;
+        flex-shrink: 0;
+        border-radius: 14px;
+        background: #FFF;
+        box-shadow: 0px 3px 15px 0px rgba(0, 40, 85, 0.20);
+        margin-bottom: 30px;
+
+        h3 {
+            color: #212121;
+            font-family: $AnekMalayalam-Medium;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 29.887px;
+            border-bottom: 1px solid #D9D9D9;
+            padding: 15px 33px;
+        }
+
+        form {
+            width: 100%;
+            padding: 15px 33px;
+
+            .mobileNumber {
+                input {
+                    padding: 0px 10px 0px 3rem !important;
+                }
+            }
+
+            .single_field {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: start;
+                align-items: start;
+
+                label {
+                    color: rgba(18, 25, 33, 0.90);
+                    font-family: "Anek Malayalam";
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 26px;
+                    margin-bottom: 6px;
+                }
+
+                .react-tel-input {
+                    align-items: center;
+                    border-radius: 25px;
+                    height: 47px;
+                    padding-left: 10px;
+
+                    .flag-dropdown {
+                        border: none;
+                        background-color: transparent;
+                    }
+                }
+
+                input {
+                    width: 100%;
+                    height: 47px;
+                    padding: 0px 10px 0px 15px;
+                    align-items: center;
+                    gap: 80px;
+                    align-self: stretch;
+                    border-radius: 25px;
+                    border: 1px solid #F2F9FF;
+                    background: #F2F9FF;
+                    outline: none;
+                    color: #313131;
+                    font-family: "Anek Malayalam";
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                    margin-bottom: 1px;
+
+                    &::placeholder {
+                        color: #cacaca;
+                        font-family: "Anek Malayalam";
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: normal;
+                    }
+                }
+
+                .form-select {
+                    width: 100%;
+                    height: 47px;
+                    border-radius: 25px;
+                    border: 1px solid #F2F9FF;
+                    background: #F2F9FF;
+                    background-image: url("data:image/svg+xml,%3Csvg width='18' height='19' viewBox='0 0 18 19' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M14.25 6.875L9 12.125L3.75 6.875' stroke='%23959494' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+                    background-repeat: no-repeat;
+                    background-size: 18px;
+                    background-position: center right 10%;
+                    color: #313131;
+                    font-family: "Anek Malayalam";
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                    margin-bottom: 0px;
+                    padding: 0px 10px 0px 15px;
+                    transition: none !important;
+
+                    &:focus {
+                        outline: none;
+                        border: none;
+                        box-shadow: none;
+                    }
+
+                    &:active {
+                        border: none;
+                        outline: none;
+                    }
+
+
+                }
+
+
+                .labelTextSpan {
+                    color: rgba(18, 25, 33, 0.90);
+                    font-family: "Anek Malayalam";
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 26px;
+                    margin-bottom: 6px;
+                }
+
+                .ant-input-suffix {}
+
+                .wraperGenders {
+                    width: 100%;
+                    height: 47px;
+                    border: 1px solid #F2F9FF;
+                    background: #F2F9FF;
+                    border-radius: 25px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    padding: 0px 15px;
+
+                    .singleGender {
+                        display: flex;
+                        align-items: center;
+                        gap: 10px;
+                        position: relative;
+
+                        label {
+                            margin: 0 !important;
+                        }
+
+                        input {
+                            margin: 0 !important;
+                            // display: none;
+                        }
+
+                        .customInp {
+                            // width: 22px;
+                            // height: 22px;
+                            // border: 1px solid #84D95B !important;
+                            // border-radius: 50%;
+                            // margin-right: 10px;
+                            // position: relative;
+                            // accent-color: #84D95B !important;
+                        }
+                    }
+                }
+
+
+                .wraper_date {
+                    width: 100%;
+                    height: 47px;
+                    overflow: hidden;
+                    position: relative;
+
+                    .ant-picker {
+                        width: 100%;
+                        height: 100%;
+                        border: 1px solid #F2F9FF;
+                        background: #F2F9FF;
+                        border-radius: 25px;
+                        padding: 0;
+                        padding-right: 20px;
+                        color: #313131;
+                        font-family: "Anek Malayalam";
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: normal;
+                        cursor: pointer;
+
+                        input {
+                            width: 100% !important;
+                            height: 47px !important;
+                            margin: 0;
+                            color: #313131;
+                            font-family: "Anek Malayalam";
+                            font-size: 16px;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: normal;
+                            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='25' viewBox='0 0 24 25' fill='none'%3E%3Cpath d='M4.9803 22.294C4.43021 22.294 3.9593 22.0981 3.56757 21.7064C3.17585 21.3147 2.97998 20.8438 2.97998 20.2937V6.29141C2.97998 5.74133 3.17585 5.27042 3.56757 4.87869C3.9593 4.48696 4.43021 4.29109 4.9803 4.29109H5.98046V2.29077H7.98078V4.29109H15.9821V2.29077H17.9824V4.29109H18.9826C19.5326 4.29109 20.0035 4.48696 20.3953 4.87869C20.787 5.27042 20.9829 5.74133 20.9829 6.29141V20.2937C20.9829 20.8438 20.787 21.3147 20.3953 21.7064C20.0035 22.0981 19.5326 22.294 18.9826 22.294H4.9803ZM4.9803 20.2937H18.9826V10.2921H4.9803V20.2937ZM4.9803 8.29173H18.9826V6.29141H4.9803V8.29173ZM11.9814 14.2927C11.698 14.2927 11.4605 14.1968 11.2688 14.0052C11.0771 13.8135 10.9813 13.5759 10.9813 13.2925C10.9813 13.0092 11.0771 12.7716 11.2688 12.5799C11.4605 12.3882 11.698 12.2924 11.9814 12.2924C12.2648 12.2924 12.5023 12.3882 12.694 12.5799C12.8857 12.7716 12.9816 13.0092 12.9816 13.2925C12.9816 13.5759 12.8857 13.8135 12.694 14.0052C12.5023 14.1968 12.2648 14.2927 11.9814 14.2927ZM7.98078 14.2927C7.69741 14.2927 7.45987 14.1968 7.26817 14.0052C7.07647 13.8135 6.98062 13.5759 6.98062 13.2925C6.98062 13.0092 7.07647 12.7716 7.26817 12.5799C7.45987 12.3882 7.69741 12.2924 7.98078 12.2924C8.26416 12.2924 8.5017 12.3882 8.6934 12.5799C8.8851 12.7716 8.98094 13.0092 8.98094 13.2925C8.98094 13.5759 8.8851 13.8135 8.6934 14.0052C8.5017 14.1968 8.26416 14.2927 7.98078 14.2927ZM15.9821 14.2927C15.6987 14.2927 15.4612 14.1968 15.2695 14.0052C15.0778 13.8135 14.9819 13.5759 14.9819 13.2925C14.9819 13.0092 15.0778 12.7716 15.2695 12.5799C15.4612 12.3882 15.6987 12.2924 15.9821 12.2924C16.2654 12.2924 16.503 12.3882 16.6947 12.5799C16.8864 12.7716 16.9822 13.0092 16.9822 13.2925C16.9822 13.5759 16.8864 13.8135 16.6947 14.0052C16.503 14.1968 16.2654 14.2927 15.9821 14.2927ZM11.9814 18.2933C11.698 18.2933 11.4605 18.1975 11.2688 18.0058C11.0771 17.8141 10.9813 17.5766 10.9813 17.2932C10.9813 17.0098 11.0771 16.7723 11.2688 16.5806C11.4605 16.3889 11.698 16.293 11.9814 16.293C12.2648 16.293 12.5023 16.3889 12.694 16.5806C12.8857 16.7723 12.9816 17.0098 12.9816 17.2932C12.9816 17.5766 12.8857 17.8141 12.694 18.0058C12.5023 18.1975 12.2648 18.2933 11.9814 18.2933ZM7.98078 18.2933C7.69741 18.2933 7.45987 18.1975 7.26817 18.0058C7.07647 17.8141 6.98062 17.5766 6.98062 17.2932C6.98062 17.0098 7.07647 16.7723 7.26817 16.5806C7.45987 16.3889 7.69741 16.293 7.98078 16.293C8.26416 16.293 8.5017 16.3889 8.6934 16.5806C8.8851 16.7723 8.98094 17.0098 8.98094 17.2932C8.98094 17.5766 8.8851 17.8141 8.6934 18.0058C8.5017 18.1975 8.26416 18.2933 7.98078 18.2933ZM15.9821 18.2933C15.6987 18.2933 15.4612 18.1975 15.2695 18.0058C15.0778 17.8141 14.9819 17.5766 14.9819 17.2932C14.9819 17.0098 15.0778 16.7723 15.2695 16.5806C15.4612 16.3889 15.6987 16.293 15.9821 16.293C16.2654 16.293 16.503 16.3889 16.6947 16.5806C16.8864 16.7723 16.9822 17.0098 16.9822 17.2932C16.9822 17.5766 16.8864 17.8141 16.6947 18.0058C16.503 18.1975 16.2654 18.2933 15.9821 18.2933Z' fill='%23959494'/%3E%3C/svg%3E") !important;
+                            background-repeat: no-repeat;
+                            background-size: 24px;
+                            background-position: center right 0%;
+                            cursor: pointer;
+                        }
+                    }
+
+                    .ant-picker-suffix {
+                        display: none;
+                    }
+
+
+                    .anticon {
+                        display: none;
+                    }
+                }
+
+                .error {
+                    color: rgba(255, 0, 0, 0.7);
+                    font-size: 12px;
+                    margin-top: -5px;
+                }
+            }
+
+            .btnWraper {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: end;
+
+                button {
+                    width: 237px;
+                    height: 68px;
+                    padding: 12px 0px;
+                    justify-content: center;
+                    align-items: center;
+                    flex-shrink: 0;
+                    border-radius: 130px;
+                    background: #0F75BC;
+                    color: #FFF;
+                    text-align: center;
+                    font-family: "Anek Malayalam";
+                    font-size: 22px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal;
+                    border: none;
+                    outline: none;
+                    transition: all 0.5s ease;
+
+                    @media (max-width: 767px) {
+                        font-size: 18px !important;
+                        width: 237px;
+                        height: 47px;
+                        margin: auto;
+                        margin-top: 20px;
+                        margin-bottom: 90px;
+                    }
+
+                    &:hover {
+                        background-color: #0F75BC !important;
+                    }
+                }
+            }
+        }
+
+        h4 {
+            color: #0F75BC;
+            font-family: "Anek Malayalam";
+            font-size: 22px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 26px;
+            margin: 12px 0px;
+
+            @media (max-width: 767px) {
+                font-size: 12px;
+            }
+        }
+
+        .passCri {}
+
+
+        .single_field_checks {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            position: relative;
+
+            @media (max-width: 767px) {
+                margin-bottom: 10px;
+            }
+
+            label {
+                position: relative;
+                padding-left: 32px;
+                transition: all 0.4s ease;
+
+                @media (max-width: 767px) {
+                    font-size: 14px !important;
+                }
+
+                input {
+                    appearance: none;
+                    width: 22px;
+                    height: 22px;
+                    border: 1px solid #E2EAF0;
+                    border-radius: 50%;
+                    position: absolute;
+                    left: 0;
+                    overflow: hidden;
+
+                    &:checked {
+                        display: none;
+                    }
+
+                    &:checked+span {
+                        background-image: url("data:image/svg+xml,%3Csvg width='22' height='22' viewBox='0 0 22 22' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='11' cy='11' r='10.25' stroke='%2384D95B' stroke-width='1.5'/%3E%3Cg clip-path='url(%23clip0_173_15892)'%3E%3Cpath d='M9.25007 13.4501L6.80007 11.0001L5.9834 11.8167L9.25007 15.0834L16.2501 8.08339L15.4334 7.26672L9.25007 13.4501Z' fill='%2384D95B' stroke='%2384D95B' stroke-width='0.5'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_173_15892'%3E%3Crect width='14' height='14' fill='white' transform='translate(4 4)'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A");
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        background-position: center;
+                        display: block;
+                        width: 22px;
+                        height: 22px;
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        bottom: 0;
+                        margin: auto;
+                    }
+                }
+            }
+
+
+
+            label {
+                color: var(--Gray, #C9C9C9);
+                font-family: "Anek Malayalam";
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+            }
+
+
+            input {}
+
+            span {}
+
+            .incl {
+                color: #313131;
+                font-family: "Anek Malayalam";
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+            }
+        }
+    }
+}
+
+
+.singleGender input[type='radio']:checked+span::after {
+    content: "";
+    width: 14px;
+    height: 14px;
+    background-color: #84D95B !important;
+    position: absolute;
+    border-radius: 50%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+}
+
+.singleGender input[type='radio']:checked+span {
+    border: 1px solid #84D95B !important;
+}
+
+.singleGender {
+    input {
+        width: 24px;
+        height: 24px;
+        border: 1px solid #5F6368 !important;
+    }
+}
+
+
+.areaWraperRegister {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    .areaSearchInp {
+        color: #222;
+        font-size: 14px;
+        padding-left: 22px;
+        padding-bottom: 8px;
+        position: sticky;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background: white;
+        z-index: 9999;
+    }
+
+    label {
+        color: rgba(18, 25, 33, 0.90);
+        font-family: "Anek Malayalam";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 26px;
+        /* 162.5% */
+        margin-bottom: 8px;
+    }
+
+    .topArea {
+        width: 100%;
+        display: flex;
+        height: 47px;
+        padding: 0px 23px 0px 15px;
+        align-items: center;
+        gap: 128px;
+        border-radius: 25px;
+        border: 1px solid #F2F9FF;
+        background: #F2F9FF;
+        justify-content: space-between;
+        cursor: pointer;
+
+        .title {
+            width: 80%;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+
+        }
+
+        .dropArr {
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='9' viewBox='0 0 14 9' fill='none'%3E%3Cpath d='M12.25 1.875L7 7.125L1.75 1.875' stroke='%23959494' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            display: block;
+            width: 13.5px;
+            height: 8.25px;
+        }
+    }
+
+    .areaOptions {
+        display: inline-flex;
+        width: 100%;
+        height: 220px;
+        padding: 20px;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        border-radius: 15px;
+        border: 0.5px solid #D3DEE9;
+        background: #FFF;
+        box-shadow: 0px 3px 15px 0px rgba(0, 40, 85, 0.20);
+        position: absolute;
+        left: 0;
+        z-index: 999;
+        top: 80%;
+
+        .citiesOptionsAll {
+            width: 100%;
+            height: calc(100% - 50px);
+            overflow-y: scroll;
+            padding-right: 12px;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+
+            .single {
+                width: 100%;
+                align-items: center;
+
+                &.singleGender {
+
+                    input {
+                        width: 24px !important;
+                        height: 24px !important;
+                        border: 1px solid #5F6368;
+                    }
+                }
+
+                label {
+                    color: #313131;
+                    font-family: "Anek Malayalam";
+                    font-size: 14px !important;
+                    font-style: normal;
+                    font-weight: 300 !important;
+                    line-height: 19.2px;
+                    /* 137.143% */
+                    margin: 0px !important;
+                }
+
+                input {
+
+                    &:checked+span {
+                        background-color: $blue-color !important;
+                    }
+                }
+            }
+        }
+
+        .enterAreaSearch {
+            display: flex;
+            width: 280px;
+            height: 50px;
+            padding: 0px 10px 0px 15px;
+            align-items: center;
+            gap: 68px;
+            border-radius: 25px;
+            border: 1px solid #F2F9FF;
+            background: #F2F9FF;
+
+            input {
+                width: 100%;
+                height: 100%;
+                background-color: transparent;
+
+                &::placeholder {
+                    color: #313131;
+                    font-family: "Anek Malayalam";
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                }
+            }
+
+            button {
+                width: 120px;
+                height: 30px;
+                border-radius: 130px;
+                background: $blue-color;
+                color: #FFF;
+                text-align: center;
+                font-family: "Anek Malayalam";
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+                text-align: center;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+
+            }
+        }
+    }
+}
+
+
+.wraperGenders .singleGender .wrapeInp {
+    position: relative;
+
+    input {
+        width: 24px !important;
+        height: 24px !important;
+        border: 1px solid #5F6368 !important;
+        padding: 0px !important;
+
+        &:checked {
+            border: 3px solid #84D95B !important;
+        }
+
+        &:checked+span {
+            z-index: 999;
+            background-color: #84D95B;
+            left: 0.4px !important;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            width: 55% !important;
+            height: 55% !important;
+
+            &::after {
+                display: none;
+            }
+        }
+    }
+}

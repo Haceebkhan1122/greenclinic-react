@@ -1,0 +1,99 @@
+.markConsultationEndedModal {
+
+    .modal-dialog {
+        width: 100%;
+        max-width: 528px;
+    }
+
+    .modal-content {
+        width: 528px;
+        height: 321px;
+        flex-shrink: 0;
+        border-radius: 15px;
+        background: #FFF;
+    }
+
+    .modal-body {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+
+
+        .infoIco {
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 40 40' fill='none'%3E%3Cpath d='M20 0C8.96 0 0 8.96 0 20C0 31.04 8.96 40 20 40C31.04 40 40 31.04 40 20C40 8.96 31.04 0 20 0ZM22 30H18V26H22V30ZM22 22H18V10H22V22Z' fill='%23118BE2'/%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            display: block;
+            width: 40px;
+            height: 40px;
+        }
+
+        h2 {
+            color: #313131;
+            text-align: center;
+            font-family: "Anek Malayalam";
+            font-size: 26px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            margin: 0 !important;
+        }
+
+        p {
+            color: #313131;
+text-align: center;
+font-family: "Anek Malayalam";
+font-size: 18px;
+font-style: normal;
+font-weight: 300;
+line-height: normal;
+margin: 0 !important;
+
+        }
+
+        .wraper_btns {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+
+            button {
+                width: 228px !important;
+                height: 50px;
+                flex-shrink: 0;
+                border-radius: 100px;
+
+              
+
+                &:nth-child(1) {
+                    border: 1px solid #0F75BC;
+                    background-color: transparent;
+                    color: #0F75BC;
+                    text-align: center;
+                    font-family: "Anek Bangla";
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: normal;
+                }
+
+                &:nth-child(2) {
+                    background: #0F75BC;
+                    color: #FFF;
+                    text-align: center;
+                    font-family: "Anek Bangla";
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: normal;
+                }
+            }
+        }
+    }
+}

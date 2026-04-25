@@ -1,0 +1,129 @@
+@import "../../../assets/css/variable.scss";
+
+.add_new_role {
+    z-index: 9999999 !important;
+
+    @media (max-width: 767px) {
+        padding-left: 0 !important;
+    }
+
+    .modal-dialog {
+        @media (max-width: 767px) {
+            width: 100%;
+            height: 100%;
+            padding: 0;
+            margin: 0;
+            max-width: 100% !important;
+        }
+
+        .modal-content {
+            border-radius: 15.385px;
+            background: $white-color;
+
+            @media (max-width: 767px) {
+                background-color: #f2f9ff;
+                border: none;
+                border-radius: 0 !important;
+            }
+
+            .close {
+                position: absolute;
+                top: 10px;
+                right: 10px;
+                z-index: 9;
+            }
+
+            .modal-body {
+                padding-left: 20px;
+                padding-right: 20px;
+
+                @media (max-width: 767px) {
+                    padding: 0;
+                }
+
+                h2 {
+                    color: $blue-color;
+                    font-size: 20px;
+                    border-bottom: 1px solid $light-blue-contrast-color;
+                    font-style: normal;
+                    margin-bottom: 20px;
+                    padding-bottom: 20px;
+                    font-weight: 500;
+                    line-height: 23.04px;
+
+                    img {
+                        display: none;
+                    }
+
+                    @media (max-width: 767px) {
+                        padding-top: 21px;
+                        padding-left: 20px;
+                        padding-right: 20px;
+                        font-size: 16px;
+                        align-items: center;
+                        background-color: white;
+                        box-shadow: 0px 3.998px 19.088px 0px rgba(0, 0, 0, 0.06);
+                        border-bottom: none;
+                        display: flex;
+
+                        img {
+                            display: block;
+                            width: 18px;
+                            height: 18px;
+                            margin-right: 10px;
+                        }
+                    }
+                }
+
+                .right {
+                    padding: 10px 11px;
+                    background-color: #fff;
+                    margin: 20px 11px 80px;
+                    border-radius: 10px;
+
+                    .box-fixed {
+                        button {
+                            width: 100%;
+                            border-radius: 100px;
+                            color: #FFF;
+                            font-size: 15px;
+                            padding: 12px 0;
+                            font-style: normal;
+                            font-weight: 600;
+                            line-height: normal;
+                            background: #0F75BC;
+                        }
+                    }
+
+                    h3 {
+                        color: #0F75BC;
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: 23.04px;
+                    }
+
+                    .customInp {
+                        input {
+                            width: 100%;
+                        }
+                    }
+
+                    .wrape_gender {
+                        border-radius: 19.77px;
+                        border: 0.791px solid #F2F9FF;
+                        background: #F2F9FF;
+                        display: flex;
+                        justify-content: space-between;
+                        padding: 10px 20px;
+                    }
+
+                    .wrape_radios {
+                        display: flex;
+                        justify-content: space-between;
+                    }
+                }
+            }
+        }
+    }
+}
